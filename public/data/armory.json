@@ -1,0 +1,74 @@
+{
+  "categories" : {
+    "weapons" : {
+      "basic melee" : {
+        "unarmed strike" : {
+          "level" : null,
+          "price" : null,
+          "damage" : "1d3 B",
+          "critical" : null,
+          "bulk" : null,
+          "special" : "archaic, nonlethal",
+          "_description" : "Lorem ipsum dolor sit amet...."
+        },
+
+        "club" : {
+          "level" : 0,
+          "price" : null,
+          "damage" : "1d6 B",
+          "critical" : null,
+          "bulk" : 0,
+          "special" : "analog, archaic",
+          "_description" : "Lorem ipsum dolor sit amet....."
+        },
+
+        "baton, tactical" : {
+          "level" : 1,
+          "price" : 90,
+          "damage" : "1d4 B",
+          "critical" : null,
+          "bulk" : 0,
+          "special" : "analog, operative"
+        }
+      },
+
+      "small arms" : {
+        "laser pistol, azimuth" : {
+          "level" : 1,
+          "price" : 350,
+          "damage" : "1d4 F",
+          "range" : "80 ft.",
+          "critical" : "burn 1d4",
+          "capacity" : "20 charges",
+          "usage" : 1,
+          "bulk" : 0,
+          "special" : null
+        },
+
+        "semi-auto pistol, tactical" : {
+          "level" : 1,
+          "price" : 260,
+          "damage" : "1d6 P",
+          "range" : "30 ft.",
+          "critical" : null,
+          "capacity" : "9 rounds",
+          "usage" : 1,
+          "bulk" : 0,
+          "special" : "analog"
+        },
+
+        "pulsecaster pistol" : {
+          "level" : 1,
+          "price" : 250,
+          "damage" : "1d4 E",
+          "range" : "30 ft.",
+          "critical" : null,
+          "capacity" : "20 charges",
+          "usage" : 1,
+          "bulk" : 0,
+          "special" : "nonlethal"
+        }
+      }
+    }
+  }
+}
