@@ -2,7 +2,7 @@ const mutators = {
     capitalize: str => str.charAt(0).toUpperCase() + str.slice(1),
     humanize: (prop, value) => {
         if (prop === 'bulk' && value === 0) return 'L';
-        else if (value === null) return '-';
+        else if (value === null || value < 0) return '-';
         return value && mutators.capitalize( value.toString() );
     }
 }
@@ -10,7 +10,7 @@ const mutators = {
 class ArmoryService {
     constructor (data) {
         this.data = data;
-        this.defaultSort = {type: 1, level: 1, price: 1};
+        this.defaultSort = ['type', 'level'];
     }
 
     getCategories () {
@@ -27,14 +27,17 @@ class ArmoryService {
     getProperties ( filter ) {
         const category = this.data && this.data.categories && this.data.categories[ filter.category ];
         const subcategory = category && category[ filter.subcategory ];
-        if (subcategory) return Object.keys( subcategory[ Object.keys( subcategory )[0] ] );
+        if (subcategory) return ['name'].concat( Object.keys( subcategory[ Object.keys( subcategory )[0] ] ) );
         return [];
     }
 
     getItems ( filter ) {
         const category = this.data && this.data.categories && this.data.categories[ filter.category ];
         const subcategory = category && category[ filter.subcategory ];
-        return subcategory || [];
+
+        return _(subcategory).map((item, name) => {
+            return _.extend({name}, item);
+        }).sortBy( ( filter.sort || this.defaultSort ).concat([ 'name' ]) ).value() || [];
     }
 }
 
@@ -68,6 +71,7 @@ const ArmoryLoaderService = new Vue({
     methods: {
         startLoad: function() {
             ArmoryLoaderService.loading = true;
+            App.loading = true;
 
             $.getJSON( "data/armory.json", function ( data ) {
                 App.armory = new ArmoryService(data);

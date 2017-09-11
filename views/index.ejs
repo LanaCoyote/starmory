@@ -10,15 +10,14 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/vue" defer></script>
-    <script src="/javascripts/app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash"></script>
   </head>
   <body>
-    <div class="native-container loading" id="loader" v-if="loading">
-      Loading....
+    <div class="fluid" id="loader" v-if="loading">
+      <p>Loading....</p>
     </div>
 
-    <main class="native-container" id="app-body" v-if="!loading">
+    <main class="fluid" id="app-body" v-if="!loading">
         <header class="nav">
           <div class="nav-top top-bar">
             <div class="top-bar-left">
@@ -47,21 +46,24 @@
           <table class="table-items">
             <thead>
               <tr>
-                <th>Name</th>
-                <th v-for="property in armory.getProperties( filter )" v-if="!property.startsWith('_')">
+                <th v-for="property in armory.getProperties( filter )" v-if="!property.startsWith('_')"
+                    v-on:click="updateFilter({sort: [property]})">
                   {{ mutate.capitalize( property ) }}
+                  <span v-if="filter.sort && filter.sort[0] === property">v</span>
                 </th>
               </tr>
             </thead>
 
             <tbody>
               <tr v-for="(item, name) in armory.getItems( filter )">
-                <td>{{ mutate.capitalize( name ) }}</td>
                 <td v-for="(value, prop) in item" v-if="!prop.startsWith('_')">{{ mutate.humanize( prop, value ) }}</td>
               </tr>
             </tbody>
           </table>
         </section>
     </main>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="/javascripts/app.js"></script>
   </body>
 </html>

@@ -3,8 +3,9 @@
     "weapons" : {
       "basic melee" : {
         "unarmed strike" : {
-          "level" : null,
-          "price" : null,
+          "type" : "uncategorized",
+          "level" : -1,
+          "price" : -1,
           "damage" : "1d3 B",
           "critical" : null,
           "bulk" : null,
@@ -13,8 +14,9 @@
         },
 
         "club" : {
+          "type" : "uncategorized",
           "level" : 0,
-          "price" : null,
+          "price" : -1,
           "damage" : "1d6 B",
           "critical" : null,
           "bulk" : 0,
@@ -23,6 +25,7 @@
         },
 
         "baton, tactical" : {
+          "type" : "uncategorized",
           "level" : 1,
           "price" : 90,
           "damage" : "1d4 B",
@@ -34,6 +37,7 @@
 
       "small arms" : {
         "laser pistol, azimuth" : {
+          "type" : "laser",
           "level" : 1,
           "price" : 350,
           "damage" : "1d4 F",
@@ -46,6 +50,7 @@
         },
 
         "semi-auto pistol, tactical" : {
+          "type" : "projectile",
           "level" : 1,
           "price" : 260,
           "damage" : "1d6 P",
@@ -58,6 +63,7 @@
         },
 
         "pulsecaster pistol" : {
+          "type" : "shock",
           "level" : 1,
           "price" : 250,
           "damage" : "1d4 E",
