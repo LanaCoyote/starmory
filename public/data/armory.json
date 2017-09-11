@@ -36,6 +36,45 @@
       },
 
       "small arms" : {
+        "cryo-zero pistol, frostbite-class" : {
+          "type" : "cryo",
+          "level" : 5,
+          "price" : 3060,
+          "damage" : "1d6 C",
+          "range" : "60 ft.",
+          "critical" : "staggered",
+          "capacity" : "20 charges",
+          "usage" : 1,
+          "bulk" : 0,
+          "special" : null
+        },
+
+        "flare gun, survival" : {
+          "type" : "flame",
+          "level" : 1,
+          "price" : 90,
+          "damage" : "1d3 F",
+          "range" : "30 ft.",
+          "critical" : "burn 1d6",
+          "capacity" : "1 flare",
+          "usage" : 1,
+          "bulk" : 0,
+          "special" : "analog, bright"
+        },
+
+        "flame pistol" : {
+          "type" : "flame",
+          "level" : 2,
+          "price" : 470,
+          "damage" : "1d4 F",
+          "range" : "20 ft.",
+          "critical" : "burn 1d4",
+          "capacity" : "20 petrol",
+          "usage" : 4,
+          "bulk" : 0,
+          "special" : "line, unwieldy"
+        },
+
         "laser pistol, azimuth" : {
           "type" : "laser",
           "level" : 1,
@@ -47,6 +86,19 @@
           "usage" : 1,
           "bulk" : 0,
           "special" : null
+        },
+
+        "plasma pistol, red star" : {
+          "type" : "plasma",
+          "level" : 7,
+          "price" : 7200,
+          "damage" : "1d8 E&F",
+          "range" : "20 ft.",
+          "critical" : "burn 1d8",
+          "capacity" : "20 charges",
+          "usage" : 4,
+          "bulk" : 0,
+          "special" : "line, unwieldy"
         },
 
         "semi-auto pistol, tactical" : {
@@ -73,6 +125,32 @@
           "usage" : 1,
           "bulk" : 0,
           "special" : "nonlethal"
+        },
+
+        "sonic pistol, thunderstrike" : {
+          "type" : "sonic",
+          "level" : 4,
+          "price" : 2300,
+          "damage" : "1d8 So",
+          "range" : "40 ft.",
+          "critical" : "deafen",
+          "capacity" : "20 charges",
+          "usage" : 2,
+          "bulk" : 0,
+          "special" : null
+        },
+
+        "needler pistol" : {
+          "type" : "uncategorized",
+          "level" : 1,
+          "price" : 105,
+          "damage" : "1d4 P",
+          "range" : "30 ft.",
+          "critical" : "injection DC +2",
+          "capacity" : "6 darts",
+          "usage" : 1,
+          "bulk" : 0,
+          "special" : "analog, injection"
         }
       }
     }

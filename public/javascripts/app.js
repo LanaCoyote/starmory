@@ -37,7 +37,7 @@ class ArmoryService {
 
         return _(subcategory).map((item, name) => {
             return _.extend({name}, item);
-        }).sortBy( ( filter.sort || this.defaultSort ).concat([ 'name' ]) ).value() || [];
+        }).orderBy( ( filter.sort || this.defaultSort ).concat([ 'name' ]), filter.order ).value() || [];
     }
 }
 
@@ -47,7 +47,7 @@ const App = new Vue({
         armory: new ArmoryService(),
         loading: false,
         showHeader: true,
-        filter: {},
+        filter: { order: ['asc'] },
         mutate: mutators
     },
 
