@@ -34,9 +34,7 @@ class ArmoryService {
     getProperties ( filter ) {
         const category = this.data && this.data.categories && this.data.categories[ filter.category ];
         const subcategory = category && category[ filter.subcategory ];
-        // if (subcategory) return ['name'].concat( Object.keys( subcategory[ Object.keys( subcategory )[0] ] ) );
         const firstItem = getFirstItem(subcategory || category, !!subcategory);
-        console.dir(firstItem);
         if (firstItem) return ['name'].concat( Object.keys( firstItem ) );
         return [];
     }
@@ -57,8 +55,7 @@ class ArmoryService {
                 if (!nameFilter) return true;
                 return nameFilter.test( item.name );
             })
-            .orderBy( ( filter.sort || this.defaultSort )
-            .concat( this.extendedSort ), filter.order )
+            .orderBy( ( filter.sort || this.defaultSort ).concat( this.extendedSort ), filter.order )
             .value() || [];
     }
 }
@@ -76,6 +73,18 @@ const App = new Vue({
     },
 
     methods: {
+        updateSort: function( key ) {
+            if (this.filter.sort && this.filter.sort[0] === key && this.filter.order[0] === 'asc') {
+                this.filter.order = ['desc'];
+            } else {
+                this.filter.sort = [key];
+                this.filter.order = ['asc'];
+            }
+
+            console.dir(this.filter);
+            this.$forceUpdate();
+        },
+
         updateFilter: function( newFilter ) {
             for (const key in newFilter) {
                 this.filter[key] = newFilter[key];

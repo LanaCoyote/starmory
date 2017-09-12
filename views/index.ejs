@@ -96,9 +96,13 @@
             <thead>
               <tr>
                 <th v-for="property in armory.getProperties( filter )" v-if="!property.startsWith('_')"
-                    v-on:click="updateFilter({sort: [property]})">
+                    v-on:click="updateSort( property )">
                   {{ mutate.capitalize( property ) }}
-                  <span v-if="filter.sort && filter.sort[0] === property">v</span>
+                  <span v-if="filter.sort && filter.sort[0] === property">
+                    <i class="fa"
+                       v-bind:class="{'fa-caret-up' : filter.order[0] === 'asc', 'fa-caret-down' : filter.order[0] === 'desc'}">
+                    </i>
+                  </span>
                 </th>
               </tr>
             </thead>
