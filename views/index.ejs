@@ -25,7 +25,9 @@
                 <li class="menu-text">Starmory</li>
 
                 <li v-for="category in armory.getCategories()">
-                  <a href="#" v-on:click="filter = {category: category}">{{ mutate.capitalize( category ) }}</a>
+                  <a href="#" v-on:click="filter = {category: category}">
+                    {{ mutate.capitalize( category ) }}
+                  </a>
                 </li>
               </ul>
             </div>
@@ -37,12 +39,33 @@
             <div class="top-bar-left">
               <ul class="menu">
                 <li v-for="subcategory in armory.getSubcategories( filter )">
-                  <a href="#" v-on:click="updateFilter({subcategory: subcategory})">{{ mutate.capitalize( subcategory ) }}</a>
+                  <a href="#" v-on:click="updateFilter({subcategory: subcategory})" v-if="filter.subcategory !== subcategory">
+                    {{ mutate.capitalize( subcategory ) }}
+                  </a>
+
+                  <div class="menu-text" v-if="filter.subcategory === subcategory">
+                    {{ mutate.capitalize( subcategory ) }}
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
         </header>
+
+        <section class="splash" v-if="!filter.category">
+          <div class="grid-container text-center">
+            <h3>Starmory</h3>
+
+            <p class="lead">
+              Welcome to the Starmory, a dynamic list of Starfinder weapons.
+            </p>
+
+            <p>
+              Select a category from the navigation bar above to begin browsing. Use the subcategories and filters to
+              narrow your search.
+            </p>
+          </div>
+        </section>
 
         <section class="items">
           <table class="table-items">
