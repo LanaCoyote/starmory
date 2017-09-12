@@ -29,6 +29,8 @@
                 </li>
               </ul>
             </div>
+
+            <input v-model.trim="search" placeholder="Search..." v-on:keyup.enter="updateFilter({name: search})">
           </div>
 
           <div class="nav-sub" v-if="filter.category">
