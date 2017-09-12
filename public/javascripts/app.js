@@ -7,6 +7,12 @@ const mutators = {
     }
 }
 
+function getFirstItem(categoryOrSub, isSubCategory) {
+    if (!categoryOrSub) return;
+    if (!isSubCategory) categoryOrSub = categoryOrSub[ Object.keys(categoryOrSub)[0] ];
+    return categoryOrSub[ Object.keys(categoryOrSub)[0] ];
+}
+
 class ArmoryService {
     constructor (data) {
         this.data = data;
@@ -28,14 +34,21 @@ class ArmoryService {
     getProperties ( filter ) {
         const category = this.data && this.data.categories && this.data.categories[ filter.category ];
         const subcategory = category && category[ filter.subcategory ];
-        if (subcategory) return ['name'].concat( Object.keys( subcategory[ Object.keys( subcategory )[0] ] ) );
+        // if (subcategory) return ['name'].concat( Object.keys( subcategory[ Object.keys( subcategory )[0] ] ) );
+        const firstItem = getFirstItem(subcategory || category, !!subcategory);
+        console.dir(firstItem);
+        if (firstItem) return ['name'].concat( Object.keys( firstItem ) );
         return [];
     }
 
     getItems ( filter ) {
         const category = this.data && this.data.categories && this.data.categories[ filter.category ];
-        const subcategory = category && category[ filter.subcategory ];
+        let subcategory = category && category[ filter.subcategory ];
         const nameFilter = filter.name && new RegExp( filter.name );
+
+        if (category && !subcategory) {
+            subcategory = _.reduce(category, (master, sub) => _.merge(master, sub), {});
+        }
 
         return _(subcategory).map((item, name) => {
                 return _.extend({name}, item);
@@ -56,6 +69,7 @@ const App = new Vue({
         armory: new ArmoryService(),
         loading: false,
         showHeader: true,
+        search: '',
         filter: { order: ['asc'] },
         mutate: mutators
     },

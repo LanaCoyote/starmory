@@ -58,7 +58,7 @@
 
             <tbody>
               <tr v-for="(item, name) in armory.getItems( filter )">
-                <td v-for="(value, prop) in item" v-if="!prop.startsWith('_')" :class="prop === 'name' ? item.type : ''">
+                <td v-for="(value, prop) in item" v-if="!prop.startsWith('_')" :class="prop === 'type' ? item.type : ''">
                   {{ mutate.humanize( prop, value ) }}
                 </td>
               </tr>
