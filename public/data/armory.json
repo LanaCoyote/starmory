@@ -43,7 +43,8 @@
           "capacity" : null,
           "usage" : null,
           "bulk" : 0,
-          "special" : "analog, operative"
+          "special" : "analog, operative",
+          "_description" : "A baton is a thin, solid metal shaft, usually with a textured rubber grip. A Tactical baton can be used to inflict precise bludgeoning blows."
         },
 
         "battleglove, cestus" : {
@@ -71,7 +72,8 @@
           "capacity" : null,
           "usage" : null,
           "bulk": 0,
-          "special" : "analog, operative"
+          "special" : "analog, operative",
+          "_description" : "These light blades can be used for both mundane tasks and combat. A typical survival knife has a fixed, single-edged, carbon-steel or ceramic blade and is treated against corrosion."
         },
 
         "dueling sword, tactical" : {
@@ -99,7 +101,8 @@
           "capacity" : null,
           "usage" : null,
           "bulk" : 0,
-          "special" : "analog, operative"
+          "special" : "analog, operative",
+          "_description" : "These light blades can be used for both mundane tasks and combat. Tactical knives have large, double-edged blades, often with a section of serrated blade near the haft, and they come in both fixed- and folding-blade designs; users may prefer one style or the other, but the two are identical in terms of price, weight, and damage dealt."
         },
 
         "dueling sword, buzzblade" : {
@@ -127,7 +130,8 @@
           "capacity" : "20 charges",
           "usage" : 1,
           "bulk" : 0,
-          "special" : "nonlethal, operative, powered (capacity 20, usage 2)"
+          "special" : "nonlethal, operative, powered (capacity 20, usage 2)",
+          "_description" : "When this nonreflective, dark-gray baton connects with a target, it discharges an electrical pulse that can stagger its victim."
         },
 
         "battleglove, power" : {
@@ -169,7 +173,8 @@
           "capacity" : null,
           "usage" : null,
           "bulk" : 0,
-          "special" : "analog, operative"
+          "special" : "analog, operative",
+          "_description" : "The thinness and lightness of daggers make them easy to carry or conceal. Ultrathin daggers have sharp, double-edged blades. Most daggers are available with fixed, folding, or retractable blades."
         },
 
         "battleglove, nova" : {
@@ -197,7 +202,8 @@
           "capacity" : null,
           "usage" : null,
           "bulk" : 0,
-          "special" : "analog, operative"
+          "special" : "analog, operative",
+          "_description" : "The thinness and lightness of daggers make them easy to carry or conceal. Zero-edge daggers have blades—crafted with quantum technology—that are so fine, their edges blur. Most daggers are available with fixed, folding, or retractable blades."
         },
 
         "dueling sword, ripper" : {
@@ -225,7 +231,8 @@
           "capacity" : "20 charges",
           "usage" : 2,
           "bulk" : 0,
-          "special" : "operative, powered (capacity 20, usage 2), stun"
+          "special" : "operative, powered (capacity 20, usage 2), stun",
+          "_description" : "This more advanced combat baton, known as a peacemaker, is a light metal rod that discharges a pulse that can be strong enough to knock a target to the ground."
         },
 
         "battleglove, gravity" : {
@@ -253,7 +260,8 @@
           "capacity" : null,
           "usage" : null,
           "bulk" : 0,
-          "special" : "analog, operative"
+          "special" : "analog, operative",
+          "_description" : "The thinness and lightness of daggers make them easy to carry or conceal. The blade of a molecular rift dagger looks translucent, as if it’s made of glass, and its vibrating particles allow the dagger to slice through almost any substance. Most daggers are available with fixed, folding, or retractable blades."
         },
 
         "dueling sword, molecular rift" : {
@@ -281,7 +289,8 @@
           "capacity" : "20 charges",
           "usage" : 1,
           "bulk" : 0,
-          "special" : "operative, powered (capacity 20, usage 1)"
+          "special" : "operative, powered (capacity 20, usage 1)",
+          "_description" : "A baton is a thin, solid metal shaft, usually with a textured rubber grip. An advanced baton, used by elite mercenary and security companies, often has an additional shaft, as well as a weighted end that can be powered to connect with substantially more force than a Tactical baton."
         },
 
         "spear, tactical" : {
@@ -763,7 +772,7 @@
           "special" : "analog"
         },
 
-        "cryopick, tactical" : {
+        "cryopike, tactical" : {
           "hands" : 2,
           "type" : "cryo",
           "level" : 5,
@@ -774,7 +783,8 @@
           "capacity" : "40 charges",
           "usage" : 2,
           "bulk" : 2,
-          "special" : "powered (capacity 40, usage 2), reach"
+          "special" : "powered (capacity 40, usage 2), reach",
+          "_description" : "The haft of a cryopike is a long aluminum or carbon-steel shaft with an adjustable rubber grip. A cryopike emits a blast of supercooled gas from its tip that acts as a freezing blade."
         },
 
         "flame doshko, ember" : {
@@ -788,7 +798,8 @@
           "capacity" : "20 charges",
           "usage" : 1,
           "bulk" : 1,
-          "special" : "powered (capacity 20, usage 1)"
+          "special" : "powered (capacity 20, usage 1)",
+          "_description" : "When activated, the blade of this doshko heats up by means of internal heating coils. The doshko deals fire damage and can also cause traumatic injuries."
         },
 
         "flame doshko, blaze" : {
@@ -802,7 +813,8 @@
           "capacity" : "20 charges",
           "usage" : 1,
           "bulk" : 1,
-          "special" : "powered (capacity 20, usage 1)"
+          "special" : "powered (capacity 20, usage 1)",
+          "_description" : "When activated, the blade of this doshko heats up by means of internal heating coils. The doshko deals fire damage and can also cause traumatic injuries."
         },
 
         "plasma doshko, red star" : {
@@ -864,7 +876,7 @@
       },
 
       "small arms" : {
-        "cryo-zero pistol, frostbite-class" : {
+        "zero pistol, frostbite-class" : {
           "hands" : 1,
           "type" : "cryo",
           "level" : 5,
@@ -875,7 +887,8 @@
           "capacity" : "20 charges",
           "usage" : 1,
           "bulk" : 0,
-          "special" : null
+          "special" : null,
+          "_description" : "Zero pistols have a weighted grip to balance their unusually heavy barrels. A cylindrical canister over the barrel contains and directs the coolants."
         },
 
         "flare gun, survival" : {
@@ -889,7 +902,8 @@
           "capacity" : "1 flare",
           "usage" : 1,
           "bulk" : 0,
-          "special" : "analog, bright"
+          "special" : "analog, bright",
+          "_description" : "A survival flare gun is used to signal danger or call for help. Though not designed for combat, survival flare guns can deal fire damage at close range."
         },
 
         "flame pistol" : {
@@ -903,7 +917,8 @@
           "capacity" : "20 petrol",
           "usage" : 4,
           "bulk" : 0,
-          "special" : "line, unwieldy"
+          "special" : "line, unwieldy",
+          "_description" : "A flame pistol shoots a line of ignited petrol from its barrel."
         },
 
         "laser pistol, azimuth" : {
@@ -917,7 +932,8 @@
           "capacity" : "20 charges",
           "usage" : 1,
           "bulk" : 0,
-          "special" : null
+          "special" : null,
+          "_description" : "The laser pistol is possibly the most common small arm used by explorers, guards, mercenaries, and traders. Laser pistols are light and reliable, yet they still deal a respectable amount of damage."
         },
 
         "plasma pistol, red star" : {
@@ -1046,7 +1062,8 @@
           "capacity" : "40 charges",
           "usage" : 2,
           "bulk" : 1,
-          "special" : null
+          "special" : null,
+          "_description" : "Zero rifles have long, bulky barrels and tend to be very front-heavy. A heavy tank over the barrel stores the rifle’s coolant supply, contributing most of its bulk."
         },
 
         "zero rifle, hailstorm-class" : {
@@ -1060,7 +1077,8 @@
           "capacity" : "40 charges",
           "usage" : 2,
           "bulk" : 2,
-          "special" : null
+          "special" : null,
+          "_description" : "Zero rifles have long, bulky barrels and tend to be very front-heavy. A heavy tank over the barrel stores the rifle’s coolant supply, contributing most of its bulk."
         },
 
         "flame rifle" : {
@@ -1074,7 +1092,8 @@
           "capacity" : "20 petrol",
           "usage" : 5,
           "bulk" : 1,
-          "special" : "line, unwieldy"
+          "special" : "line, unwieldy",
+          "_description" : "A flame rifle shoots a line of ignited petrol from its barrel."
         },
 
         "laser rifle, azimuth" : {
@@ -1088,7 +1107,8 @@
           "capacity" : "20 charges",
           "usage" : 1,
           "bulk" : 1,
-          "special" : null
+          "special" : null,
+          "_description" : "With its snub, squared barrel and internal reinforcements, a laser rifle is sturdy and dependable."
         },
 
         "laser rifle, corona" : {
@@ -1102,7 +1122,8 @@
           "capacity" : "20 charges",
           "usage" : 1,
           "bulk" : 1,
-          "special" : null
+          "special" : null,
+          "_description" : "With its snub, squared barrel and internal reinforcements, a laser rifle is sturdy and dependable."
         },
 
         "laser rifle, aphelion" : {
@@ -1116,7 +1137,8 @@
           "capacity" : "20 charges",
           "usage" : 1,
           "bulk" : 1,
-          "special" : null
+          "special" : null,
+          "_description" : "With its snub, squared barrel and internal reinforcements, a laser rifle is sturdy and dependable."
         },
 
         "plasma rifle, red star" : {
@@ -1301,7 +1323,8 @@
           "capacity": "80 charges",
           "usage": 4,
           "bulk": 2,
-          "special": "line, unwieldy"
+          "special": "line, unwieldy",
+          "_description" : "Zero cannons project a freezing line straight out from a generator, affecting any targets within the line. A pair of tanks in the cannon’s heavy stock contain chemical coolants that produce a violent endothermic reaction when mixed in the insulated barrel."
         },
         "flamethrower, ifrit-class": {
           "hands": 2,
@@ -1314,7 +1337,8 @@
           "capacity": "20 petrol",
           "usage": 4,
           "bulk": 2,
-          "special": "analog, blast, unwieldy"
+          "special": "analog, blast, unwieldy",
+          "_description" : "These portable flamethrowers consist of a heavy rifle-like design with an oversized petrol tank integrated into the weapon’s stock."
         },
         "flamethrower, salamander-class": {
           "hands": 2,
@@ -1327,7 +1351,8 @@
           "capacity": "20 petrol",
           "usage": 5,
           "bulk": 2,
-          "special": "analog, blast, unwieldy"
+          "special": "analog, blast, unwieldy",
+          "_description" : "These portable flamethrowers consist of a heavy rifle-like design with an oversized petrol tank integrated into the weapon’s stock."
         },
 
         "artillery laser, azimuth": {
@@ -1341,7 +1366,8 @@
           "capacity" : "20 charges",
           "usage" : 2,
           "bulk" : 3,
-          "special" : "penetrating"
+          "special" : "penetrating",
+          "_description" : "Artillery lasers are heavy weapons designed to be effective against hardened targets such as Vehicles and enemy bunkers."
         },
 
         "artillery laser, corona": {
@@ -1355,7 +1381,8 @@
           "capacity" : "40 charges",
           "usage" : 4,
           "bulk" : 3,
-          "special" : "penetrating"
+          "special" : "penetrating",
+          "_description" : "Artillery lasers are heavy weapons designed to be effective against hardened targets such as Vehicles and enemy bunkers."
         },
 
         "artillery laser, aphelion": {
@@ -1369,7 +1396,8 @@
           "capacity" : "40 charges",
           "usage" : 4,
           "bulk" : 3,
-          "special" : "penetrating"
+          "special" : "penetrating",
+          "_description" : "Artillery lasers are heavy weapons designed to be effective against hardened targets such as Vehicles and enemy bunkers."
         },
 
         "plasma cannon, red star" : {
@@ -1600,7 +1628,8 @@
           "capacity" : "drawn",
           "usage" : null,
           "bulk" : -1,
-          "special" : "explode (1d6 P, 15 ft.)"
+          "special" : "explode (1d6 P, 15 ft.)",
+          "_description" : "A fragmentary, or frag, grenade explodes in a cloud of shrapnel."
         },
 
         "shock grenade I" : {
@@ -1614,7 +1643,8 @@
           "capacity" : "drawn",
           "usage" : null,
           "bulk" : -1,
-          "special" : "explode (1d8 E, 15 ft.)"
+          "special" : "explode (1d8 E, 15 ft.)",
+          "_description" : "A shock grenade releases a pulse of electrical energy on impact."
         },
 
         "smoke grenade" : {
@@ -1628,7 +1658,8 @@
           "capacity" : "drawn",
           "usage" : null,
           "bulk" : -1,
-          "special" : "explode (smoke cloud 1 minute, 20 ft.)"
+          "special" : "explode (smoke cloud 1 minute, 20 ft.)",
+          "_description" : "A smoke grenade deals no damage; instead, it releases a cloud of dense smoke. Each character who inhales smoke must succeed at a Fortitude saving throw each round (DC = 15 + 1 per previous check) or spend that round choking and coughing; he can do nothing else. A character who chokes for 2 consecutive rounds takes 1d6 nonlethal damage. (Active environmental protection from a suit of armor prevents this effect altogether.) Regardless of the armor a character wears, smoke obscures vision, granting concealment to anyone within it."
         },
 
         "stickybomb grenade I" : {
@@ -1642,7 +1673,8 @@
           "capacity" : "drawn",
           "usage" : null,
           "bulk" : -1,
-          "special" : "explode (entangled 2d4 rounds, 10 ft.)"
+          "special" : "explode (entangled 2d4 rounds, 10 ft.)",
+          "_description" : "A stickybomb grenade detonates with a splash of adhesive resin."
         },
 
         "flash grenade I" : {
@@ -1656,7 +1688,8 @@
           "capacity" : "drawn",
           "usage" : null,
           "bulk" : -1,
-          "special" : "explode (blinded 1d4 rounds, 5 ft.)"
+          "special" : "explode (blinded 1d4 rounds, 5 ft.)",
+          "_description" : "When detonated, a flash grenade releases a pulse of intense radiance."
         },
 
         "incendiary grenade I" : {
@@ -1670,7 +1703,8 @@
           "capacity" : "drawn",
           "usage" : null,
           "bulk" : -1,
-          "special" : "explode (1d6 F, burn 1d4, 5 ft.)"
+          "special" : "explode (1d6 F, burn 1d4, 5 ft.)",
+          "_description" : "Incendiary grenades detonate in a spray of superheated plasma."
         },
 
         "frag grenade II" : {
@@ -1684,7 +1718,8 @@
           "capacity" : "drawn",
           "usage" : null,
           "bulk" : -1,
-          "special" : "explode (2d6 P, 15 ft.)"
+          "special" : "explode (2d6 P, 15 ft.)",
+          "_description" : "A fragmentary, or frag, grenade explodes in a cloud of shrapnel."
         },
 
         "screamer grenade I" : {
@@ -1698,7 +1733,8 @@
           "capacity" : "drawn",
           "usage" : null,
           "bulk" : -1,
-          "special" : "explode (1d10 So, deafened 1d4 minutes, 15 ft.)"
+          "special" : "explode (1d10 So, deafened 1d4 minutes, 15 ft.)",
+          "_description" : "When detonated, a screamer grenade releases a piercing shriek of sonic energy."
         }
       },
 
