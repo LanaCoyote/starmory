@@ -38,7 +38,7 @@
               </ul>
             </div>
 
-            <div class="top-bar-right">
+            <div class="top-bar-right" v-if="filter.category">
               <ul class="menu">
                 <li>
                   <input type="search" v-model.trim="search" placeholder="Search..."
