@@ -599,8 +599,84 @@
           "critical" : null,
           "bulk" : 1,
           "special" : "analog"
-        }
+        },
 
+        "cryopick, tactical" : {
+          "hands" : 2,
+          "type" : "cryo",
+          "level" : 5,
+          "price" : 3360,
+          "damage" : "1d8 C",
+          "critical" : null,
+          "bulk" : 2,
+          "special" : "powered (capacity 40, usage 2), reach"
+        },
+
+        "flame doshko, ember" : {
+          "hands" : 2,
+          "type" : "flame",
+          "level" : 2,
+          "price" : 750,
+          "damage" : "1d8 F",
+          "critical" : "wound",
+          "bulk" : 1,
+          "special" : "powered (capacity 20, usage 1)"
+        },
+
+        "flame doshko, blaze" : {
+          "hands" : 2,
+          "type" : "flame",
+          "level" : 8,
+          "price" : 8500,
+          "damage" : "2d8 F",
+          "critical" : "wound",
+          "bulk" : 1,
+          "special" : "powered (capacity 20, usage 1)"
+        },
+
+        "plasma doshko, red star" : {
+          "hands" : 2,
+          "type" : "plasma",
+          "level" : 6,
+          "price" : 4650,
+          "damage" : "1d10 E&F",
+          "critical" : "severe wound",
+          "bulk" : 1,
+          "special" : "powered (capacity 20, usage 2)"
+        },
+
+        "doshko, tactical" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level" : 1,
+          "price" : 240,
+          "damage" : "1d12 P",
+          "critical" : null,
+          "bulk" : 1,
+          "special" : "analog, unwieldy"
+        },
+
+        "pike, tactical" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level" : 2,
+          "price" : 475,
+          "damage" : "1d8 P",
+          "critical" : null,
+          "bulk" : 2,
+          "special" : "analog, reach"
+        },
+
+        "curve blade, carbon steel" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level" : 4,
+          "price" : 2230,
+          "damage" : "1d10 S",
+          "critical" : "bleed 1d6",
+          "bulk" : 2,
+          "special" : "analog"
+        }
 
       },
 
@@ -689,6 +765,34 @@
           "special" : "analog"
         },
 
+        "semi-auto pistol, advanced" : {
+          "hands" : 1,
+          "type" : "projectile",
+          "level" : 7,
+          "price" : 5500,
+          "damage" : "2d6 P",
+          "range" : "60 ft.",
+          "critical" : null,
+          "capacity" : "12 rounds",
+          "usage" : 1,
+          "bulk" : 0,
+          "special" : "analog"
+        },
+
+        "semi-auto pistol, elite" : {
+          "hands" : 1,
+          "type" : "projectile",
+          "level" : 10,
+          "price" : 18200,
+          "damage" : "3d6 P",
+          "range" : "60 ft.",
+          "critical" : null,
+          "capacity" : "12 rounds",
+          "usage" : 1,
+          "bulk" : 0,
+          "special" : "analog"
+        },
+
         "pulsecaster pistol" : {
           "hands" : 1,
           "type" : "shock",
@@ -701,6 +805,20 @@
           "usage" : 1,
           "bulk" : 0,
           "special" : "nonlethal"
+        },
+
+        "arc pistol, static" : {
+          "hands" : 1,
+          "type" : "shock",
+          "level" : 2,
+          "price" : 750,
+          "damage" : "1d6 E",
+          "range" : "50 ft.",
+          "critical" : "arc 2",
+          "capacity" : "20 charges",
+          "usage" : 2,
+          "bulk" : 0,
+          "special" : "stun"
         },
 
         "sonic pistol, thunderstrike" : {
@@ -730,6 +848,262 @@
           "bulk" : 0,
           "special" : "analog, injection"
         }
+      },
+
+      "longarms" : {
+
+        "zero rifle, frostbite-class" : {
+          "hands" : 2,
+          "type" : "cryo",
+          "level" : 4,
+          "price" : 2330,
+          "damage" : "1d8 C",
+          "range" : "60 ft.",
+          "critical" : "staggered",
+          "capacity" : "40 charges",
+          "usage" : 2,
+          "bulk" : 1,
+          "special" : null
+        },
+
+        "zero rifle, hailstorm-class" : {
+          "hands" : 2,
+          "type" : "cryo",
+          "level" : 8,
+          "price" : 10100,
+          "damage" : "2d8 C",
+          "range" : "60 ft.",
+          "critical" : "staggered",
+          "capacity" : "40 charges",
+          "usage" : 2,
+          "bulk" : 2,
+          "special" : null
+        },
+
+        "flame rifle" : {
+          "hands" : 2,
+          "type" : "flame",
+          "level" : 2,
+          "price" : 490,
+          "damage" : "1d6 F",
+          "range" : "25 ft.",
+          "critical" : "burn 1d6",
+          "capacity" : "20 petrol",
+          "usage" : 5,
+          "bulk" : 1,
+          "special" : "line, unwieldy"
+        },
+
+        "laser rifle, azimuth" : {
+          "hands" : 2,
+          "type" : "laser",
+          "level" : 1,
+          "price" : 425,
+          "damage" : "1d8 F",
+          "range" : "120 ft.",
+          "critical" : "burn 1d6",
+          "capacity" : "20 charges",
+          "usage" : 1,
+          "bulk" : 1,
+          "special" : null
+        },
+
+        "laser rifle, corona" : {
+          "hands" : 2,
+          "type" : "laser",
+          "level" : 6,
+          "price" : 4650,
+          "damage" : "2d6 F",
+          "range" : "120 ft.",
+          "critical" : "burn 1d6",
+          "capacity" : "20 charges",
+          "usage" : 1,
+          "bulk" : 1,
+          "special" : null
+        },
+
+        "laser rifle, aphelion" : {
+          "hands" : 2,
+          "type" : "laser",
+          "level" : 9,
+          "price" : 14300,
+          "damage" : "3d6 F",
+          "range" : "120 ft.",
+          "critical" : "burn 1d6",
+          "capacity" : "20 charges",
+          "usage" : 1,
+          "bulk" : 1,
+          "special" : null
+        },
+
+        "plasma rifle, red star" : {
+          "hands" : 2,
+          "type" : "plasma",
+          "level" : 5,
+          "price" : 4600,
+          "damage" : "1d10 E&F",
+          "range" : "40 ft.",
+          "critical" : "burn 1d4",
+          "capacity" : "40 charges",
+          "usage" : 4,
+          "bulk" : 2,
+          "special" : "line, unwieldy"
+        },
+
+        "hunting rifle" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 1,
+          "price" : 240,
+          "damage" : "1d8 P",
+          "range" : "90 ft.",
+          "critical" : null,
+          "capacity" : "6 rounds",
+          "usage" : 1,
+          "bulk" : 1,
+          "special" : "analog"
+        },
+
+        "scattergun, utility" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 1,
+          "price" : 235,
+          "damage" : "1d4 P",
+          "range" : "15 ft.",
+          "critical" : null,
+          "capacity" : "4 shells",
+          "usage" : 1,
+          "bulk" : 1,
+          "special" : "analog, blast"
+        },
+
+        "acid dart rifle, tactical" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 2,
+          "price" : 485,
+          "damage" : "1d8 A&P",
+          "range" : "80 ft.",
+          "critical" : "corrode 1d4",
+          "capacity" : "10 darts",
+          "usage" : 1,
+          "bulk" : 1,
+          "special" : "analog"
+        },
+
+        "autotarget rifle" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 2,
+          "price" : 755,
+          "damage" : "1d6 P",
+          "range" : "60 ft.",
+          "critical" : null,
+          "capacity" : "10 rounds",
+          "usage" : 1,
+          "bulk" : 2,
+          "special" : "analog, automatic"
+        },
+
+        "crossbolter, tactical" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 2,
+          "price" : 475,
+          "damage" : "1d10 P",
+          "range" : "70 ft.",
+          "critical" : null,
+          "capacity" : "1 arrow",
+          "usage" : 1,
+          "bulk" : 2,
+          "special" : "unwieldy"
+        },
+
+        "pulsecaster rifle" : {
+          "hands" : 2,
+          "type" : "shock",
+          "level" : 1,
+          "price" : 100,
+          "damage" : "1d6 E",
+          "range" : "50 ft.",
+          "critical" : null,
+          "capacity" : "40 charges",
+          "usage" : 2,
+          "bulk" : 1,
+          "special" : "nonlethal"
+        },
+
+        "arc emitter, tactical" : {
+          "hands" : 2,
+          "type" : "shock",
+          "level" : 2,
+          "price" : 750,
+          "damage" : "1d4 E",
+          "range" : "15 ft.",
+          "critical" : null,
+          "capacity" : "20 charges",
+          "usage" : 4,
+          "bulk" : 1,
+          "special" : "blast, unwieldy, stun"
+        },
+
+        "arc rifle, static" : {
+          "hands" : 2,
+          "type" : "shock",
+          "level" : 6,
+          "price" : 4200,
+          "damage" : "1d12 E",
+          "range" : "70 ft.",
+          "critical" : "arc 1d6",
+          "capacity" : "40 charges",
+          "usage" : 1,
+          "bulk" : 2,
+          "special" : "stun"
+        },
+
+        "sonic rifle, thunderstrike" : {
+          "hands" : 2,
+          "type" : "sonic",
+          "level" : 5,
+          "price" : 3400,
+          "damage" : "1d10 So",
+          "range" : "50 ft.",
+          "critical" : "deafen",
+          "capacity" : "40 charges",
+          "usage" : 2,
+          "bulk" : 1,
+          "special" : null
+        },
+
+        "streetsweeper, thunderstrike" : {
+          "hands" : 2,
+          "type" : "sonic",
+          "level" : 7,
+          "price" : 7150,
+          "damage" : "1d10 So",
+          "range" : "50 ft.",
+          "critical" : "knockdown",
+          "capacity" : "40 charges",
+          "usage" : 5,
+          "bulk" : 2,
+          "special" : "boost 1d6"
+        },
+
+        "needler rifle" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level" : 1,
+          "price" : 110,
+          "damage" : "1d6 P",
+          "range" : "60 ft.",
+          "critical" : "injection DC +2",
+          "capacity" : "12 darts",
+          "usage" : 1,
+          "bulk" : 1,
+          "special" : "analog, injection"
+        }
+
       }
     }
   }
