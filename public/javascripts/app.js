@@ -35,10 +35,18 @@ class ArmoryService {
     getItems ( filter ) {
         const category = this.data && this.data.categories && this.data.categories[ filter.category ];
         const subcategory = category && category[ filter.subcategory ];
+        const nameFilter = filter.name && new RegExp( filter.name );
 
         return _(subcategory).map((item, name) => {
-            return _.extend({name}, item);
-        }).orderBy( ( filter.sort || this.defaultSort ).concat( this.extendedSort ), filter.order ).value() || [];
+                return _.extend({name}, item);
+            })
+            .filter(item => {
+                if (!nameFilter) return true;
+                return nameFilter.test( item.name );
+            })
+            .orderBy( ( filter.sort || this.defaultSort )
+            .concat( this.extendedSort ), filter.order )
+            .value() || [];
     }
 }
 
