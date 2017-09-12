@@ -72,6 +72,8 @@ class ArmoryService {
 Vue.component('item-description', {
     props: ['item'],
     data: function() {
+        const descriptorConstants = App.descriptors;
+        if (!descriptorConstants) return {};
         let descriptors = [];
 
         if (this.item.damage === 'by grenade') {
@@ -92,11 +94,11 @@ Vue.component('item-description', {
         if (this.item.special) {
             const specials = this.item.special.split(',');
             specials.forEach(quality => {
-                const qualityType = quality.split(' ')[0].trim();
-                if (specialDescriptions[ qualityType ]) {
+                const qualityType = quality.trim().split(' ')[0];
+                if (descriptorConstants.special[ qualityType ]) {
                     descriptors.push({
-                        header: mutators.capitalize(quality),
-                        text: specialDescriptions[ qualityType ]
+                        header: mutators.capitalize( quality.trim() ),
+                        text: descriptorConstants.special[ qualityType ]
                     });
                 }
             })
@@ -118,6 +120,7 @@ const App = new Vue({
     el: "#app-body",
     data: {
         armory: new ArmoryService(),
+        descriptions: {},
         loading: true,
         showHeader: true,
         search: '',
@@ -167,13 +170,23 @@ const ArmoryLoaderService = new Vue({
 
     methods: {
         startLoad: function() {
+            let thingsToLoad = 2;
             ArmoryLoaderService.loading = true;
             App.loading = true;
 
-            $.getJSON( "data/armory.json", function ( data ) {
-                App.armory = new ArmoryService(data);
+            function done() {
                 App.loading = false;
                 ArmoryLoaderService.loading = false;
+            }
+
+            $.getJSON( "data/armory.json", function ( data ) {
+                App.armory = new ArmoryService(data);
+                if (!--thingsToLoad) done();
+            });
+
+            $.getJSON( "data/descriptors.json", function ( data ) {
+                App.descriptors = data;
+                if (!--thingsToLoad) done();
             });
         }
     },
