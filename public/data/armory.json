@@ -313,6 +313,297 @@
         }
       },
 
+      "advanced melee" : {
+
+        "skyfire sword, tactical" : {
+          "hands" : 1,
+          "type" : "flame",
+          "level" : 7,
+          "price" : 6120,
+          "damage" : "2d4 F",
+          "critical" : "burn 1d8",
+          "bulk" : 1,
+          "special" : "powered (capacity 20, usage 2)"
+        },
+
+        "skyfire sword, inferno" : {
+          "hands" : 1,
+          "type" : "flame",
+          "level" : 17,
+          "price" : 246000,
+          "damage" : "7d8 F",
+          "critical" : "burn 4d12",
+          "bulk" : 1,
+          "special" : "powered (capacity 20, usage 1)"
+        },
+
+        "plasma sword, tactical" : {
+          "hands" : 1,
+          "type" : "plasma",
+          "level" : 9,
+          "price" : 14550,
+          "damage" : "2d8 E&F",
+          "critical" : "severe wound",
+          "bulk" : 1,
+          "special" : "powered (capacity 20, usage 2)"
+        },
+
+        "plasma sword, red star" : {
+          "hands" : 1,
+          "type" : "plasma",
+          "level" : 13,
+          "price" : 54300,
+          "damage" : "4d8 E&F",
+          "critical" : "severe wound",
+          "bulk" : 1,
+          "special" : "powered (capacity 40, usage 4)"
+        },
+
+        "plasma sword, yellow star" : {
+          "hands" : 1,
+          "type" : "plasma",
+          "level" : 15,
+          "price" : 127000,
+          "damage" : "5d8 E&F",
+          "critical" : "severe wound",
+          "bulk" : 1,
+          "special" : "powered (capacity 40, usage 4)"
+        },
+
+        "plasma sword, white star" : {
+          "hands" : 1,
+          "type" : "plasma",
+          "level" : 18,
+          "price" : 415600,
+          "damage" : "8d8 E&F",
+          "critical" : "severe wound",
+          "bulk" : 1,
+          "special" : "powered (capacity 40, usage 4)"
+        },
+
+        "plasma sword, blue star" : {
+          "hands" : 1,
+          "type" : "plasma",
+          "level" : 20,
+          "price" : 920250,
+          "damage" : "10d8 E&F",
+          "critical" : "severe wound",
+          "bulk" : 1,
+          "special" : "powered (capacity 40, usage 4)"
+        },
+
+        "shock truncheon, static" : {
+          "hands" : 1,
+          "type" : "shock",
+          "level" : 8,
+          "price" : 9150,
+          "damage" : "1d12 E",
+          "critical" : "Arc 1d4",
+          "bulk" : 1,
+          "special" : "powered (capacity 20, usage 2), stun"
+        },
+
+        "shock truncheon, aurora" : {
+          "hands" : 1,
+          "type" : "shock",
+          "level" : 11,
+          "price" : 23000,
+          "damage" : "2d12 E",
+          "critical" : "Arc 2d4",
+          "bulk" : 1,
+          "special" : "powered (capacity 20, usage 2), stun"
+        },
+
+        "shock truncheon, storm" : {
+          "hands" : 1,
+          "type" : "shock",
+          "level" : 16,
+          "price" : 80200,
+          "damage" : "3d12 E",
+          "critical" : "Arc 3d4",
+          "bulk" : 1,
+          "special" : "powered (capacity 40, usage 2), stun"
+        },
+
+        "shock truncheon, tempest" : {
+          "hands" : 1,
+          "type" : "shock",
+          "level" : 19,
+          "price" : 545000,
+          "damage" : "6d12 E",
+          "critical" : "Arc 6d4",
+          "bulk" : 1,
+          "special" : "powered (capacity 40, usage 2), stun"
+        },
+
+        "pulse gauntlet, thunderstrike" : {
+          "hands" : 1,
+          "type" : "sonic",
+          "level" : 2,
+          "price" : 475,
+          "damage" : "1d6 B&So",
+          "critical" : "knockdown",
+          "bulk" : 1,
+          "special" : "powered (capacity 20, usage 1)"
+        },
+
+        "pulse gauntlet, LFD" : {
+          "hands" : 1,
+          "type" : "sonic",
+          "level" : 7,
+          "price" : 7340,
+          "damage" : "2d6 B&So",
+          "critical" : "knockdown",
+          "bulk" : 1,
+          "special" : "powered (capacity 20, usage 1)"
+        },
+
+        "pulse gauntlet, HFD" : {
+          "hands" : 1,
+          "type" : "sonic",
+          "level" : 12,
+          "price" : 31300,
+          "damage" : "5d6 B&So",
+          "critical" : "knockdown",
+          "bulk" : 1,
+          "special" : "powered (capacity 20, usage 1)"
+        },
+
+        "pulse gauntlet, banshee" : {
+          "hands" : 1,
+          "type" : "sonic",
+          "level" : 16,
+          "price" : 148200,
+          "damage" : "10d6 B&So",
+          "critical" : "knockdown",
+          "bulk" : 1,
+          "special" : "powered (capacity 20, usage 1)"
+        },
+
+        "hammer, assault" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 1,
+          "price" : 95,
+          "damage" : "1d6 B",
+          "critical" : null,
+          "bulk" : 1,
+          "special" : "analog"
+        },
+
+        "longsword" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 1,
+          "price" : 375,
+          "damage" : "1d8 S",
+          "critical" : null,
+          "bulk" : 1,
+          "special" : "analog"
+        },
+
+        "starknife, tactical" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 1,
+          "price" : 110,
+          "damage" : "1d4 P",
+          "critical" : null,
+          "bulk" : 0,
+          "special" : "analog, thrown (20 ft.)"
+        },
+
+        "taclash, standard" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 1,
+          "price" : 240,
+          "damage" : "1d4 S",
+          "critical" : null,
+          "bulk" : 0,
+          "special" : "analog, disarm, nonlethal, reach, trip"
+        },
+
+        "injection glove" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 2,
+          "price" : 490,
+          "damage" : "1d4 P",
+          "critical" : "injection DC +2",
+          "bulk" : 0,
+          "special" : "analog, injection"
+        },
+
+        "fangblade" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 7,
+          "price" : 5430,
+          "damage" : "1d12 S",
+          "critical" : "bleed 1d8",
+          "bulk" : 1,
+          "special" : "powered (capacity 20, usage 1)"
+        },
+
+        "longsword, sintered" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 7,
+          "price" : 8420,
+          "damage" : "2d8 S",
+          "critical" : null,
+          "bulk" : 1,
+          "special" : "analog"
+        },
+
+        "starknife, sintered" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 8,
+          "price" : 9810,
+          "damage" : "4d4 P",
+          "critical" : null,
+          "bulk" : 0,
+          "special" : "analog, thrown (50 ft.)"
+        },
+
+        "longsword, microserrated" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 9,
+          "price" : 12100,
+          "damage" : "2d10 S",
+          "critical" : "bleed 2d6",
+          "bulk" : 1,
+          "special" : "analog"
+        },
+
+        "hammer, comet" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 10,
+          "price" : 16900,
+          "damage" : "16900",
+          "critical" : null,
+          "bulk" : 1,
+          "special" : "powered (capacity 20, usage 2)"
+        },
+
+        "longsword, ultrathin" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 11,
+          "price" : 26300,
+          "damage" : "4d8 S",
+          "critical" : null,
+          "bulk" : 1,
+          "special" : "analog"
+        }
+
+
+      },
+
       "small arms" : {
         "cryo-zero pistol, frostbite-class" : {
           "hands" : 1,
