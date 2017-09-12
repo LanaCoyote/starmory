@@ -1287,6 +1287,628 @@
           "special" : "analog, injection"
         }
 
+      },
+
+      "heavy weapons" : {
+        "zero cannon, tactical": {
+          "hands": 2,
+          "type": "cryo",
+          "level": 11,
+          "price": 23000,
+          "damage": "3d8 C",
+          "range": "60 ft.",
+          "critical": "staggered",
+          "capacity": "80 charges",
+          "usage": 4,
+          "bulk": 2,
+          "special": "line, unwieldy"
+        },
+        "flamethrower, ifrit-class": {
+          "hands": 2,
+          "type": "flame",
+          "level": 2,
+          "price": 780,
+          "damage": "1d6 F",
+          "range": "15 ft.",
+          "critical": "burn 1d6",
+          "capacity": "20 petrol",
+          "usage": 4,
+          "bulk": 2,
+          "special": "analog, blast, unwieldy"
+        },
+        "flamethrower, salamander-class": {
+          "hands": 2,
+          "type": "flame",
+          "level": 8,
+          "price": 8600,
+          "damage": "2d6 F",
+          "range": "30 ft.",
+          "critical": "burn 2d6",
+          "capacity": "20 petrol",
+          "usage": 5,
+          "bulk": 2,
+          "special": "analog, blast, unwieldy"
+        },
+
+        "artillery laser, azimuth": {
+          "hands": 2,
+          "type" : "laser",
+          "level" : 1,
+          "price" : 425,
+          "damage" : "1d10 F",
+          "range" : "120 ft.",
+          "critical" : "burn 1d6",
+          "capacity" : "20 charges",
+          "usage" : 2,
+          "bulk" : 3,
+          "special" : "penetrating"
+        },
+
+        "artillery laser, corona": {
+          "hands": 2,
+          "type" : "laser",
+          "level" : 6,
+          "price" : 4650,
+          "damage" : "2d8 F",
+          "range" : "120 ft.",
+          "critical" : "burn 1d6",
+          "capacity" : "40 charges",
+          "usage" : 4,
+          "bulk" : 3,
+          "special" : "penetrating"
+        },
+
+        "artillery laser, aphelion": {
+          "hands": 2,
+          "type" : "laser",
+          "level" : 9,
+          "price" : 14300,
+          "damage" : "3d8 F",
+          "range" : "120 ft.",
+          "critical" : "burn 1d6",
+          "capacity" : "40 charges",
+          "usage" : 4,
+          "bulk" : 3,
+          "special" : "penetrating"
+        },
+
+        "plasma cannon, red star" : {
+          "hands" : 2,
+          "type" : "plasma",
+          "level" : 8,
+          "price" : 8650,
+          "damage" : "2d10 E&F",
+          "range" : "100 ft.",
+          "critical" : "burn 1d8",
+          "capacity" : "40 charges",
+          "usage" : 5,
+          "bulk" : 2,
+          "special" : "explode (5 ft.), unwieldy"
+        },
+
+        "reaction cannon, light" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 1,
+          "price" : 250,
+          "damage" : "1d10 P",
+          "range" : "90 ft.",
+          "critical" : null,
+          "capacity" : "6 rounds",
+          "usage" : 1,
+          "bulk" : 3,
+          "special" : "penetrating"
+        },
+
+        "machine gun, squad" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 4,
+          "price" : 2060,
+          "damage" : "1d10 P",
+          "range" : "60 ft.",
+          "critical" : null,
+          "capacity" : "40 rounds",
+          "usage" : 2,
+          "bulk" : 2,
+          "special" : "analog, automatic"
+        },
+
+        "x-gen gun, tactical" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 6,
+          "price" : 4240,
+          "damage" : "1d12 P",
+          "range" : "120 ft.",
+          "critical" : null,
+          "capacity" : "80 rounds",
+          "usage" : 2,
+          "bulk" : 2,
+          "special" : "automatic"
+        },
+
+        "reaction cannon, tactical" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 7,
+          "price" : 6100,
+          "damage" : "2d10 P",
+          "range" : "90 ft.",
+          "critical" : null,
+          "capacity" : "6 rounds",
+          "usage" : 1,
+          "bulk" : 3,
+          "special" : "penetrating"
+        },
+
+        "machine gun, light" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 8,
+          "price" : 8600,
+          "damage" : "2d10 P",
+          "range" : "60 ft.",
+          "critical" : null,
+          "capacity" : "60 rounds",
+          "usage" : 2,
+          "bulk" : 2,
+          "special" : "analog, automatic"
+        },
+
+        "x-gen gun, advanced" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 9,
+          "price" : 13100,
+          "damage" : "2d12 P",
+          "range" : "120 ft.",
+          "critical" : null,
+          "capacity" : "100 rounds",
+          "usage" : 2,
+          "bulk" : 2,
+          "special" : "automatic"
+        },
+
+        "shock caster, static" : {
+          "hands" : 2,
+          "type" : "shock",
+          "level" : 6,
+          "price" : 4620,
+          "damage" : "1d12 E",
+          "range" : "40 ft.",
+          "critical" : null,
+          "capacity" : "40 charges",
+          "usage" : 2,
+          "bulk" : 2,
+          "special" : "explode (10 ft.), unwieldy"
+        },
+
+        "screamer, thunderstrike" : {
+          "hands" : 2,
+          "type" : "sonic",
+          "level" : 5,
+          "price" : 3350,
+          "damage" : "1d10 So",
+          "range" : "30 ft.",
+          "critical" : "deafen",
+          "capacity" : "40 charges",
+          "usage" : 4,
+          "bulk" : 2,
+          "special" : "blast, unwieldy"
+        },
+
+        "screamer, LFD" : {
+          "hands" : 2,
+          "type" : "sonic",
+          "level" : 9,
+          "price" : 14000,
+          "damage" : "2d10 So",
+          "range" : "60 ft.",
+          "critical" : "deafen",
+          "capacity" : "80 charges",
+          "usage" : 8,
+          "bulk" : 2,
+          "special" : "blast, unwieldy"
+        },
+
+        "NIL grenade launcher, merc" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level" : 1,
+          "price" : 280,
+          "damage" : "by grenade",
+          "range" : "60 ft.",
+          "critical" : null,
+          "capacity" : "6 grenades",
+          "usage" : 1,
+          "bulk" : 2,
+          "special" : "analog"
+        },
+
+        "NIL grenade launcher, squad" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level" : 8,
+          "price" : 9400,
+          "damage" : "by grenade",
+          "range" : "70 ft.",
+          "critical" : null,
+          "capacity" : "12 grenades",
+          "usage" : 1,
+          "bulk" : 3,
+          "special" : "analog"
+        },
+
+        "IMDS missile launcher" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level" : 10,
+          "price" : 18200,
+          "damage" : null,
+          "range" : "80 ft.",
+          "critical" : null,
+          "capacity" : "1 missile",
+          "usage" : 1,
+          "bulk" : 2,
+          "special" : null
+        }
+      },
+
+      "sniper weapons" : {
+
+        "shirren-eye rifle, tactical" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 2,
+          "price" : 755,
+          "damage" : "1d10 P",
+          "range" : "70 ft.",
+          "critical" : null,
+          "capacity" : "1 round",
+          "usage" : 1,
+          "bulk" : 1,
+          "special" : "analog, sniper (250 ft.), unwieldy"
+        },
+
+        "shirren-eye rifle, advanced" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 8,
+          "price" : 9350,
+          "damage" : "2d10 P",
+          "range" : "70 ft.",
+          "critical" : null,
+          "capacity" : "4 rounds",
+          "usage" : 1,
+          "bulk" : 2,
+          "special" : "analog, sniper (500 ft.), unwieldy"
+        }
+
+      },
+
+      "grenades" : {
+
+        "frag grenade I" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 1,
+          "price" : 35,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (1d6 P, 15 ft.)"
+        },
+
+        "shock grenade I" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 1,
+          "price" : 130,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (1d8 E, 15 ft.)"
+        },
+
+        "smoke grenade" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 1,
+          "price" : 40,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (smoke cloud 1 minute, 20 ft.)"
+        },
+
+        "stickybomb grenade I" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 1,
+          "price" : 170,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (entangled 2d4 rounds, 10 ft.)"
+        },
+
+        "flash grenade I" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 2,
+          "price" : 275,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (blinded 1d4 rounds, 5 ft.)"
+        },
+
+        "incendiary grenade I" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 2,
+          "price" : 375,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (1d6 F, burn 1d4, 5 ft.)"
+        },
+
+        "frag grenade II" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 4,
+          "price" : 700,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (2d6 P, 15 ft.)"
+        },
+
+        "screamer grenade I" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 4,
+          "price" : 725,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (1d10 So, deafened 1d4 minutes, 15 ft.)"
+        }
+      },
+
+      "special weapons" : {
+
+        "carbonedge shuriken (10)" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 1,
+          "price" : 85,
+          "damage" : "1d4 P",
+          "range" : "10 ft. (thrown)",
+          "critical" : "bleed 1d4",
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "quick reload, thrown"
+        },
+
+        "nyfiber net" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 2,
+          "price" : 460,
+          "damage" : null,
+          "range" : "10 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : 1,
+          "special" : null
+        },
+
+        "bow" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level" : 1,
+          "price" : 255,
+          "damage" : "1d6 P",
+          "range" : "60 ft.",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : 1,
+          "bulk" : 1,
+          "special" : "quick reload"
+        }
+
+      }
+    },
+
+    "ammunition" : {
+      "standard ammunition" : {
+
+        "arrows" : {
+          "type" : "uncategorized",
+          "level" : 1,
+          "price" : 50,
+          "charges/cartridges" : 20,
+          "bulk" : 0,
+          "special" : null
+        },
+
+        "battery" : {
+          "type" : "charges",
+          "level" : 1,
+          "price" : 60,
+          "charges/cartridges" : 20,
+          "bulk" : -1,
+          "special" : null
+        },
+
+        "battery, high-capacity" : {
+          "type" : "charges",
+          "level" : 4,
+          "price" : 330,
+          "charges/cartridges" : 40,
+          "bulk" : -1,
+          "special" : null
+        },
+
+        "battery, super-capacity" : {
+          "type" : "charges",
+          "level" : 4,
+          "price" : 390,
+          "charges/cartridges" : 80,
+          "bulk" : -1,
+          "special" : null
+        },
+
+        "battery, ultra-capacity" : {
+          "type" : "charges",
+          "level" : 5,
+          "price" : 445,
+          "charges/cartridges" : 100,
+          "bulk" : 0,
+          "special" : null
+        },
+
+        "darts" : {
+          "type" : "uncategorized",
+          "level" : 1,
+          "price" : 20,
+          "charges/cartridges" : 25,
+          "bulk" : 0,
+          "special" : null
+        },
+
+        "flare" : {
+          "type" : "uncategorized",
+          "level" : 1,
+          "price" : 5,
+          "charges/cartridges" : 1,
+          "bulk" : -1,
+          "special" : null
+        },
+
+        "mini-rockets" : {
+          "type" : "explosive",
+          "level" : 4,
+          "price" : 300,
+          "charges/cartridges" : 10,
+          "bulk" : 0,
+          "special" : null
+        },
+
+        "petrol tank, standard" : {
+          "type" : "petrol",
+          "level" : 1,
+          "price" : 60,
+          "charges/cartridges" : 20,
+          "bulk" : 1,
+          "special" : null
+        },
+
+        "petrol tank, high capacity" : {
+          "type" : "petrol",
+          "level" : 3,
+          "price" : 280,
+          "charges/cartridges" : 40,
+          "bulk" : 2,
+          "special" : null
+        },
+
+        "rounds, small arm" : {
+          "type" : "rounds",
+          "level" : 1,
+          "price" : 40,
+          "charges/cartridges" : 30,
+          "bulk" : 0,
+          "special" : null
+        },
+
+        "rounds, longarm and sniper" : {
+          "type" : "rounds",
+          "level" : 1,
+          "price" : 75,
+          "charges/cartridges" : 25,
+          "bulk" : 0,
+          "special" : null
+        },
+
+        "rounds, heavy" : {
+          "type" : "rounds",
+          "level" : 1,
+          "price" : 90,
+          "charges/cartridges" : 20,
+          "bulk" : 0,
+          "special" : null
+        },
+
+        "scattergun shells" : {
+          "type" : "shells",
+          "level" : 1,
+          "price" : 55,
+          "charges/cartridges" : 25,
+          "bulk" : 0,
+          "special" : null
+        }
+
+      },
+
+      "special ammunition" : {
+
+        "grenade arrow I" : {
+          "type" : "uncategorized",
+          "level" : 6,
+          "price" : 875,
+          "charges/cartridges" : 1,
+          "bulk" : -1,
+          "special" : "as any 1st-level grenade"
+        },
+
+        "grenade arrow II" : {
+          "type" : "uncategorized",
+          "level" : 10,
+          "price" : 5450,
+          "charges/cartridges" : 1,
+          "bulk" : -1,
+          "special" : "as any 5th- or lower-level grenade"
+        },
+
+        "tactical missile" : {
+          "type" : "explosive",
+          "level" : 10,
+          "price" : 5700,
+          "charges/cartridges" : 1,
+          "bulk" : 1,
+          "special" : "explode (6d8 B&P, 30 ft.)"
+        }
+
       }
     }
   }

@@ -42,7 +42,7 @@ class ArmoryService {
     getItems ( filter ) {
         const category = this.data && this.data.categories && this.data.categories[ filter.category ];
         let subcategory = category && category[ filter.subcategory ];
-        const nameFilter = filter.name && new RegExp( filter.name );
+        const nameFilter = filter.name && new RegExp( filter.name, 'i' );
 
         if (category && !subcategory) {
             subcategory = _.reduce(category, (master, sub) => _.merge(master, sub), {});
