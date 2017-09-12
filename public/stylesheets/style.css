@@ -11,6 +11,16 @@ main {
 th {
   white-space: nowrap; }
 
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10; }
+
+.content {
+  position: relative;
+  margin-top: 90px; }
+
 .nav-sub {
   background: #d4d4d4; }
 
