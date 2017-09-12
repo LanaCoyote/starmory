@@ -92,9 +92,10 @@
         </section>
 
         <section class="items medium-auto">
-          <table class="table-items">
+          <table class="table-items unstriped">
             <thead>
               <tr>
+                <th></th>
                 <th v-for="property in armory.getProperties( filter )" v-if="!property.startsWith('_')"
                     v-on:click="updateSort( property )">
                   {{ mutate.capitalize( property ) }}
@@ -108,11 +109,20 @@
             </thead>
 
             <tbody>
-              <tr v-for="(item, name) in armory.getItems( filter )">
+            <template v-for="item in armory.getItems( filter )">
+              <tr v-on:click="expandItem( item )">
+                <td>
+                  <i class="fa"
+                     v-bind:class="{'fa-caret-up' : !isExpanded( item ), 'fa-caret-down' : isExpanded( item )}"></i>
+                </td>
                 <td v-for="(value, prop) in item" v-if="!prop.startsWith('_')" :class="prop === 'type' ? item.type : ''">
                   {{ mutate.humanize( prop, value ) }}
                 </td>
               </tr>
+              <tr v-if="isExpanded( item )">
+                <td is="item-description" :item="item"></td>
+              </tr>
+            </template>
             </tbody>
           </table>
         </section>

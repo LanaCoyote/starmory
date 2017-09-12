@@ -5,7 +5,16 @@ const mutators = {
         else if (value === null || value < 0) return '-';
         return value && mutators.capitalize( value.toString() );
     }
-}
+};
+
+const criticalDescriptions = {
+    'burn' : "The target gains the burning condition",
+    'staggered' : "The target gains the staggered condition"
+};
+
+const specialDescriptions = {
+    'analog' : "This item requires neither technology nor magic to function"
+};
 
 function getFirstItem(categoryOrSub, isSubCategory) {
     if (!categoryOrSub) return;
@@ -60,6 +69,51 @@ class ArmoryService {
     }
 }
 
+Vue.component('item-description', {
+    props: ['item'],
+    data: function() {
+        let descriptors = [];
+
+        if (this.item.damage === 'by grenade') {
+            descriptors.push({
+                header: "By grenade",
+                text: "This weapon fires grenades instead of ammunition"
+            })
+        }
+
+        const criticalType = this.item.critical && this.item.critical.split(' ')[0];
+        if (criticalDescriptions[ criticalType ]) {
+            descriptors.push({
+                header: mutators.capitalize( this.item.critical ),
+                text: criticalDescriptions[ criticalType ]
+            });
+        }
+
+        if (this.item.special) {
+            const specials = this.item.special.split(',');
+            specials.forEach(quality => {
+                const qualityType = quality.split(' ')[0].trim();
+                if (specialDescriptions[ qualityType ]) {
+                    descriptors.push({
+                        header: mutators.capitalize(quality),
+                        text: specialDescriptions[ qualityType ]
+                    });
+                }
+            })
+        }
+
+        return { descriptors: descriptors }
+    },
+    template: "<td colspan='100'>" +
+        "<p>{{ item._description || 'No description available' }}</p>" +
+        "<ul>" +
+            "<li v-for='descriptor in descriptors'>" +
+                "<strong>{{ descriptor.header }}</strong> - {{ descriptor.text }}" +
+            "</li>" +
+        "</ul>" +
+        "</td>"
+});
+
 const App = new Vue({
     el: "#app-body",
     data: {
@@ -69,7 +123,8 @@ const App = new Vue({
         search: '',
         filter: { order: ['asc'] },
         filterOpen: false,
-        mutate: mutators
+        mutate: mutators,
+        expanded: {}
     },
 
     methods: {
@@ -91,6 +146,15 @@ const App = new Vue({
             }
 
             this.$forceUpdate();
+        },
+
+        expandItem: function( item ) {
+            this.expanded[ item.name ] = !this.expanded[ item.name ];
+            this.$forceUpdate();
+        },
+
+        isExpanded: function( item ) {
+            return this.expanded[ item.name ];
         }
     }
 });
@@ -120,4 +184,5 @@ const ArmoryLoaderService = new Vue({
         });
     }
 });
+
 
