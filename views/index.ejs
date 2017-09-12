@@ -3,6 +3,10 @@
   <head>
     <title>Starmory - Flexible Starfinder Armory</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+          crossorigin="anonymous">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css"
           crossorigin="anonymous" />
@@ -13,11 +17,13 @@
     <script src="https://cdn.jsdelivr.net/npm/lodash"></script>
   </head>
   <body>
-    <div class="fluid" id="loader" v-if="loading">
-      <p>Loading....</p>
+    <div class="fluid text-center" id="loader" v-if="loading">
+      <div class="callout large" style="border: none">
+        <h3>Loading items...&nbsp;&nbsp;&nbsp;<i class="fa fa-hourglass fa-spin"></i></h3>
+      </div>
     </div>
 
-    <main class="fluid" id="app-body" v-if="!loading">
+    <main class="fluid" id="app-body" style="display: none" v-bind:style="{display: loading ? 'none' : 'block'}">
         <header class="nav">
           <div class="nav-top top-bar">
             <div class="top-bar-left">
@@ -32,7 +38,18 @@
               </ul>
             </div>
 
-            <input v-model.trim="search" placeholder="Search..." v-on:keyup.enter="updateFilter({name: search})">
+            <div class="top-bar-right">
+              <ul class="menu">
+                <li>
+                  <input type="search" v-model.trim="search" placeholder="Search..."
+                         v-on:keyup.enter="updateFilter({name: search})">
+                </li>
+
+                <li>
+                  <a href="#" v-on:click="filterOpen = !filterOpen">Filter</a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div class="nav-sub" v-if="filter.category">
@@ -52,6 +69,13 @@
           </div>
         </header>
 
+      <div class="grid-x">
+        <section class="filter medium-2 medium-order-2 callout" v-if="filterOpen">
+            <h4>Filter</h4>
+
+            <p>Nothing here yet, just use search</p>
+        </section>
+
         <section class="splash" v-if="!filter.category">
           <div class="grid-container text-center">
             <h3>Starmory</h3>
@@ -67,7 +91,7 @@
           </div>
         </section>
 
-        <section class="items">
+        <section class="items medium-auto">
           <table class="table-items">
             <thead>
               <tr>
@@ -88,6 +112,7 @@
             </tbody>
           </table>
         </section>
+      </div>
     </main>
 
     <script src="https://unpkg.com/vue"></script>

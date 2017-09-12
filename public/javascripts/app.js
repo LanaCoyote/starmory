@@ -67,10 +67,11 @@ const App = new Vue({
     el: "#app-body",
     data: {
         armory: new ArmoryService(),
-        loading: false,
+        loading: true,
         showHeader: true,
         search: '',
         filter: { order: ['asc'] },
+        filterOpen: false,
         mutate: mutators
     },
 
