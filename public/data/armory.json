@@ -3,17 +3,19 @@
     "weapons" : {
       "basic melee" : {
         "unarmed strike" : {
+          "hands" : -1,
           "type" : "uncategorized",
           "level" : -1,
           "price" : -1,
           "damage" : "1d3 B",
           "critical" : null,
-          "bulk" : null,
+          "bulk" : -1,
           "special" : "archaic, nonlethal",
           "_description" : "Lorem ipsum dolor sit amet...."
         },
 
         "club" : {
+          "hands" : 1,
           "type" : "uncategorized",
           "level" : 0,
           "price" : -1,
@@ -25,6 +27,7 @@
         },
 
         "baton, tactical" : {
+          "hands" : 1,
           "type" : "uncategorized",
           "level" : 1,
           "price" : 90,
@@ -32,11 +35,287 @@
           "critical" : null,
           "bulk" : 0,
           "special" : "analog, operative"
+        },
+
+        "battleglove, cestus" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 1,
+          "price" : 100,
+          "damage" : "1d4 B",
+          "critical" : null,
+          "bulk" : 0,
+          "special" : "analog"
+        },
+
+        "knife, survival" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 1,
+          "price" : 95,
+          "damage" : "1d4 S",
+          "critical" : null,
+          "bulk": 0,
+          "special" : "analog, operative"
+        },
+
+        "dueling sword, tactical" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 2,
+          "price" : 475,
+          "damage" : "1d6 S",
+          "critical" : null,
+          "bulk": 0,
+          "special" : "analog"
+        },
+
+        "knife, tactical" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 7,
+          "price" : 6000,
+          "damage" : "2d4 S",
+          "critical" : null,
+          "bulk" : 0,
+          "special" : "analog, operative"
+        },
+
+        "dueling sword, buzzblade" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 8,
+          "price" : 9500,
+          "damage" : "2d6 S",
+          "critical" : null,
+          "bulk" : 0,
+          "special" : "powered (capacity 20, usage 1)"
+        },
+
+        "incapacitator" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 9,
+          "price" : 14200,
+          "damage" : "3d4 B",
+          "critical" : "staggered",
+          "bulk" : 0,
+          "special" : "nonlethal, operative, powered (capacity 20, usage 2)"
+        },
+
+        "battleglove, power" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 10,
+          "price" : 16100,
+          "damage" : "2d8 B",
+          "critical" : null,
+          "bulk" : 0,
+          "special" : "powered (capacity 20, usage 1)"
+        },
+
+        "dueling sword, ultrathin" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 11,
+          "price" : 26000,
+          "damage" : "3d6 S",
+          "critical" : null,
+          "bulk" : 0,
+          "special" : "analog"
+        },
+
+        "dagger, ultrathin" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 12,
+          "price" : 32800,
+          "damage" : "4d4 S",
+          "critical" : null,
+          "bulk" : 0,
+          "special" : "analog, operative"
+        },
+
+        "battleglove, nova" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 13,
+          "price" : 52500,
+          "damage" : "3d10 B",
+          "critical" : null,
+          "bulk" : 0,
+          "special" : "powered (capacity 20, usage 1)"
+        },
+
+        "dagger, zero-edge" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 14,
+          "price" : 64400,
+          "damage" : "6d4 S",
+          "critical" : null,
+          "bulk" : 0,
+          "special" : "analog, operative"
+        },
+
+        "dueling sword, ripper" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 15,
+          "price" : 109250,
+          "damage" : "7d6 S",
+          "critical" : null,
+          "bulk" : 0,
+          "special" : "powered (capacity 20, usage 1)"
+        },
+
+        "peacemaker" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 16,
+          "price" : 185300,
+          "damage" : "6d6 B",
+          "critical" : "knockdown",
+          "bulk" : 0,
+          "special" : "operative, powered (capacity 20, usage 2), stun"
+        },
+
+        "battleglove, gravity" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 17,
+          "price" : 214850,
+          "damage" : "5d10 B",
+          "critical" : null,
+          "bulk" : 0,
+          "special" : "powered (capacity 20, usage 1)"
+        },
+
+        "dagger, molecular rift" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 17,
+          "price" : 275000,
+          "damage" : "10d4 S",
+          "critical" : null,
+          "bulk" : 0,
+          "special" : "analog, operative"
+        },
+
+        "dueling sword, molecular rift" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 18,
+          "price" : 331200,
+          "damage" : "10d6 S",
+          "critical" : null,
+          "bulk" : 0,
+          "special" : "analog"
+        },
+
+        "baton, advanced" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 19,
+          "price" : 540000,
+          "damage" : "8d6 B",
+          "critical" : null,
+          "bulk" : 0,
+          "special" : "operative, powered (capacity 20, usage 1)"
+        },
+
+        "spear, tactical" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level" : 1,
+          "price" : 375,
+          "damage" : "1d6 P",
+          "critical" : null,
+          "bulk" : 1,
+          "special" : "analog, block, thrown (20 ft.)"
+        },
+
+        "staff, battle" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level" : 1,
+          "price" : 80,
+          "damage" : "1d4 B",
+          "critical" : "knockdown",
+          "bulk" : 1,
+          "special" : "analog, block"
+        },
+
+        "staff, carbon" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level" : 7,
+          "price" : 6150,
+          "damage" : "1d8 B",
+          "critical" : null,
+          "bulk" : 1,
+          "special" : "analog, block"
+        },
+
+        "spear, sentinel" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level" : 8,
+          "price" : 10000,
+          "damage" : "2d6 P",
+          "critical" : null,
+          "bulk" : 1,
+          "special" : "analog, block, thrown (20 ft.)"
+        },
+
+        "spear, buzzblade" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level" : 11,
+          "price" : 22650,
+          "damage" : "3d6 P",
+          "critical" : null,
+          "bulk" : 1,
+          "special" : "block, powered (capacity 40, usage 2), thrown (20 ft.)"
+        },
+
+        "spear, zero-edge" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level" : 15,
+          "price" : 107350,
+          "damage" : "7d6 P",
+          "critical" : null,
+          "bulk" : 1,
+          "special" : "analog, block, thrown (20 ft.)"
+        },
+
+        "staff, hardlight" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level" : 18,
+          "price" : 320800,
+          "damage" : "8d8 B",
+          "critical" : "knockdown",
+          "bulk" : 1,
+          "special" : "analog, block"
+        },
+
+        "spear, gravity" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level" : 19,
+          "price" : 552000,
+          "damage" : "12d6 P",
+          "critical" : null,
+          "bulk" : 1,
+          "special" : "block, powered (capacity 40, usage 2), thrown (20 ft.)"
         }
       },
 
       "small arms" : {
         "cryo-zero pistol, frostbite-class" : {
+          "hands" : 1,
           "type" : "cryo",
           "level" : 5,
           "price" : 3060,
@@ -50,6 +329,7 @@
         },
 
         "flare gun, survival" : {
+          "hands" : 1,
           "type" : "flame",
           "level" : 1,
           "price" : 90,
@@ -63,6 +343,7 @@
         },
 
         "flame pistol" : {
+          "hands" : 1,
           "type" : "flame",
           "level" : 2,
           "price" : 470,
@@ -76,6 +357,7 @@
         },
 
         "laser pistol, azimuth" : {
+          "hands" : 1,
           "type" : "laser",
           "level" : 1,
           "price" : 350,
@@ -89,6 +371,7 @@
         },
 
         "plasma pistol, red star" : {
+          "hands" : 1,
           "type" : "plasma",
           "level" : 7,
           "price" : 7200,
@@ -102,6 +385,7 @@
         },
 
         "semi-auto pistol, tactical" : {
+          "hands" : 1,
           "type" : "projectile",
           "level" : 1,
           "price" : 260,
@@ -115,6 +399,7 @@
         },
 
         "pulsecaster pistol" : {
+          "hands" : 1,
           "type" : "shock",
           "level" : 1,
           "price" : 250,
@@ -128,6 +413,7 @@
         },
 
         "sonic pistol, thunderstrike" : {
+          "hands" : 1,
           "type" : "sonic",
           "level" : 4,
           "price" : 2300,
@@ -141,6 +427,7 @@
         },
 
         "needler pistol" : {
+          "hands" : 1,
           "type" : "uncategorized",
           "level" : 1,
           "price" : 105,

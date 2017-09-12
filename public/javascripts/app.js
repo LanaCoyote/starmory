@@ -10,7 +10,8 @@ const mutators = {
 class ArmoryService {
     constructor (data) {
         this.data = data;
-        this.defaultSort = ['type', 'level'];
+        this.defaultSort = ['hands'];
+        this.extendedSort = ['type', 'level', 'name']
     }
 
     getCategories () {
@@ -37,7 +38,7 @@ class ArmoryService {
 
         return _(subcategory).map((item, name) => {
             return _.extend({name}, item);
-        }).orderBy( ( filter.sort || this.defaultSort ).concat([ 'name' ]), filter.order ).value() || [];
+        }).orderBy( ( filter.sort || this.defaultSort ).concat( this.extendedSort ), filter.order ).value() || [];
     }
 }
 
