@@ -113,7 +113,7 @@
               <tr v-on:click="expandItem( item )">
                 <td>
                   <i class="fa"
-                     v-bind:class="{'fa-caret-up' : !isExpanded( item ), 'fa-caret-down' : isExpanded( item )}"></i>
+                     v-bind:class="{'fa-caret-down' : !isExpanded( item ), 'fa-caret-up' : isExpanded( item )}"></i>
                 </td>
                 <td v-for="(value, prop) in item" v-if="!prop.startsWith('_')" :class="prop === 'type' ? item.type : ''">
                   {{ mutate.humanize( prop, value ) }}
