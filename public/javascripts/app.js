@@ -32,6 +32,18 @@ function getFirstItem(categoryOrSub, isSubCategory) {
     return categoryOrSub[ Object.keys(categoryOrSub)[0] ];
 }
 
+function snapHeight() {
+    const header = $('header');
+    $('.content').offset({ top: header.height() });
+    snapColumns();
+}
+
+function snapColumns() {
+    const widths = $('.template-header').children('th').map( (_,column) => $( column ).width() ).get();
+    $('.fixed-header').children('th').each(( index, column ) => {
+        $( column ).width( widths[ index ] );
+    });
+}
 
 class ArmoryService {
     constructor (data) {
@@ -150,8 +162,13 @@ const App = new Vue({
                 this.filter.order = ['asc'];
             }
 
-            console.dir(this.filter);
             this.$forceUpdate();
+            Vue.nextTick(snapColumns);
+        },
+
+        setCategory: function( category ) {
+            this.filter = { category: category };
+            Vue.nextTick(snapHeight);
         },
 
         updateFilter: function( newFilter ) {
@@ -160,6 +177,7 @@ const App = new Vue({
             }
 
             this.$forceUpdate();
+            Vue.nextTick(snapColumns);
         },
 
         expandItem: function( item ) {

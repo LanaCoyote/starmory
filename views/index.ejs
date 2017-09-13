@@ -31,7 +31,7 @@
                 <li class="menu-text">Starmory</li>
 
                 <li v-for="category in armory.getCategories()">
-                  <a href="#" v-on:click="filter = {category: category}">
+                  <a href="#" v-on:click="setCategory( category )">
                     {{ mutate.capitalize( category ) }}
                   </a>
                 </li>
@@ -92,12 +92,24 @@
         </section>
 
         <section class="items medium-auto" v-if="filter.category">
-          <table class="table-items ">
+          <table class="table-items hover">
             <thead>
-              <tr>
+              <tr class="fixed-header">
                 <th></th>
                 <th v-for="property in armory.getProperties( filter )" v-if="!property.startsWith('_')"
                     v-on:click="updateSort( property )">
+                  {{ mutate.capitalize( property ) }}
+                  <span v-if="filter.sort && filter.sort[0] === property">
+                    <i class="fa"
+                       v-bind:class="{'fa-caret-up' : filter.order[0] === 'asc', 'fa-caret-down' : filter.order[0] === 'desc'}">
+                    </i>
+                  </span>
+                </th>
+              </tr>
+
+              <tr class="template-header">
+                <th></th>
+                <th v-for="property in armory.getProperties( filter )" v-if="!property.startsWith('_')">
                   {{ mutate.capitalize( property ) }}
                   <span v-if="filter.sort && filter.sort[0] === property">
                     <i class="fa"
@@ -110,7 +122,7 @@
 
             <tbody>
             <template v-for="item in armory.getItems( filter )">
-              <tr v-on:click="expandItem( item )">
+              <tr v-on:click="expandItem( item )" class="item-bar">
                 <td>
                   <i class="fa"
                      v-bind:class="{'fa-caret-down' : !isExpanded( item ), 'fa-caret-up' : isExpanded( item )}"></i>

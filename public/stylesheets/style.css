@@ -8,8 +8,14 @@ a {
 main {
   display: none; }
 
+table {
+  width: 100%; }
+
 th {
   white-space: nowrap; }
+
+tr {
+  width: 100%; }
 
 header {
   position: fixed;
@@ -17,9 +23,20 @@ header {
   top: 0;
   z-index: 10; }
 
-.content {
-  position: relative;
-  margin-top: 90px; }
+.table-items thead {
+  border: none; }
+
+.template-header {
+  opacity: 0; }
+
+.fixed-header {
+  position: fixed;
+  background: #f8f8f8;
+  border: 1px solid #f1f1f1;
+  z-index: 4; }
+
+.item-bar, .fixed-header {
+  cursor: pointer; }
 
 .nav-sub {
   background: #d4d4d4; }
@@ -30,6 +47,8 @@ header {
   margin-top: 1in !important; }
 
 td.description {
+  background: #ffffff;
+  border-bottom: 1px solid lightgray;
   white-space: pre-wrap; }
 
 .cryo {
