@@ -32,16 +32,16 @@ header {
 .cryo {
   background: #d4e1ff; }
 
-.flame, .petrol {
+.flame, .petrol, .heavy {
   background: #ffe4d4; }
 
-.laser, .explosive {
+.laser, .explosive, .powered {
   background: #ffd4d4; }
 
 .plasma, .charges {
   background: #e4d4ff; }
 
-.projectile, .rounds {
+.projectile, .rounds, .light {
   background: #d4ffd4; }
 
 .shock, .shells {

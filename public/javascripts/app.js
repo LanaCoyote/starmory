@@ -1,8 +1,18 @@
 const mutators = {
     capitalize: str => str.charAt(0).toUpperCase() + str.slice(1),
     humanize: (prop, value) => {
-        if (prop === 'bulk' && value === 0) return 'L';
-        else if (value === null || value < 0) return '-';
+        switch ( prop ) {
+            case 'bulk' :
+                if (value === 0) return 'L'; break;
+            case 'armor check penalty' :
+            case 'speed adjustment' :
+                if (value < 0) return value;
+                else if (value === 0) return '-';
+                break;
+            default :
+                if (value === null || value < 0) return '-';
+        }
+
         return value && mutators.capitalize( value.toString() );
     }
 };
