@@ -115,12 +115,12 @@
                   <i class="fa"
                      v-bind:class="{'fa-caret-down' : !isExpanded( item ), 'fa-caret-up' : isExpanded( item )}"></i>
                 </td>
-                <td v-for="(value, prop) in item" v-if="!prop.startsWith('_')" :class="prop === 'type' ? item.type : ''">
+                <td v-for="(value, prop) in item" v-if="!prop.startsWith('_')" :class="prop === 'type' ? getItemClass( item ) : ''">
                   {{ mutate.humanize( prop, value ) }}
                 </td>
               </tr>
               <tr v-if="isExpanded( item )">
-                <td is="item-description" :item="item"></td>
+                <td class="description" is="item-description" :item="item"></td>
               </tr>
             </template>
             </tbody>

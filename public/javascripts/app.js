@@ -32,6 +32,7 @@ function getFirstItem(categoryOrSub, isSubCategory) {
     return categoryOrSub[ Object.keys(categoryOrSub)[0] ];
 }
 
+
 class ArmoryService {
     constructor (data) {
         this.data = data;
@@ -168,7 +169,13 @@ const App = new Vue({
 
         isExpanded: function( item ) {
             return this.expanded[ item.name ];
+        },
+
+
+        getItemClass: function( item ) {
+            return item && item.type && item.type.split(',')[0];
         }
+
     }
 });
 

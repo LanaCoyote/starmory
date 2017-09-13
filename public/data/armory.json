@@ -2335,6 +2335,203 @@
           "bulk": 28
         }
       }
+    },
+
+    "armor upgrades" : {
+      "" : {
+        "infrared sensors" : {
+          "level" : 1,
+          "price" : 200,
+          "slots" : 1,
+          "type" : "any",
+          "capacity" : null,
+          "usage" : null,
+          "stats": "darkvision 60 ft.",
+          "bulk" : 0,
+          "_description" : "You gain darkvision with a range of 60 feet."
+        },
+
+        "quick-release sheath" : {
+          "level" : 1,
+          "price" : 325,
+          "slots" : 1,
+          "type" : "any",
+          "capacity" : null,
+          "usage" : null,
+          "stats": null,
+          "bulk" : 0,
+          "_description" : "This articulated compartment can hold a one-handed weapon of no more than light bulk. You can activate this upgrade as a swift action to put the item in your hand as though you’d drawn it."
+        },
+
+        "radiation buffer" : {
+          "level" : 1,
+          "price" : 200,
+          "slots" : 1,
+          "type" : "any",
+          "capacity" : null,
+          "usage" : null,
+          "stats": "+2 vs radiation",
+          "bulk" : 0,
+          "_description" : "This device grants a +2 bonus to your initial saving throw against radiation in addition to any bonuses from your armor’s environmental protection. This doesn’t provide any bonus to saves against the secondary effects of radiation."
+        },
+
+        "tensile reinforcement" : {
+          "level" : 1,
+          "price" : 150,
+          "slots" : 1,
+          "type" : "any",
+          "capacity" : null,
+          "usage" : null,
+          "stats": null,
+          "bulk" : 1,
+          "_description" : "When calculating your armor’s hardness and Hit Points, treat it as if its item level were 5 higher."
+        },
+
+        "automated loader" : {
+          "level" : 2,
+          "price" : 750,
+          "slots" : 1,
+          "type" : "powered",
+          "capacity" : null,
+          "usage" : null,
+          "stats": null,
+          "bulk" : 1,
+          "_description" : "This device attaches to powered armor and consists of a small robotic arm and a storage compartment that holds up to 2 bulk of ammunition and batteries. You can activate the automated loader as a move action to reload or recharge a weapon that’s mounted to the powered armor (but not to replace the batteries of the powered armor itself). Abilities that let you reload faster than a move action don’t apply to an automated loader.\n\nThis upgrade can be installed only in powered armor."
+        },
+
+        "jump jets" : {
+          "level" : 2,
+          "price" : 1000,
+          "slots" : 1,
+          "type" : "light, heavy",
+          "capacity" : 20,
+          "usage" : "2/action",
+          "stats": null,
+          "bulk" : 0,
+          "_description" : "You can activate jump jets as part of a move action in order to fly during your movement. You can fly up to 30 feet (average maneuverability) with a maximum height of 10 feet, or you can fly up to 20 feet straight up. You must land at the end of your move action. Jump jets can’t lift you if you’re encumbered.\n\nThis upgrade can be installed only in light or heavy armor."
+        },
+
+        "force field, brown" : {
+          "level" : 3,
+          "price" : 1600,
+          "slots" : 2,
+          "type" : "any",
+          "capacity" : 10,
+          "usage" : "1/round",
+          "stats": "1 temp HP / 1 fast healing",
+          "bulk" : 0,
+          "_description" : "You can activate or deactivate your armor’s force field as a standard action. Once active, the device generates an invisible force field around you, including all your worn and carried items. The force field blocks solids and liquids but not gases or light (including laser beams). You can breathe while the field is active, but you can’t eat or drink.\n\nWhile a force field is active, you gain a number of temporary Hit Points depending on the force field’s power. All damage dealt to you is subtracted from the force field’s temporary Hit Points first. A force field has fast healing, meaning that it regains temporary Hit Points at a fixed rate each round at the end of your turn, up to its normal maximum. If the force field’s temporary Hit Points are reduced to 0, it is inactive until the end of your next turn, when its fast healing restores some of its Hit Points. The charge capacity, amount of temporary Hit Points granted, and rate of fast healing vary according to the force field’s color code. A force field has a usage of 1 charge per round.\n\nMore powerful force fields also have a fortification ability, which gives a percentage chance that a critical hit is treated as a normal attack, dealing normal damage and not applying any critical effect. You roll your fortification percentage chance before the critical hit’s damage is rolled. If a force field is inactive, its fortification ability does not function. A suit of armor cannot support more than one force field upgrade."
+        },
+
+        "backup generator" : {
+          "level" : 4,
+          "price" : 2100,
+          "slots" : 1,
+          "type" : "any",
+          "capacity" : null,
+          "usage" : "recharge 1/10 minutes",
+          "stats": null,
+          "bulk" : 1,
+          "_description" : "You can connect charged electric items such as batteries to this miniature generator to recharge them. The electricity comes from the kinetic energy of your movement, which generates 1 charge every 10 minutes of movement. No more than one item can be plugged in at a time, and the generator doesn’t produce charges when you’re resting or otherwise stationary."
+        },
+
+        "exit pod" : {
+          "level" : 4,
+          "price" : 1750,
+          "slots" : 1,
+          "type" : "heavy, powered",
+          "capacity" : null,
+          "usage" : null,
+          "stats": null,
+          "bulk" : 2,
+          "_description" : "This body harness fits into a suit of powered armor or is built into the frame of heavy armor, allowing you to exit the armor as a move action instead of as a full action. Entering the armor is no faster with an exit pod.\n\nThis can be installed only in heavy armor or powered armor."
+        },
+
+        "targeting computer" : {
+          "level" : 4,
+          "price" : 2250,
+          "slots" : 1,
+          "type" : "any",
+          "capacity" : null,
+          "usage" : null,
+          "stats": null,
+          "bulk" : -1,
+          "_description" : "This targeting computer helps you compensate for poor visibility conditions. Ignore concealment on attacks you make. This doesn’t have any effect against targets with total concealment."
+        },
+
+        "electrostatic field, mk 1" : {
+          "level" : 5,
+          "price" : 3000,
+          "slots" : 1,
+          "type" : "any",
+          "capacity" : null,
+          "usage" : null,
+          "stats": "resist 5 E / damage 1d6 E",
+          "bulk" : -1,
+          "_description" : "This field over your armor grants you electricity resistance, and any creature that touches you or deals damage to you with a melee weapon takes electricity damage. The resistance granted and damage dealt depend on this upgrade’s type, as noted below.\n\nMk 1: Resistance 5 and 1d6 electricity damage."
+        },
+
+        "jetpack" : {
+          "level" : 5,
+          "price" : 3100,
+          "slots" : 1,
+          "type" : "light, heavy",
+          "capacity" : "40",
+          "usage" : "2/round",
+          "stats": null,
+          "bulk" : 1,
+          "_description" : "You gain a fly speed of 30 feet (average maneuverability). You can use this for “cruising flight” at a usage of only 1 charge per minute, but you are flat-footed and off-target while doing so. Changing from normal flight to cruising flight or vice versa is a standard action. A jetpack can’t lift you if you’re encumbered.\n\nThis upgrade can be installed only in light or heavy armor."
+        },
+
+        "load lifter" : {
+          "level" : 5,
+          "price" : 2550,
+          "slots" : 1,
+          "type" : "any",
+          "capacity" : null,
+          "usage" : null,
+          "stats": null,
+          "bulk" : -1,
+          "_description" : "This set of Artificial muscles increases the amount of bulk you can carry while wearing your armor by 3."
+        },
+
+        "thermal capacitor, mk 1" : {
+          "level" : 5,
+          "price" : 3600,
+          "slots" : 1,
+          "type" : "any",
+          "capacity" : null,
+          "usage" : null,
+          "stats": "resist 5 F&C",
+          "bulk" : -1,
+          "_description" : "This upgrade regulates heat, protecting you from extreme temperatures. You can exist comfortably in conditions between –50° and 170° F without needing to attempt Fortitude saves. In addition, the armor grants cold resistance and fire resistance. The amount depends on the capacitor’s type, as listed below.\n\nMk 1: Resistance 5"
+        },
+
+        "filtered rebreather" : {
+          "level" : 6,
+          "price" : 4600,
+          "slots" : 1,
+          "type" : "any",
+          "capacity" : null,
+          "usage" : null,
+          "stats": "resist 5 A / +2 vs poison & disease",
+          "bulk" : 1,
+          "_description" : "This upgraded rebreather supplements your armor’s ability to provide fresh air and filters out common toxins and poisonous vapors. Armor with this upgrade can provide fresh air for a number of weeks equal to its level. You also gain acid resistance 5 and a +2 bonus to saving throws against poison and disease."
+        },
+
+        "force field, purple" : {
+          "level" : 6,
+          "price" : 4550,
+          "slots" : 6,
+          "type" : "any",
+          "capacity" : 10,
+          "usage" : "1/round",
+          "stats": "5 temp HP / 2 fast healing",
+          "bulk" : 0,
+          "_description" : "You can activate or deactivate your armor’s force field as a standard action. Once active, the device generates an invisible force field around you, including all your worn and carried items. The force field blocks solids and liquids but not gases or light (including laser beams). You can breathe while the field is active, but you can’t eat or drink.\n\nWhile a force field is active, you gain a number of temporary Hit Points depending on the force field’s power. All damage dealt to you is subtracted from the force field’s temporary Hit Points first. A force field has fast healing, meaning that it regains temporary Hit Points at a fixed rate each round at the end of your turn, up to its normal maximum. If the force field’s temporary Hit Points are reduced to 0, it is inactive until the end of your next turn, when its fast healing restores some of its Hit Points. The charge capacity, amount of temporary Hit Points granted, and rate of fast healing vary according to the force field’s color code. A force field has a usage of 1 charge per round.\n\nMore powerful force fields also have a fortification ability, which gives a percentage chance that a critical hit is treated as a normal attack, dealing normal damage and not applying any critical effect. You roll your fortification percentage chance before the critical hit’s damage is rolled. If a force field is inactive, its fortification ability does not function. A suit of armor cannot support more than one force field upgrade."
+        }
+
+      }
     }
   }
 }
