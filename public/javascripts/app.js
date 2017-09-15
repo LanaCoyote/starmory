@@ -195,7 +195,7 @@ Vue.component('nav-dropdown', {
         return { mutate: mutators, setCategory: App.setCategory };
     },
     template:       "<li class=\"dropdown\">\n" +
-    "                  <a href=\"#\" v-on:click=\"setCategory(category)\" v-on:hover=\"dropdown = 'weapons'\">" +
+    "                  <a href=\"#\" v-on:click=\"setCategory(category)\">" +
     "                       {{ mutate.capitalize( category ) }}" +
     "                  </a>\n" +
     "                  <i class=\"fa fa-caret-down\" v-if='subcategories'></i>\n" +
