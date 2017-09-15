@@ -73,13 +73,13 @@ li a:hover ~ ul, li ul:hover {
     display: inherit !important;
     position: absolute; }
 
-.cryo, .cybernetics {
+.cryo, .cybernetics, .graviton {
   background: #d4e1ff; }
 
-.flame, .petrol, .heavy, .biotech {
+.flame, .petrol, .heavy, .biotech, .gluon {
   background: #ffe4d4; }
 
-.laser, .explosive, .powered {
+.laser, .explosive, .powered, .w-boson {
   background: #ffd4d4; }
 
 .plasma, .charges {
@@ -88,7 +88,7 @@ li a:hover ~ ul, li ul:hover {
 .projectile, .rounds, .light {
   background: #d4ffd4; }
 
-.shock, .shells {
+.shock, .shells, .photon {
   background: #ffffd4; }
 
 .sonic, .personal.upgrade {

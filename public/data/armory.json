@@ -2222,6 +2222,232 @@
       }
     },
 
+    "solarian weapon crystals": {
+      "" : {
+
+        "graviton crystal, least" : {
+          "type":"graviton",
+          "level":5,
+          "price":2900,
+          "damage":"+1d3",
+          "critical":"knockdown",
+          "bulk":null,
+          "_description":"Graviton crystals accelerate the impact of a weapon, dealing extra damage and potentially knocking down targets."
+        },
+        "graviton crystal, minor" : {
+          "type":"graviton",
+          "level":8,
+          "price":9200,
+          "damage":"+1d6",
+          "critical":"knockdown",
+          "bulk":null,
+          "_description":"Graviton crystals accelerate the impact of a weapon, dealing extra damage and potentially knocking down targets."
+        },
+        "graviton crystal, lesser" : {
+          "type":"graviton",
+          "level":11,
+          "price":24000,
+          "damage":"+2d6",
+          "critical":"knockdown",
+          "bulk":null,
+          "_description":"Graviton crystals accelerate the impact of a weapon, dealing extra damage and potentially knocking down targets."
+        },
+        "graviton crystal, standard" : {
+          "type":"graviton",
+          "level":14,
+          "price":69800,
+          "damage":"+3d6",
+          "critical":"knockdown",
+          "bulk":null,
+          "_description":"Graviton crystals accelerate the impact of a weapon, dealing extra damage and potentially knocking down targets."
+        },
+        "graviton crystal, greater" : {
+          "type":"graviton",
+          "level":17,
+          "price":251000,
+          "damage":"+4d6",
+          "critical":"knockdown",
+          "bulk":null,
+          "_description":"Graviton crystals accelerate the impact of a weapon, dealing extra damage and potentially knocking down targets."
+        },
+        "graviton crystal, true" : {
+          "type":"graviton",
+          "level":20,
+          "price":727100,
+          "damage":"+6d6",
+          "critical":"knockdown",
+          "bulk":null,
+          "_description":"Graviton crystals accelerate the impact of a weapon, dealing extra damage and potentially knocking down targets."
+        },
+
+        "photon crystal, least" : {
+          "type":"photon",
+          "level":5,
+          "price":2950,
+          "damage":"+1d3 F",
+          "critical":"burn 1d6",
+          "bulk":null,
+          "_description":"Photon crystals add compressed photonic energy to a weapon strike, adding fire damage and the potential to burn the target."
+        },
+        "photon crystal, minor" : {
+          "type":"photon",
+          "level":8,
+          "price":9300,
+          "damage":"+1d6 F",
+          "critical":"burn 1d6",
+          "bulk":null,
+          "_description":"Photon crystals add compressed photonic energy to a weapon strike, adding fire damage and the potential to burn the target."
+        },
+        "photon crystal, lesser" : {
+          "type":"photon",
+          "level":11,
+          "price":25100,
+          "damage":"+2d6 F",
+          "critical":"burn 1d6",
+          "bulk":null,
+          "_description":"Photon crystals add compressed photonic energy to a weapon strike, adding fire damage and the potential to burn the target."
+        },
+        "photon crystal, standard" : {
+          "type":"photon",
+          "level":14,
+          "price":71200,
+          "damage":"+3d6 F",
+          "critical":"burn 2d6",
+          "bulk":null,
+          "_description":"Photon crystals add compressed photonic energy to a weapon strike, adding fire damage and the potential to burn the target."
+        },
+        "photon crystal, greater" : {
+          "type":"photon",
+          "level":17,
+          "price":246200,
+          "damage":"+4d6 F",
+          "critical":"burn 3d6",
+          "bulk":null,
+          "_description":"Photon crystals add compressed photonic energy to a weapon strike, adding fire damage and the potential to burn the target."
+        },
+        "photon crystal, true" : {
+          "type":"photon",
+          "level":20,
+          "price":729500,
+          "damage":"+6d6 F",
+          "critical":"burn 5d6",
+          "bulk":null,
+          "_description":"Photon crystals add compressed photonic energy to a weapon strike, adding fire damage and the potential to burn the target."
+        },
+
+        "w-boson crystal, least" : {
+          "type":"w-boson",
+          "level":5,
+          "price":3050,
+          "damage":"+1d4",
+          "critical":"bleed 1d6",
+          "bulk":null,
+          "_description":"W-boson crystals amplify the sheer amount of damage a weapon deals."
+        },
+        "w-boson crystal, minor" : {
+          "type":"w-boson",
+          "level":8,
+          "price":9800,
+          "damage":"+1d6",
+          "critical":"bleed 2d6",
+          "bulk":null,
+          "_description":"W-boson crystals amplify the sheer amount of damage a weapon deals."
+        },
+        "w-boson crystal, lesser" : {
+          "type":"w-boson",
+          "level":11,
+          "price":26200,
+          "damage":"+2d6",
+          "critical":"bleed 2d6",
+          "bulk":null,
+          "_description":"W-boson crystals amplify the sheer amount of damage a weapon deals."
+        },
+        "w-boson crystal, standard" : {
+          "type":"w-boson",
+          "level":14,
+          "price":81300,
+          "damage":"+3d6",
+          "critical":"bleed 3d6",
+          "bulk":null,
+          "_description":"W-boson crystals amplify the sheer amount of damage a weapon deals."
+        },
+        "w-boson crystal, greater" : {
+          "type":"w-boson",
+          "level":17,
+          "price":274100,
+          "damage":"+4d6",
+          "critical":"bleed 4d6",
+          "bulk":null,
+          "_description":"W-boson crystals amplify the sheer amount of damage a weapon deals."
+        },
+        "w-boson crystal, true" : {
+          "type":"w-boson",
+          "level":20,
+          "price":806000,
+          "damage":"+6d6",
+          "critical":"bleed 6d6",
+          "bulk":null,
+          "_description":"W-boson crystals amplify the sheer amount of damage a weapon deals."
+        },
+
+        "gluon crystal, least" : {
+          "type":"gluon",
+          "level":6,
+          "price":3900,
+          "damage":"+1d4",
+          "critical":"wound",
+          "bulk":null,
+          "_description":"Gluon crystals create an entropic field along the weapon that creates traumatic wounds."
+        },
+        "gluon crystal, minor" : {
+          "type":"gluon",
+          "level":9,
+          "price":11500,
+          "damage":"+1d6",
+          "critical":"severe wound",
+          "bulk":null,
+          "_description":"Gluon crystals create an entropic field along the weapon that creates traumatic wounds."
+        },
+        "gluon crystal, lesser" : {
+          "type":"gluon",
+          "level":12,
+          "price":30800,
+          "damage":"+2d6",
+          "critical":"severe wound",
+          "bulk":null,
+          "_description":"Gluon crystals create an entropic field along the weapon that creates traumatic wounds."
+        },
+        "gluon crystal, standard" : {
+          "type":"gluon",
+          "level":15,
+          "price":94200,
+          "damage":"+3d6",
+          "critical":"severe wound",
+          "bulk":null,
+          "_description":"Gluon crystals create an entropic field along the weapon that creates traumatic wounds."
+        },
+        "gluon crystal, greater" : {
+          "type":"gluon",
+          "level":18,
+          "price":330300,
+          "damage":"+4d6",
+          "critical":"severe wound",
+          "bulk":null,
+          "_description":"Gluon crystals create an entropic field along the weapon that creates traumatic wounds."
+        },
+        "gluon crystal, true" : {
+          "type":"gluon",
+          "level":20,
+          "price":916200,
+          "damage":"+6d6",
+          "critical":"severe wound",
+          "bulk":null,
+          "_description":"Gluon crystals create an entropic field along the weapon that creates traumatic wounds."
+        }
+
+      }
+    },
+
     "armor" : {
       "light armor": {
         "estex suit I": {
