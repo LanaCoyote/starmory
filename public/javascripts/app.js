@@ -92,52 +92,6 @@ class ArmoryService {
     }
 }
 
-Vue.component('item-description', {
-    props: ['item'],
-    data: function() {
-        const descriptorConstants = App.descriptors;
-        if (!descriptorConstants) return {};
-        let descriptors = [];
-
-        if (this.item.damage === 'by grenade') {
-            descriptors.push({
-                header: "By grenade",
-                text: "This weapon fires grenades instead of ammunition"
-            })
-        }
-
-        const criticalType = this.item.critical && this.item.critical.split(' ')[0];
-        if (criticalDescriptions[ criticalType ]) {
-            descriptors.push({
-                header: mutators.capitalize( this.item.critical ),
-                text: criticalDescriptions[ criticalType ]
-            });
-        }
-
-        if (this.item.special) {
-            const specials = this.item.special.split(',');
-            specials.forEach(quality => {
-                const qualityType = quality.trim().split(' ')[0];
-                if (descriptorConstants.special[ qualityType ]) {
-                    descriptors.push({
-                        header: mutators.capitalize( quality.trim() ),
-                        text: descriptorConstants.special[ qualityType ]
-                    });
-                }
-            })
-        }
-
-        return { descriptors: descriptors }
-    },
-    template: "<td colspan='100'>" +
-        "<p>{{ item._description || 'No description available' }}</p>" +
-        "<ul>" +
-            "<li v-for='descriptor in descriptors'>" +
-                "<strong>{{ descriptor.header }}</strong> - {{ descriptor.text }}" +
-            "</li>" +
-        "</ul>" +
-        "</td>"
-});
 
 const App = new Vue({
     el: "#app-body",
@@ -150,7 +104,8 @@ const App = new Vue({
         filter: { order: ['asc'] },
         filterOpen: false,
         mutate: mutators,
-        expanded: {}
+        expanded: {},
+        dropdown: ''
     },
 
     methods: {
@@ -234,3 +189,67 @@ const ArmoryLoaderService = new Vue({
 });
 
 
+Vue.component('nav-dropdown', {
+    props: ['category', 'subcategories'],
+    data: function() {
+        return { mutate: mutators, setCategory: App.setCategory };
+    },
+    template:       "<li class=\"dropdown\">\n" +
+    "                  <a href=\"#\" v-on:click=\"setCategory(category)\" v-on:hover=\"dropdown = 'weapons'\">" +
+    "                       {{ mutate.capitalize( category ) }}" +
+    "                  </a>\n" +
+    "                  <i class=\"fa fa-caret-down\" v-if='subcategories'></i>\n" +
+    "                  <ul class=\"menu vertical\" v-if='subcategories'>\n" +
+    "                    <li v-for=\"subcategory in subcategories.split(',')\">" +
+    "                       <a v-on:click=\"setCategory(subcategory)\">{{ mutate.capitalize( subcategory ) }}</a>" +
+    "                    </li>\n" +
+    "                  </ul>\n" +
+    "                </li>"
+});
+
+Vue.component('item-description', {
+    props: ['item'],
+    data: function() {
+        const descriptorConstants = App.descriptors;
+        if (!descriptorConstants) return {};
+        let descriptors = [];
+
+        if (this.item.damage === 'by grenade') {
+            descriptors.push({
+                header: "By grenade",
+                text: "This weapon fires grenades instead of ammunition"
+            })
+        }
+
+        const criticalType = this.item.critical && this.item.critical.split(' ')[0];
+        if (criticalDescriptions[ criticalType ]) {
+            descriptors.push({
+                header: mutators.capitalize( this.item.critical ),
+                text: criticalDescriptions[ criticalType ]
+            });
+        }
+
+        if (this.item.special) {
+            const specials = this.item.special.split(',');
+            specials.forEach(quality => {
+                const qualityType = quality.trim().split(' ')[0];
+                if (descriptorConstants.special[ qualityType ]) {
+                    descriptors.push({
+                        header: mutators.capitalize( quality.trim() ),
+                        text: descriptorConstants.special[ qualityType ]
+                    });
+                }
+            })
+        }
+
+        return { descriptors: descriptors }
+    },
+    template: "<td colspan='100'>" +
+    "<p>{{ item._description || 'No description available' }}</p>" +
+    "<ul>" +
+    "<li v-for='descriptor in descriptors'>" +
+    "<strong>{{ descriptor.header }}</strong> - {{ descriptor.text }}" +
+    "</li>" +
+    "</ul>" +
+    "</td>"
+});

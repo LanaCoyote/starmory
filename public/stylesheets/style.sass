@@ -1,5 +1,4 @@
 body
-  padding: 50px
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
 
 a
@@ -52,11 +51,44 @@ td.description
   border-bottom: 1px solid lightgray
   white-space: pre-wrap
 
+// dropdown styles
+li
+  > ul
+    display: none !important
+
+  a:hover ~ ul, ul:hover
+    display: inherit !important
+    position: absolute
+//
+//li:hover > ul
+//  display: inherit
+
+.menu > li.dropdown
+  cursor: pointer
+
+  > a
+    display: inline-block
+    padding-right: 0
+
+  > i
+    opacity: 0.3
+
+  > ul
+    display: none !important
+    background: #ffffff
+    border: 1px solid lightgray
+    z-index: 5
+
+  &:hover > ul, > ul:hover
+    display: inherit !important
+    position: absolute
+
+
 // type classes
-.cryo
+.cryo, .cybernetics
   background: #d4e1ff
 
-.flame, .petrol, .heavy
+.flame, .petrol, .heavy, .biotech
   background: #ffe4d4
 
 .laser, .explosive, .powered
@@ -71,7 +103,7 @@ td.description
 .shock, .shells
   background: #ffffd4
 
-.sonic
+.sonic, .personal.upgrade
   background: #ffd4ff
 
 .uncategorized, .grenade, .any

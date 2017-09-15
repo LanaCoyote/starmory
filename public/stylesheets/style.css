@@ -1,5 +1,4 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
@@ -48,10 +47,33 @@ td.description {
   border-bottom: 1px solid lightgray;
   white-space: pre-wrap; }
 
-.cryo {
+li > ul {
+  display: none !important; }
+
+li a:hover ~ ul, li ul:hover {
+  display: inherit !important;
+  position: absolute; }
+
+.menu > li.dropdown {
+  cursor: pointer; }
+  .menu > li.dropdown > a {
+    display: inline-block;
+    padding-right: 0; }
+  .menu > li.dropdown > i {
+    opacity: 0.3; }
+  .menu > li.dropdown > ul {
+    display: none !important;
+    background: #ffffff;
+    border: 1px solid lightgray;
+    z-index: 5; }
+  .menu > li.dropdown:hover > ul, .menu > li.dropdown > ul:hover {
+    display: inherit !important;
+    position: absolute; }
+
+.cryo, .cybernetics {
   background: #d4e1ff; }
 
-.flame, .petrol, .heavy {
+.flame, .petrol, .heavy, .biotech {
   background: #ffe4d4; }
 
 .laser, .explosive, .powered {
@@ -66,7 +88,7 @@ td.description {
 .shock, .shells {
   background: #ffffd4; }
 
-.sonic {
+.sonic, .personal.upgrade {
   background: #ffd4ff; }
 
 .uncategorized, .grenade, .any {

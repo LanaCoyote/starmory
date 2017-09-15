@@ -888,7 +888,7 @@
           "usage" : 1,
           "bulk" : 0,
           "special" : null,
-          "_description" : "Zero pistols have a weighted grip to balance their unusually heavy barrels. A cylindrical canister over the barrel contains and directs the coolants."
+          "_description" : "Zero pistols have a weighted grip to balance their unusually heavy barrels. A cylinspecialical canister over the barrel contains and directs the coolants."
         },
 
         "flare gun, survival" : {
@@ -1625,7 +1625,7 @@
           "damage" : null,
           "range" : "20 ft. (thrown)",
           "critical" : null,
-          "capacity" : "drawn",
+          "capacity" : "specialawn",
           "usage" : null,
           "bulk" : -1,
           "special" : "explode (1d6 P, 15 ft.)",
@@ -1640,7 +1640,7 @@
           "damage" : null,
           "range" : "20 ft. (thrown)",
           "critical" : null,
-          "capacity" : "drawn",
+          "capacity" : "specialawn",
           "usage" : null,
           "bulk" : -1,
           "special" : "explode (1d8 E, 15 ft.)",
@@ -1655,7 +1655,7 @@
           "damage" : null,
           "range" : "20 ft. (thrown)",
           "critical" : null,
-          "capacity" : "drawn",
+          "capacity" : "specialawn",
           "usage" : null,
           "bulk" : -1,
           "special" : "explode (smoke cloud 1 minute, 20 ft.)",
@@ -1670,7 +1670,7 @@
           "damage" : null,
           "range" : "20 ft. (thrown)",
           "critical" : null,
-          "capacity" : "drawn",
+          "capacity" : "specialawn",
           "usage" : null,
           "bulk" : -1,
           "special" : "explode (entangled 2d4 rounds, 10 ft.)",
@@ -1685,7 +1685,7 @@
           "damage" : null,
           "range" : "20 ft. (thrown)",
           "critical" : null,
-          "capacity" : "drawn",
+          "capacity" : "specialawn",
           "usage" : null,
           "bulk" : -1,
           "special" : "explode (blinded 1d4 rounds, 5 ft.)",
@@ -1700,7 +1700,7 @@
           "damage" : null,
           "range" : "20 ft. (thrown)",
           "critical" : null,
-          "capacity" : "drawn",
+          "capacity" : "specialawn",
           "usage" : null,
           "bulk" : -1,
           "special" : "explode (1d6 F, burn 1d4, 5 ft.)",
@@ -1715,7 +1715,7 @@
           "damage" : null,
           "range" : "20 ft. (thrown)",
           "critical" : null,
-          "capacity" : "drawn",
+          "capacity" : "specialawn",
           "usage" : null,
           "bulk" : -1,
           "special" : "explode (2d6 P, 15 ft.)",
@@ -1730,7 +1730,7 @@
           "damage" : null,
           "range" : "20 ft. (thrown)",
           "critical" : null,
-          "capacity" : "drawn",
+          "capacity" : "specialawn",
           "usage" : null,
           "bulk" : -1,
           "special" : "explode (1d10 So, deafened 1d4 minutes, 15 ft.)",
@@ -1748,7 +1748,7 @@
           "damage" : "1d4 P",
           "range" : "10 ft. (thrown)",
           "critical" : "bleed 1d4",
-          "capacity" : "drawn",
+          "capacity" : "specialawn",
           "usage" : null,
           "bulk" : -1,
           "special" : "quick reload, thrown"
@@ -1762,7 +1762,7 @@
           "damage" : null,
           "range" : "10 ft. (thrown)",
           "critical" : null,
-          "capacity" : "drawn",
+          "capacity" : "specialawn",
           "usage" : null,
           "bulk" : 1,
           "special" : null
@@ -1776,7 +1776,7 @@
           "damage" : "1d6 P",
           "range" : "60 ft.",
           "critical" : null,
-          "capacity" : "drawn",
+          "capacity" : "specialawn",
           "usage" : 1,
           "bulk" : 1,
           "special" : "quick reload"
@@ -1794,7 +1794,8 @@
           "price" : 50,
           "charges/cartridges" : 20,
           "bulk" : 0,
-          "special" : null
+          "special" : null,
+          "_description" : "Arrow shafts are made of carbon fiber–reinforced plastic and have metal or ceramic heads."
         },
 
         "battery" : {
@@ -1803,7 +1804,8 @@
           "price" : 60,
           "charges/cartridges" : 20,
           "bulk" : -1,
-          "special" : null
+          "special" : null,
+          "_description" : "Batteries charge powered weapons, but they can also be used to power an array of items, including powered armor and technological items. Batteries have a standardized size and weight, and items that take batteries all have a slot into which they fit, regardless of the item’s actual size. Weapons that use batteries list the highest-capacity battery they are capable of using as well as how many charges from the battery that each shot consumes."
         },
 
         "battery, high-capacity" : {
@@ -1812,7 +1814,8 @@
           "price" : 330,
           "charges/cartridges" : 40,
           "bulk" : -1,
-          "special" : null
+          "special" : null,
+          "_description" : "Batteries charge powered weapons, but they can also be used to power an array of items, including powered armor and technological items. Batteries have a standardized size and weight, and items that take batteries all have a slot into which they fit, regardless of the item’s actual size. Weapons that use batteries list the highest-capacity battery they are capable of using as well as how many charges from the battery that each shot consumes."
         },
 
         "battery, super-capacity" : {
@@ -1821,7 +1824,8 @@
           "price" : 390,
           "charges/cartridges" : 80,
           "bulk" : -1,
-          "special" : null
+          "special" : null,
+          "_description" : "Batteries charge powered weapons, but they can also be used to power an array of items, including powered armor and technological items. Batteries have a standardized size and weight, and items that take batteries all have a slot into which they fit, regardless of the item’s actual size. Weapons that use batteries list the highest-capacity battery they are capable of using as well as how many charges from the battery that each shot consumes."
         },
 
         "battery, ultra-capacity" : {
@@ -1830,7 +1834,8 @@
           "price" : 445,
           "charges/cartridges" : 100,
           "bulk" : 0,
-          "special" : null
+          "special" : null,
+          "_description" : "Batteries charge powered weapons, but they can also be used to power an array of items, including powered armor and technological items. Batteries have a standardized size and weight, and items that take batteries all have a slot into which they fit, regardless of the item’s actual size. Weapons that use batteries list the highest-capacity battery they are capable of using as well as how many charges from the battery that each shot consumes."
         },
 
         "darts" : {
@@ -1839,7 +1844,8 @@
           "price" : 20,
           "charges/cartridges" : 25,
           "bulk" : 0,
-          "special" : null
+          "special" : null,
+          "_description" : "These light metal shafts each have a pointed tip and a reservoir to hold toxins or other appropriate substances that are typically liquid or viscous. While most combatants rely on darts to deliver toxins to enemies, particularly desperate or overworked field medics sometimes employ darts to conveniently deliver antitoxins, healing serums, and other beneficial specialugs across a crowded battlefield. In these cases, medics often practice to improve their aim to ensure that this strategy is effective when employed."
         },
 
         "flare" : {
@@ -1848,7 +1854,8 @@
           "price" : 5,
           "charges/cartridges" : 1,
           "bulk" : -1,
-          "special" : null
+          "special" : null,
+          "_description" : "Usually made of magnesium, flares burn brightly and can deliver some heat. You can ignite a flare by hand without the need for a flare gun. A lit flare burns for 1 hour, and it can be wielded in melee combat as an improvised weapon that deals 1d2 fire damage."
         },
 
         "mini-rockets" : {
@@ -1857,7 +1864,8 @@
           "price" : 300,
           "charges/cartridges" : 10,
           "bulk" : 0,
-          "special" : null
+          "special" : null,
+          "_description" : "These long, tapered shells hold combustible material as well as a chemical propellant."
         },
 
         "petrol tank, standard" : {
@@ -1866,7 +1874,8 @@
           "price" : 60,
           "charges/cartridges" : 20,
           "bulk" : 1,
-          "special" : null
+          "special" : null,
+          "_description" : "Petrol is a highly flammable blend of hyspecialocarbons that is used in flame weapons (and petrol is occasionally used by desperate adventurers as fuel or for other various utilitarian purposes). A petrol tank snaps easily into the housing of weapons that are specifically petrol-powered."
         },
 
         "petrol tank, high capacity" : {
@@ -1875,7 +1884,8 @@
           "price" : 280,
           "charges/cartridges" : 40,
           "bulk" : 2,
-          "special" : null
+          "special" : null,
+          "_description" : "Petrol is a highly flammable blend of hyspecialocarbons that is used in flame weapons (and petrol is occasionally used by desperate adventurers as fuel or for other various utilitarian purposes). A petrol tank snaps easily into the housing of weapons that are specifically petrol-powered."
         },
 
         "rounds, small arm" : {
@@ -1884,7 +1894,8 @@
           "price" : 40,
           "charges/cartridges" : 30,
           "bulk" : 0,
-          "special" : null
+          "special" : null,
+          "_description" : "Cased rounds are housed in magazines, which can be fitted into the appropriate weapon."
         },
 
         "rounds, longarm and sniper" : {
@@ -1893,7 +1904,8 @@
           "price" : 75,
           "charges/cartridges" : 25,
           "bulk" : 0,
-          "special" : null
+          "special" : null,
+          "_description" : "Cased rounds are housed in magazines, which can be fitted into the appropriate weapon."
         },
 
         "rounds, heavy" : {
@@ -1902,7 +1914,8 @@
           "price" : 90,
           "charges/cartridges" : 20,
           "bulk" : 0,
-          "special" : null
+          "special" : null,
+          "_description" : "Cased rounds are housed in magazines, which can be fitted into the appropriate weapon."
         },
 
         "scattergun shells" : {
@@ -1911,7 +1924,8 @@
           "price" : 55,
           "charges/cartridges" : 25,
           "bulk" : 0,
-          "special" : null
+          "special" : null,
+          "_description" : "These cartridges are packed with small metal spheres that scatter when the cartridge explodes."
         }
 
       },
@@ -1924,7 +1938,8 @@
           "price" : 875,
           "charges/cartridges" : 1,
           "bulk" : -1,
-          "special" : "as any 1st-level grenade"
+          "special" : "as any 1st-level grenade",
+          "_description" : "The explosive tip of the arrow detonates on impact. A grenade arrow can be made using any handheld grenade. The miniaturized technology incorporated into the arrow increases its price substantially over an equivalent grenade."
         },
 
         "grenade arrow II" : {
@@ -1933,7 +1948,8 @@
           "price" : 5450,
           "charges/cartridges" : 1,
           "bulk" : -1,
-          "special" : "as any 5th- or lower-level grenade"
+          "special" : "as any 5th- or lower-level grenade",
+          "_description" : "The explosive tip of the arrow detonates on impact. A grenade arrow can be made using any handheld grenade. The miniaturized technology incorporated into the arrow increases its price substantially over an equivalent grenade."
         },
 
         "tactical missile" : {
@@ -1942,7 +1958,8 @@
           "price" : 5700,
           "charges/cartridges" : 1,
           "bulk" : 1,
-          "special" : "explode (6d8 B&P, 30 ft.)"
+          "special" : "explode (6d8 B&P, 30 ft.)",
+          "_description" : "Missiles are heavy, snub-nosed munitions with devastating explosive power. A missile’s damage when fired from a missile launcher (such as an IMDS missile launcher) is listed in its entry."
         }
 
       }
@@ -2346,7 +2363,7 @@
           "type" : "any",
           "capacity" : null,
           "usage" : null,
-          "stats": "darkvision 60 ft.",
+          "special": "darkvision 60 ft.",
           "bulk" : 0,
           "_description" : "You gain darkvision with a range of 60 feet."
         },
@@ -2358,9 +2375,9 @@
           "type" : "any",
           "capacity" : null,
           "usage" : null,
-          "stats": null,
+          "special": "draw one-handed weapon as swift action",
           "bulk" : 0,
-          "_description" : "This articulated compartment can hold a one-handed weapon of no more than light bulk. You can activate this upgrade as a swift action to put the item in your hand as though you’d drawn it."
+          "_description" : "This articulated compartment can hold a one-handed weapon of no more than light bulk. You can activate this upgrade as a swift action to put the item in your hand as though you’d specialawn it."
         },
 
         "radiation buffer" : {
@@ -2370,7 +2387,7 @@
           "type" : "any",
           "capacity" : null,
           "usage" : null,
-          "stats": "+2 vs radiation",
+          "special": "+2 vs radiation",
           "bulk" : 0,
           "_description" : "This device grants a +2 bonus to your initial saving throw against radiation in addition to any bonuses from your armor’s environmental protection. This doesn’t provide any bonus to saves against the secondary effects of radiation."
         },
@@ -2382,7 +2399,7 @@
           "type" : "any",
           "capacity" : null,
           "usage" : null,
-          "stats": null,
+          "special": "+5 HP and hardness",
           "bulk" : 1,
           "_description" : "When calculating your armor’s hardness and Hit Points, treat it as if its item level were 5 higher."
         },
@@ -2394,7 +2411,7 @@
           "type" : "powered",
           "capacity" : null,
           "usage" : null,
-          "stats": null,
+          "special": "move action to reload",
           "bulk" : 1,
           "_description" : "This device attaches to powered armor and consists of a small robotic arm and a storage compartment that holds up to 2 bulk of ammunition and batteries. You can activate the automated loader as a move action to reload or recharge a weapon that’s mounted to the powered armor (but not to replace the batteries of the powered armor itself). Abilities that let you reload faster than a move action don’t apply to an automated loader.\n\nThis upgrade can be installed only in powered armor."
         },
@@ -2406,7 +2423,7 @@
           "type" : "light, heavy",
           "capacity" : 20,
           "usage" : "2/action",
-          "stats": null,
+          "special": "fly 30 ft. as part of movement",
           "bulk" : 0,
           "_description" : "You can activate jump jets as part of a move action in order to fly during your movement. You can fly up to 30 feet (average maneuverability) with a maximum height of 10 feet, or you can fly up to 20 feet straight up. You must land at the end of your move action. Jump jets can’t lift you if you’re encumbered.\n\nThis upgrade can be installed only in light or heavy armor."
         },
@@ -2418,9 +2435,9 @@
           "type" : "any",
           "capacity" : 10,
           "usage" : "1/round",
-          "stats": "1 temp HP / 1 fast healing",
+          "special": "1 temp HP / 1 fast healing",
           "bulk" : 0,
-          "_description" : "You can activate or deactivate your armor’s force field as a standard action. Once active, the device generates an invisible force field around you, including all your worn and carried items. The force field blocks solids and liquids but not gases or light (including laser beams). You can breathe while the field is active, but you can’t eat or drink.\n\nWhile a force field is active, you gain a number of temporary Hit Points depending on the force field’s power. All damage dealt to you is subtracted from the force field’s temporary Hit Points first. A force field has fast healing, meaning that it regains temporary Hit Points at a fixed rate each round at the end of your turn, up to its normal maximum. If the force field’s temporary Hit Points are reduced to 0, it is inactive until the end of your next turn, when its fast healing restores some of its Hit Points. The charge capacity, amount of temporary Hit Points granted, and rate of fast healing vary according to the force field’s color code. A force field has a usage of 1 charge per round.\n\nMore powerful force fields also have a fortification ability, which gives a percentage chance that a critical hit is treated as a normal attack, dealing normal damage and not applying any critical effect. You roll your fortification percentage chance before the critical hit’s damage is rolled. If a force field is inactive, its fortification ability does not function. A suit of armor cannot support more than one force field upgrade."
+          "_description" : "You can activate or deactivate your armor’s force field as a standard action. Once active, the device generates an invisible force field around you, including all your worn and carried items. The force field blocks solids and liquids but not gases or light (including laser beams). You can breathe while the field is active, but you can’t eat or specialink.\n\nWhile a force field is active, you gain a number of temporary Hit Points depending on the force field’s power. All damage dealt to you is subtracted from the force field’s temporary Hit Points first. A force field has fast healing, meaning that it regains temporary Hit Points at a fixed rate each round at the end of your turn, up to its normal maximum. If the force field’s temporary Hit Points are reduced to 0, it is inactive until the end of your next turn, when its fast healing restores some of its Hit Points. The charge capacity, amount of temporary Hit Points granted, and rate of fast healing vary according to the force field’s color code. A force field has a usage of 1 charge per round.\n\nMore powerful force fields also have a fortification ability, which gives a percentage chance that a critical hit is treated as a normal attack, dealing normal damage and not applying any critical effect. You roll your fortification percentage chance before the critical hit’s damage is rolled. If a force field is inactive, its fortification ability does not function. A suit of armor cannot support more than one force field upgrade."
         },
 
         "backup generator" : {
@@ -2430,7 +2447,7 @@
           "type" : "any",
           "capacity" : null,
           "usage" : "recharge 1/10 minutes",
-          "stats": null,
+          "special": null,
           "bulk" : 1,
           "_description" : "You can connect charged electric items such as batteries to this miniature generator to recharge them. The electricity comes from the kinetic energy of your movement, which generates 1 charge every 10 minutes of movement. No more than one item can be plugged in at a time, and the generator doesn’t produce charges when you’re resting or otherwise stationary."
         },
@@ -2442,7 +2459,7 @@
           "type" : "heavy, powered",
           "capacity" : null,
           "usage" : null,
-          "stats": null,
+          "special": "exit armor as move action",
           "bulk" : 2,
           "_description" : "This body harness fits into a suit of powered armor or is built into the frame of heavy armor, allowing you to exit the armor as a move action instead of as a full action. Entering the armor is no faster with an exit pod.\n\nThis can be installed only in heavy armor or powered armor."
         },
@@ -2454,7 +2471,7 @@
           "type" : "any",
           "capacity" : null,
           "usage" : null,
-          "stats": null,
+          "special": "ignore partial concealment",
           "bulk" : -1,
           "_description" : "This targeting computer helps you compensate for poor visibility conditions. Ignore concealment on attacks you make. This doesn’t have any effect against targets with total concealment."
         },
@@ -2466,7 +2483,7 @@
           "type" : "any",
           "capacity" : null,
           "usage" : null,
-          "stats": "resist 5 E / damage 1d6 E",
+          "special": "resist 5 E / damage 1d6 E",
           "bulk" : -1,
           "_description" : "This field over your armor grants you electricity resistance, and any creature that touches you or deals damage to you with a melee weapon takes electricity damage. The resistance granted and damage dealt depend on this upgrade’s type, as noted below.\n\nMk 1: Resistance 5 and 1d6 electricity damage."
         },
@@ -2478,7 +2495,7 @@
           "type" : "light, heavy",
           "capacity" : "40",
           "usage" : "2/round",
-          "stats": null,
+          "special": "fly 30 ft.",
           "bulk" : 1,
           "_description" : "You gain a fly speed of 30 feet (average maneuverability). You can use this for “cruising flight” at a usage of only 1 charge per minute, but you are flat-footed and off-target while doing so. Changing from normal flight to cruising flight or vice versa is a standard action. A jetpack can’t lift you if you’re encumbered.\n\nThis upgrade can be installed only in light or heavy armor."
         },
@@ -2490,7 +2507,7 @@
           "type" : "any",
           "capacity" : null,
           "usage" : null,
-          "stats": null,
+          "special": "carry +3 bulk",
           "bulk" : -1,
           "_description" : "This set of Artificial muscles increases the amount of bulk you can carry while wearing your armor by 3."
         },
@@ -2502,7 +2519,7 @@
           "type" : "any",
           "capacity" : null,
           "usage" : null,
-          "stats": "resist 5 F&C",
+          "special": "resist 5 F&C",
           "bulk" : -1,
           "_description" : "This upgrade regulates heat, protecting you from extreme temperatures. You can exist comfortably in conditions between –50° and 170° F without needing to attempt Fortitude saves. In addition, the armor grants cold resistance and fire resistance. The amount depends on the capacitor’s type, as listed below.\n\nMk 1: Resistance 5"
         },
@@ -2514,7 +2531,7 @@
           "type" : "any",
           "capacity" : null,
           "usage" : null,
-          "stats": "resist 5 A / +2 vs poison & disease",
+          "special": "resist 5 A / +2 vs poison & disease",
           "bulk" : 1,
           "_description" : "This upgraded rebreather supplements your armor’s ability to provide fresh air and filters out common toxins and poisonous vapors. Armor with this upgrade can provide fresh air for a number of weeks equal to its level. You also gain acid resistance 5 and a +2 bonus to saving throws against poison and disease."
         },
@@ -2526,9 +2543,76 @@
           "type" : "any",
           "capacity" : 10,
           "usage" : "1/round",
-          "stats": "5 temp HP / 2 fast healing",
+          "special": "5 temp HP / 2 fast healing",
           "bulk" : 0,
-          "_description" : "You can activate or deactivate your armor’s force field as a standard action. Once active, the device generates an invisible force field around you, including all your worn and carried items. The force field blocks solids and liquids but not gases or light (including laser beams). You can breathe while the field is active, but you can’t eat or drink.\n\nWhile a force field is active, you gain a number of temporary Hit Points depending on the force field’s power. All damage dealt to you is subtracted from the force field’s temporary Hit Points first. A force field has fast healing, meaning that it regains temporary Hit Points at a fixed rate each round at the end of your turn, up to its normal maximum. If the force field’s temporary Hit Points are reduced to 0, it is inactive until the end of your next turn, when its fast healing restores some of its Hit Points. The charge capacity, amount of temporary Hit Points granted, and rate of fast healing vary according to the force field’s color code. A force field has a usage of 1 charge per round.\n\nMore powerful force fields also have a fortification ability, which gives a percentage chance that a critical hit is treated as a normal attack, dealing normal damage and not applying any critical effect. You roll your fortification percentage chance before the critical hit’s damage is rolled. If a force field is inactive, its fortification ability does not function. A suit of armor cannot support more than one force field upgrade."
+          "_description" : "You can activate or deactivate your armor’s force field as a standard action. Once active, the device generates an invisible force field around you, including all your worn and carried items. The force field blocks solids and liquids but not gases or light (including laser beams). You can breathe while the field is active, but you can’t eat or specialink.\n\nWhile a force field is active, you gain a number of temporary Hit Points depending on the force field’s power. All damage dealt to you is subtracted from the force field’s temporary Hit Points first. A force field has fast healing, meaning that it regains temporary Hit Points at a fixed rate each round at the end of your turn, up to its normal maximum. If the force field’s temporary Hit Points are reduced to 0, it is inactive until the end of your next turn, when its fast healing restores some of its Hit Points. The charge capacity, amount of temporary Hit Points granted, and rate of fast healing vary according to the force field’s color code. A force field has a usage of 1 charge per round.\n\nMore powerful force fields also have a fortification ability, which gives a percentage chance that a critical hit is treated as a normal attack, dealing normal damage and not applying any critical effect. You roll your fortification percentage chance before the critical hit’s damage is rolled. If a force field is inactive, its fortification ability does not function. A suit of armor cannot support more than one force field upgrade."
+        }
+
+      }
+    },
+
+    "augmentations" : {
+      "cybernetics" : {
+
+        "hideaway limb, standard" : {
+          "level" : 1,
+          "price" : 150,
+          "type" : "cybernetics",
+          "system" : "arm or leg",
+          "special" : "+2 sleight of hand to conceal / draw as standard action",
+          "_description" : "This compartment is hidden inside one of your limbs. You can conceal items inside and protect them with a simple passcode. The compartment can hold items of negligible bulk and items of light bulk that are either relatively small or can be folded or contracted to fit. A hideaway in a leg (in a human) can hold more than one in an arm, and the creature’s size also adjusts the capacity. The GM decides what can fit.\n\nWhen the compartment is closed, the seam in your flesh is difficult to detect. You gain a +2 bonus to Sleight of Hand checks to conceal items in a hideaway limb. Though this compartment can usually foil a simple pat down, most security checkpoints include a scan that can detect such devices. Retrieving an item from a hideaway limb is a move action instead of a standard action.\n\nThis type of augmentation is for Small and Medium creatures only. Hideaway limbs for creatures larger than Medium typically cost more but can hold items of greater size or bulk.\n\nNothing stored in a hideaway limb is considered part of the cybernetic, and the stored item does not gain the cybernetic’s immunity to attacks affecting technological devices."
+        },
+
+        "prosthetic limb, standard" : {
+          "level" : 1,
+          "price" : 100,
+          "type" : "cybernetics",
+          "system" : "arm and hand or leg and foot",
+          "special" : null,
+          "_description" : "This prosthesis replaces a missing limb. It restores functionality, but it is no more durable than and doesn’t otherwise function differently than a normal limb for your species. A prosthetic limb can replace one you’ve lost, or you can have a limb removed in order to replace it with a prosthetic."
+        },
+
+        "respiration compounder" : {
+          "level" : 1,
+          "price" : 250,
+          "type" : "cybernetics",
+          "system" : "lungs",
+          "special" : "+4 to Con checks for holding breath / +2 vs inhaled poison",
+          "_description" : "A respiration compounder consists of a series of modules that attach to your lungs, letting you survive longer without having to breathe. Treat your Constitution score as though it were doubled for the purpose of how long you can hold your breath. You also gain a +4 bonus to Constitution checks to continue holding your breath. This doesn’t protect you from other dangers of an airless environment.\n\nThe compounder also filters your air, granting a +2 bonus to saving throws against inhaled poisons or other airborne toxins."
+        },
+
+        "vocal modulator" : {
+          "level" : 1,
+          "price" : 125,
+          "type" : "cybernetics",
+          "system" : "throat",
+          "special" : "+2 disguise",
+          "_description" : "A vocal modulator includes a series of miniature actuators built specifically to reshape your voice box, along with miniature hyper-resonant chambers that dynamically close or open. This allows you to change the pitch, timbre, and tone of your voice. You can more easily imitate accents or pronounce alien languages. When using Disguise to change your appearance, you gain a +2 circumstance bonus if the change in your voice also helps your disguise (at the GM’s discretion)."
+        },
+
+        "datajack, standard" : {
+          "level" : 2,
+          "price" : 625,
+          "type" : "cybernetics",
+          "system" : "brain",
+          "special" : "operate computers without an interface",
+          "_description" : "This cybernetic includes a programmable data port that allows you to access different types of computers and digital storage media. Any handheld computer can be inserted directly into the port, while larger systems need to be connected by an adapter cable. Having the system connected directly to your nervous system obviates the need for an interface to access data on a system. Actually operating the system requires you to use the Computers skill as usual. Some closed systems don’t allow data access or require you to do some rewiring to connect with a datajack (usually an Engineering check)."
+        },
+
+        "test biotech" : {
+          "level" : 0,
+          "price" : 100,
+          "type" : "biotech",
+          "system" : null,
+          "special" : null
+        },
+
+        "test upgrade" : {
+          "level" : 0,
+          "price" : 100,
+          "type" : "personal upgrade",
+          "system" : null,
+          "special" : null
         }
 
       }

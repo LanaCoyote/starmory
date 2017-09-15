@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>Starmory - Flexible Starfinder Armory</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           rel="stylesheet"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
@@ -10,11 +9,7 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css"
           crossorigin="anonymous" />
-
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lodash"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
     <div class="fluid text-center" id="loader" v-if="loading">
@@ -28,13 +23,10 @@
           <div class="nav-top top-bar">
             <div class="top-bar-left">
               <ul class="menu">
-                <li class="menu-text">Starmory</li>
-
-                <li v-for="category in armory.getCategories()">
-                  <a href="#" v-on:click="setCategory( category )">
-                    {{ mutate.capitalize( category ) }}
-                  </a>
-                </li>
+                <li class="menu-text"><span>Starmory</span></li>
+                <nav-dropdown category="weapons" subcategories="ammunition"></nav-dropdown>
+                <nav-dropdown category="armor" subcategories="armor upgrades"></nav-dropdown>
+                <nav-dropdown category="augmentations"></nav-dropdown>
               </ul>
             </div>
 
@@ -141,6 +133,12 @@
       </div>
     </main>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash"></script>
     <script src="https://unpkg.com/vue"></script>
     <script src="/javascripts/app.js"></script>
   </body>
