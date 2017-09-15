@@ -200,6 +200,7 @@ Vue.component('nav-dropdown', {
     "                  </a>\n" +
     "                  <i class=\"fa fa-caret-down\" v-if='subcategories'></i>\n" +
     "                  <ul class=\"menu vertical\" v-if='subcategories'>\n" +
+    "                    <li><a v-on:click=\"setCategory(category)\">All {{ category }}</a></li>" +
     "                    <li v-for=\"subcategory in subcategories.split(',')\">" +
     "                       <a v-on:click=\"setCategory(subcategory)\">{{ mutate.capitalize( subcategory ) }}</a>" +
     "                    </li>\n" +
