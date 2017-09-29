@@ -749,7 +749,7 @@
           "type" : "uncategorized",
           "level" : 10,
           "price" : 16900,
-          "damage" : "16900",
+          "damage" : "4d6 B",
           "range" : null,
           "critical" : null,
           "capacity" : "20 charges",
@@ -772,6 +772,174 @@
           "special" : "analog"
         },
 
+        "taclash, numbing" : {
+          "hands": 1,
+          "type": "uncategorized",
+          "level" : 11,
+          "price" : 28400,
+          "damage": "5d4 S",
+          "range" : null,
+          "critical" : null,
+          "capacity" : "20 charges",
+          "usage" : 2,
+          "bulk" :0,
+          "special" : "disarm, powered (capacity 20, usage 2), reach, stun, trip"
+        },
+
+        "starknife, accelerated": {
+          "hands": 1,
+          "type": "uncategorized",
+          "level": 12,
+          "price": 40400,
+          "damage": "4d8 F&P",
+          "range": "30 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "20 charges",
+          "usage": 1,
+          "bulk" : 0,
+          "special" : "powered (capacity 20, usage 1), thrown (30 ft.)"
+        },
+
+        "grindblade" : {
+          "hands": 1,
+          "type" : "uncategorized",
+          "level" : 13,
+          "price" : 45700,
+          "damage" : "4d10 S",
+          "range" : null,
+          "critical" : "bleed 2d8",
+          "capacity" : null,
+          "usage" : null,
+          "bulk" : 1,
+          "special" : "analog"
+        },
+
+        "longsword, zero-edge" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 14,
+          "price" : 79500,
+          "damage" : "7d8 S",
+          "range" : null,
+          "critical" : "severe wound",
+          "capacity" : null,
+          "usage" : null,
+          "bulk" : 0,
+          "special" : "analog"
+        },
+
+        "monowhip" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 15,
+          "price" : 107000,
+          "damage" : "10d4 S",
+          "range" : null,
+          "critical" : "severe wound",
+          "capacity" : null,
+          "usage" : null,
+          "bulk" : 0,
+          "special" : "analog, disarm, reach, trip"
+        },
+
+        "hammer, meteoric" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 16,
+          "price" : 164500,
+          "damage" : "11d6 B",
+          "range" : null,
+          "critical" : null,
+          "capacity" : null,
+          "usage" : null,
+          "bulk" : 1,
+          "special" : "analog"
+        },
+
+        "starknife, lightspeed" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 16,
+          "price" : 183400,
+          "damage" : "8d8 F&P",
+          "range" : "50 ft. (thrown)",
+          "critical" : null,
+          "capacity" : 20,
+          "usage" : 2,
+          "bulk": 0,
+          "special" : "powered (capacity 20, usage 2), thrown (50 ft.)"
+        },
+
+        "longsword, molecular rift" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 17,
+          "price" : 254200,
+          "damage" : "10d8 S",
+          "range" : null,
+          "critical" : null,
+          "capacity" : null,
+          "usage" : null,
+          "bulk" : 1,
+          "special" : "analog"
+        },
+
+        "longsword, ultraserrated" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 18,
+          "price" : 368100,
+          "damage" : "8d10 S",
+          "range" : null,
+          "critical" : "bleed 6d6",
+          "capacity" : null,
+          "usage" : null,
+          "bulk" : 1,
+          "special" : "analog"
+        },
+
+        "hammer, gravity well" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 19,
+          "price" : 551000,
+          "damage" : "15d6 B",
+          "range" : null,
+          "critical" : null,
+          "capacity" : "40 charges",
+          "usage" : 2,
+          "bulk" : 1,
+          "special" : "powered (capacity 40, usage 2)"
+        },
+
+        "starknife, dimensional slice" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 19,
+          "price" : 602200,
+          "damage" : "8d12 P",
+          "range" : "80 ft. (thrown)",
+          "critical" : null,
+          "capacity" : null,
+          "usage" : null,
+          "bulk" : 0,
+          "special" : "analog, thrown (80 ft.)"
+        },
+
+        "longsword, dimensional slice" : {
+          "hands" : 1,
+          "type" : "uncategorized",
+          "level" : 20,
+          "price" : 727300,
+          "damage" : "14d8 S",
+          "range" : null,
+          "critical" : null,
+          "capacity" : null,
+          "usage" : null,
+          "bulk" : 0,
+          "special" : "analog"
+        },
+
         "cryopike, tactical" : {
           "hands" : 2,
           "type" : "cryo",
@@ -785,6 +953,21 @@
           "bulk" : 2,
           "special" : "powered (capacity 40, usage 2), reach",
           "_description" : "The haft of a cryopike is a long aluminum or carbon-steel shaft with an adjustable rubber grip. A cryopike emits a blast of supercooled gas from its tip that acts as a freezing blade."
+        },
+
+        "cryopike, advanced" : {
+          "hands" : 2,
+          "type" : "cryo",
+          "level" : 12,
+          "price" : 34800,
+          "damage" : "2d8 C",
+          "range": null,
+          "critical": "staggered",
+          "capacity": "40 charges",
+          "usage" : 2,
+          "bulk" : 2,
+          "special": "powered (capacity 40, usage 2), reach",
+          "_description": "The haft of a cryopike is a long aluminum or carbon-steel shaft with an adjustable rubber grip. A cryopike emits a blast of supercooled gas from its tip that acts as a freezing blade."
         },
 
         "flame doshko, ember" : {
@@ -817,12 +1000,84 @@
           "_description" : "When activated, the blade of this doshko heats up by means of internal heating coils. The doshko deals fire damage and can also cause traumatic injuries."
         },
 
+        "flame doshko, inferno" : {
+          "hands": 2,
+          "type": "flame",
+          "level": 13,
+          "price": 53200,
+          "damage" : "5d8 F",
+          "range": null,
+          "critical" : "wound",
+          "capacity": "20 charges",
+          "usage": 1,
+          "bulk" : 1,
+          "special" :"powered (capacity 20, usage 1)",
+          "_description" : "When activated, the blade of this doshko heats up by means of internal heating coils. The doshko deals fire damage and can also cause traumatic injuries."
+        },
+
+        "flame doshko, solar flare" : {
+          "hands" : 2,
+          "type" : "flame",
+          "level": 19,
+          "price": 595000,
+          "damage": "10d8 F",
+          "range": null,
+          "critical": "severe wound",
+          "capacity": "20 charges",
+          "usage": 1,
+          "bulk" : 1,
+          "special": "powered (capacity 20, usage 1)",
+          "_description" : "When activated, the blade of this doshko heats up by means of internal heating coils. The doshko deals fire damage and can also cause traumatic injuries."
+        },
+
         "plasma doshko, red star" : {
           "hands" : 2,
           "type" : "plasma",
           "level" : 6,
           "price" : 4650,
           "damage" : "1d10 E&F",
+          "range" : null,
+          "critical" : "severe wound",
+          "capacity" : "20 charges",
+          "usage" : 2,
+          "bulk" : 1,
+          "special" : "powered (capacity 20, usage 2)"
+        },
+
+        "plasma doshko, yellow star" : {
+          "hands" : 2,
+          "type" : "plasma",
+          "level" : 10,
+          "price" : 17000,
+          "damage" : "2d10 E&F",
+          "range" : null,
+          "critical" : "severe wound",
+          "capacity" : "20 charges",
+          "usage" : 2,
+          "bulk" : 1,
+          "special" : "powered (capacity 20, usage 2)"
+        },
+
+        "plasma doshko, white star" : {
+          "hands" : 2,
+          "type" : "plasma",
+          "level" : 15,
+          "price" : 126800,
+          "damage" : "5d10 E&F",
+          "range" : null,
+          "critical" : "severe wound",
+          "capacity" : "20 charges",
+          "usage" : 2,
+          "bulk" : 1,
+          "special" : "powered (capacity 20, usage 2)"
+        },
+
+        "plasma doshko, blue star" : {
+          "hands" : 2,
+          "type" : "plasma",
+          "level" : 18,
+          "price" : 364100,
+          "damage" : "7d10 E&F",
           "range" : null,
           "critical" : "severe wound",
           "capacity" : "20 charges",
@@ -870,6 +1125,104 @@
           "capacity" : null,
           "usage" : null,
           "bulk" : 2,
+          "special" : "analog"
+        },
+
+        "swoop hammer, tactical" : {
+          "hands": 2,
+          "type":"uncategorized",
+          "level": 5,
+          "price": 3360,
+          "damage": "1d10 B",
+          "range": null,
+          "critical" : "knockdown",
+          "capacity" : null,
+          "usage": null,
+          "bulk" : 2,
+          "special" : "analog, reach, unwieldy"
+        },
+
+        "devastation blade, wrack" : {
+          "hands" : 2,
+          "type": "uncategorized",
+          "level": 7,
+          "price": 5500,
+          "damage": "2d8 S",
+          "range": null,
+          "critical": null,
+          "capacity": null,
+          "usage": null,
+          "bulk" : 1,
+          "special": "analog"
+        },
+
+        "doshko, advanced": {
+          "hands": 2,
+          "type":"uncategorized",
+          "level": 7,
+          "price": 5300,
+          "damage": "2d12 P",
+          "range": null,
+          "critical" : null,
+          "capacity" : null,
+          "usage": null,
+          "bulk" : 1,
+          "special" : "analog, unwieldy"
+        },
+
+        "staff, sentinel" : {
+          "hands": 2,
+          "type": "uncategorized",
+          "level": 7,
+          "price": 6320,
+          "damage": "1d10 B",
+          "range":null,
+          "critical" : null,
+          "capacity" : "20 charges",
+          "usage" : 1,
+          "bulk" : 1,
+          "special": "block, powered (capacity 20, usage 1), stun"
+        },
+
+        "pike, advanced" : {
+          "hands": 2,
+          "type" : "uncategorized",
+          "level" : 9,
+          "price" : 12200,
+          "damage": "2d8 P",
+          "range": null,
+          "critical" : "bleed 1d8",
+          "capacity" : null,
+          "usage": null,
+          "bulk" : 2,
+          "special" : "analog, reach"
+        },
+
+        "swoop hammer, advanced" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level": 9,
+          "price": 14300,
+          "damage": "3d10 B",
+          "range": null,
+          "critical" : "knockdown",
+          "capacity" : null,
+          "usage": null,
+          "bulk": 2,
+          "special" : "analog, reach, unwieldy"
+        },
+
+        "curve blade, ultrathin" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level": 10,
+          "price": 18100,
+          "damage": "3d10 S",
+          "range" : null,
+          "critical" : "bleed 2d6",
+          "capacity" : null,
+          "usage": null,
+          "bulk" : 1,
           "special" : "analog"
         }
 
@@ -1748,7 +2101,7 @@
           "damage" : "1d4 P",
           "range" : "10 ft. (thrown)",
           "critical" : "bleed 1d4",
-          "capacity" : "specialawn",
+          "capacity" : "drawn",
           "usage" : null,
           "bulk" : -1,
           "special" : "quick reload, thrown"
@@ -1762,7 +2115,7 @@
           "damage" : null,
           "range" : "10 ft. (thrown)",
           "critical" : null,
-          "capacity" : "specialawn",
+          "capacity" : "drawn",
           "usage" : null,
           "bulk" : 1,
           "special" : null
@@ -1776,7 +2129,7 @@
           "damage" : "1d6 P",
           "range" : "60 ft.",
           "critical" : null,
-          "capacity" : "specialawn",
+          "capacity" : "drawn",
           "usage" : 1,
           "bulk" : 1,
           "special" : "quick reload"
