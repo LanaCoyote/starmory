@@ -1224,6 +1224,188 @@
           "usage": null,
           "bulk" : 1,
           "special" : "analog"
+        },
+
+        "doshko, ultrathin" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level": 11,
+          "price": 24600,
+          "damage": "4d12 P",
+          "range" : null,
+          "critical" : null,
+          "capacity" : null,
+          "usage": null,
+          "bulk" : 1,
+          "special" : "analog, unwieldy"
+        },
+
+        "devastation blade, ruin" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level": 13,
+          "price": 43900,
+          "damage": "5d8 S",
+          "range" : null,
+          "critical" : null,
+          "capacity" : null,
+          "usage": null,
+          "bulk" : 1,
+          "special" : "analog"
+        },
+
+        "staff, repeller" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level": 13,
+          "price": 45200,
+          "damage": "3d8 B",
+          "range" : null,
+          "critical" : "knockdown",
+          "capacity" : "20 charges",
+          "usage": 1,
+          "bulk" : 1,
+          "special" : "block, powered (capacity 20, usage 1), stun"
+        },
+
+        "swoop hammer, mach 1" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level": 13,
+          "price": 44100,
+          "damage": "5d10 B",
+          "range" : null,
+          "critical" : "knockdown",
+          "capacity" : "40 charges",
+          "usage": 4,
+          "bulk" : 2,
+          "special" : "powered (capacity 40, usage 4), reach, unwieldy"
+        },
+
+        "doshko, zero-edge" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level": 14,
+          "price": 71500,
+          "damage": "7d12 P",
+          "range" : null,
+          "critical" : null,
+          "capacity" : null,
+          "usage": null,
+          "bulk" : 1,
+          "special" : "analog, unwieldy"
+        },
+
+        "pike, elite" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level": 15,
+          "price": 95700,
+          "damage": "7d8 P",
+          "range" : null,
+          "critical" : "bleed 3d6",
+          "capacity" : null,
+          "usage": null,
+          "bulk" : 2,
+          "special" : "analog, reach"
+        },
+
+        "curve blade, buzzblade" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level": 16,
+          "price": 184300,
+          "damage": "8d10 S",
+          "range" : null,
+          "critical" : "bleed 5d6",
+          "capacity" : "40 charges",
+          "usage": 2,
+          "bulk" : 2,
+          "special" : "powered (capacity 40, usage 2)"
+        },
+
+        "doshko, molecular rift" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level": 17,
+          "price": 248000,
+          "damage": "10d12 P",
+          "range" : null,
+          "critical" : null,
+          "capacity" : "20 charges",
+          "usage": 1,
+          "bulk" : 1,
+          "special" : "powered (capacity 20, usage 1), unwieldy"
+        },
+
+        "swoop hammer, mach II" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level": 17,
+          "price": 273000,
+          "damage": "10d10 B",
+          "range" : null,
+          "critical" : "knockdown",
+          "capacity" : null,
+          "usage": null,
+          "bulk" : 2,
+          "special" : "analog, reach, unwieldy"
+        },
+
+        "devastation blade, apocalypse" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level": 18,
+          "price": 410200,
+          "damage": "12d8 S",
+          "range" : null,
+          "critical" : null,
+          "capacity" : null,
+          "usage": null,
+          "bulk" : 1,
+          "special" : "analog, unwieldy"
+        },
+
+        "doshko, dimension blade" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level": 19,
+          "price": 546100,
+          "damage": "13d12 P",
+          "range" : null,
+          "critical" : null,
+          "capacity" : null,
+          "usage": null,
+          "bulk" : 1,
+          "special" : "analog, unwieldy"
+        },
+
+        "curve blade, dimensional slice" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level": 20,
+          "price": 815000,
+          "damage": "12d10 S",
+          "range" : null,
+          "critical" : "bleed 6d6",
+          "capacity" : "40 charges",
+          "usage": 2,
+          "bulk" : 2,
+          "special" : "powered (capacity 40, usage 2)"
+        },
+
+        "swoop hammer, mach III" : {
+          "hands" : 2,
+          "type" : "uncategorized",
+          "level": 20,
+          "price": 905700,
+          "damage": "14d10 B&F",
+          "range" : null,
+          "critical" : "knockdown",
+          "capacity" : "40 charges",
+          "usage": 4,
+          "bulk" : 1,
+          "special" : "powered (capacity 40, usage 4), reach, unwieldy"
         }
 
       },
