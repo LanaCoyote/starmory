@@ -1426,6 +1426,51 @@
           "_description" : "Zero pistols have a weighted grip to balance their unusually heavy barrels. A cylinspecialical canister over the barrel contains and directs the coolants."
         },
 
+        "zero pistol, hailstorm-class" : {
+          "hands" : 1,
+          "type" : "cryo",
+          "level" : 10,
+          "price" : 16900,
+          "damage" : "2d6 C",
+          "range" : "60 ft.",
+          "critical" : "staggered",
+          "capacity" : "40 charges",
+          "usage" : 2,
+          "bulk" : 0,
+          "special" : null,
+          "_description" : "Zero pistols have a weighted grip to balance their unusually heavy barrels. A cylinspecialical canister over the barrel contains and directs the coolants."
+        },
+
+        "zero pistol, blizzard-class" : {
+          "hands" : 1,
+          "type" : "cryo",
+          "level" : 15,
+          "price" : 94500,
+          "damage" : "4d6 C",
+          "range" : "60 ft.",
+          "critical" : "staggered",
+          "capacity" : "40 charges",
+          "usage" : 2,
+          "bulk" : 0,
+          "special" : null,
+          "_description" : "Zero pistols have a weighted grip to balance their unusually heavy barrels. A cylinspecialical canister over the barrel contains and directs the coolants."
+        },
+
+        "zero pistol, avalanche-class" : {
+          "hands" : 1,
+          "type" : "cryo",
+          "level" : 19,
+          "price" : 492900,
+          "damage" : "6d6 C",
+          "range" : "60 ft.",
+          "critical" : "staggered",
+          "capacity" : "80 charges",
+          "usage" : 4,
+          "bulk" : 0,
+          "special" : null,
+          "_description" : "Zero pistols have a weighted grip to balance their unusually heavy barrels. A cylinspecialical canister over the barrel contains and directs the coolants."
+        },
+
         "flare gun, survival" : {
           "hands" : 1,
           "type" : "flame",
@@ -1471,6 +1516,81 @@
           "_description" : "The laser pistol is possibly the most common small arm used by explorers, guards, mercenaries, and traders. Laser pistols are light and reliable, yet they still deal a respectable amount of damage."
         },
 
+        "laser pistol, corona" : {
+          "hands" : 1,
+          "type" : "laser",
+          "level" : 6,
+          "price" : 4270,
+          "damage" : "2d4 F",
+          "range" : "90 ft.",
+          "critical" : "burn 1d4",
+          "capacity" : "20 charges",
+          "usage" : 1,
+          "bulk" : 0,
+          "special" : null,
+          "_description" : "The laser pistol is possibly the most common small arm used by explorers, guards, mercenaries, and traders. Laser pistols are light and reliable, yet they still deal a respectable amount of damage."
+        },
+
+        "laser pistol, aphelion" : {
+          "hands" : 1,
+          "type" : "laser",
+          "level" : 9,
+          "price" : 14820,
+          "damage" : "3d4 F",
+          "range" : "90 ft.",
+          "critical" : "burn 1d4",
+          "capacity" : "40 charges",
+          "usage" : 2,
+          "bulk" : 0,
+          "special" : "boost 1d4",
+          "_description" : "The laser pistol is possibly the most common small arm used by explorers, guards, mercenaries, and traders. Laser pistols are light and reliable, yet they still deal a respectable amount of damage."
+        },
+
+        "laser pistol, perihelion" : {
+          "hands" : 1,
+          "type" : "laser",
+          "level" : 12,
+          "price" : 40200,
+          "damage" : "4d4 F",
+          "range" : "90 ft.",
+          "critical" : "burn 2d4",
+          "capacity" : "40 charges",
+          "usage" : 2,
+          "bulk" : 0,
+          "special" : null,
+          "_description" : "The laser pistol is possibly the most common small arm used by explorers, guards, mercenaries, and traders. Laser pistols are light and reliable, yet they still deal a respectable amount of damage."
+        },
+
+        "laser pistol, parallax" : {
+          "hands" : 1,
+          "type" : "laser",
+          "level" : 14,
+          "price" : 82000,
+          "damage" : "5d4 F",
+          "range" : "90 ft.",
+          "critical" : "burn 3d4",
+          "capacity" : "80 charges",
+          "usage" : 4,
+          "bulk" : 0,
+          "special" : "boost 2d4",
+          "_description" : "The laser pistol is possibly the most common small arm used by explorers, guards, mercenaries, and traders. Laser pistols are light and reliable, yet they still deal a respectable amount of damage."
+        },
+
+        "laser pistol, zenith" : {
+          "hands" : 1,
+          "type" : "laser",
+          "level" : 17,
+          "price" : 245200,
+          "damage" : "8d4 F",
+          "range" : "100 ft.",
+          "critical" : "burn 4d4",
+          "capacity" : "80 charges",
+          "usage" : 4,
+          "bulk" : 0,
+          "special" : null,
+          "_description" : "The laser pistol is possibly the most common small arm used by explorers, guards, mercenaries, and traders. Laser pistols are light and reliable, yet they still deal a respectable amount of damage."
+        },
+
         "plasma pistol, red star" : {
           "hands" : 1,
           "type" : "plasma",
@@ -1481,6 +1601,48 @@
           "critical" : "burn 1d8",
           "capacity" : "20 charges",
           "usage" : 4,
+          "bulk" : 0,
+          "special" : "line, unwieldy"
+        },
+
+        "plasma pistol, yellow star" : {
+          "hands" : 1,
+          "type" : "plasma",
+          "level" : 12,
+          "price" : 40300,
+          "damage" : "2d8 E&F",
+          "range" : "25 ft.",
+          "critical" : "burn 1d8",
+          "capacity" : "40 charges",
+          "usage" : 8,
+          "bulk" : 0,
+          "special" : "line, unwieldy"
+        },
+
+        "plasma pistol, white star" : {
+          "hands" : 1,
+          "type" : "plasma",
+          "level" : 15,
+          "price" : 107500,
+          "damage" : "3d8 E&F",
+          "range" : "30 ft.",
+          "critical" : "burn 2d8",
+          "capacity" : "100 charges",
+          "usage" : 20,
+          "bulk" : 0,
+          "special" : "line, unwieldy"
+        },
+
+        "plasma pistol, blue star" : {
+          "hands" : 1,
+          "type" : "plasma",
+          "level" : 19,
+          "price" : 565000,
+          "damage" : "5d8 E&F",
+          "range" : "40 ft.",
+          "critical" : "burn 3d8",
+          "capacity" : "100 charges",
+          "usage" : 20,
           "bulk" : 0,
           "special" : "line, unwieldy"
         },
@@ -1527,6 +1689,62 @@
           "special" : "analog"
         },
 
+        "semi-auto pistol, paragon" : {
+          "hands" : 1,
+          "type" : "projectile",
+          "level" : 13,
+          "price" : 45200,
+          "damage" : "4d6 P",
+          "range" : "60 ft.",
+          "critical" : null,
+          "capacity" : "16 rounds",
+          "usage" : 1,
+          "bulk" : 0,
+          "special" : "analog"
+        },
+
+        "gyrojet pistol, tactical" : {
+          "hands" : 1,
+          "type" : "projectile",
+          "level" : 15,
+          "price" : 91500,
+          "damage" : "3d12 B",
+          "range" : "80 ft.",
+          "critical" : "knockdown",
+          "capacity" : "8 mini-rockets",
+          "usage" : 1,
+          "bulk" : 0,
+          "special" : "analog"
+        },
+
+        "gyrojet pistol, advanced" : {
+          "hands" : 1,
+          "type" : "projectile",
+          "level" : 17,
+          "price" : 212700,
+          "damage" : "4d12 B",
+          "range" : "80 ft.",
+          "critical" : "knockdown",
+          "capacity" : "8 mini-rockets",
+          "usage" : 1,
+          "bulk" : 0,
+          "special" : "analog"
+        },
+
+        "gyrojet pistol, elite" : {
+          "hands" : 1,
+          "type" : "projectile",
+          "level" : 20,
+          "price" : 715800,
+          "damage" : "5d12 B",
+          "range" : "80 ft.",
+          "critical" : "knockdown",
+          "capacity" : "8 mini-rockets",
+          "usage" : 1,
+          "bulk" : 0,
+          "special" : "analog"
+        },
+
         "pulsecaster pistol" : {
           "hands" : 1,
           "type" : "shock",
@@ -1555,6 +1773,34 @@
           "special" : "stun"
         },
 
+        "arc pistol, aurora" : {
+          "hands" : 1,
+          "type" : "shock",
+          "level" : 13,
+          "price" : 45700,
+          "damage" : "3d6 E",
+          "range" : "50 ft.",
+          "critical" : "arc 2d6",
+          "capacity" : "40 charges",
+          "usage" : 2,
+          "bulk" : 0,
+          "special" : "stun"
+        },
+
+        "arc pistol, storm" : {
+          "hands" : 1,
+          "type" : "shock",
+          "level" : 18,
+          "price" : 365500,
+          "damage" : "3d12 E",
+          "range" : "50 ft.",
+          "critical" : "arc 4d6",
+          "capacity" : "100 charges",
+          "usage" : 10,
+          "bulk" : 0,
+          "special" : "stun"
+        },
+
         "sonic pistol, thunderstrike" : {
           "hands" : 1,
           "type" : "sonic",
@@ -1567,6 +1813,48 @@
           "usage" : 2,
           "bulk" : 0,
           "special" : null
+        },
+
+        "sonic pistol, LFD" : {
+          "hands" : 1,
+          "type" : "sonic",
+          "level" : 11,
+          "price" : 26200,
+          "damage" : "2d8 So",
+          "range" : "40 ft.",
+          "critical" : "deafen",
+          "capacity" : "40 charges",
+          "usage" : 4,
+          "bulk" : 0,
+          "special" : "boost 1d6"
+        },
+
+        "sonic pistol, HFD" : {
+          "hands" : 1,
+          "type" : "sonic",
+          "level" : 14,
+          "price" : 71300,
+          "damage" : "3d8 So",
+          "range" : "40 ft.",
+          "critical" : "deafen",
+          "capacity" : "60 charges",
+          "usage" : 6,
+          "bulk" : 0,
+          "special" : null
+        },
+
+        "sonic pistol, banshee" : {
+          "hands" : 1,
+          "type" : "sonic",
+          "level" : 16,
+          "price" : 191000,
+          "damage" : "4d8 So",
+          "range" : "40 ft.",
+          "critical" : "deafen",
+          "capacity" : "80 charges",
+          "usage" : 8,
+          "bulk" : 0,
+          "special" : "boost 1d10"
         },
 
         "needler pistol" : {
@@ -1611,6 +1899,36 @@
           "critical" : "staggered",
           "capacity" : "40 charges",
           "usage" : 2,
+          "bulk" : 2,
+          "special" : null,
+          "_description" : "Zero rifles have long, bulky barrels and tend to be very front-heavy. A heavy tank over the barrel stores the rifle’s coolant supply, contributing most of its bulk."
+        },
+
+        "zero rifle, blizzard-class" : {
+          "hands" : 2,
+          "type" : "cryo",
+          "level" : 14,
+          "price" : 79800,
+          "damage" : "4d8 C",
+          "range" : "60 ft.",
+          "critical" : "staggered",
+          "capacity" : "80 charges",
+          "usage" : 4,
+          "bulk" : 2,
+          "special" : null,
+          "_description" : "Zero rifles have long, bulky barrels and tend to be very front-heavy. A heavy tank over the barrel stores the rifle’s coolant supply, contributing most of its bulk."
+        },
+
+        "zero rifle, avalanche-class" : {
+          "hands" : 2,
+          "type" : "cryo",
+          "level" : 18,
+          "price" : 410200,
+          "damage" : "7d8 C",
+          "range" : "60 ft.",
+          "critical" : "staggered",
+          "capacity" : "100 charges",
+          "usage" : 5,
           "bulk" : 2,
           "special" : null,
           "_description" : "Zero rifles have long, bulky barrels and tend to be very front-heavy. A heavy tank over the barrel stores the rifle’s coolant supply, contributing most of its bulk."
@@ -1671,6 +1989,96 @@
           "critical" : "burn 1d6",
           "capacity" : "20 charges",
           "usage" : 1,
+          "bulk" : 1,
+          "special" : null,
+          "_description" : "With its snub, squared barrel and internal reinforcements, a laser rifle is sturdy and dependable."
+        },
+
+        "autobeam rifle, tactical" : {
+          "hands" : 2,
+          "type" : "laser",
+          "level" : 11,
+          "price" : 26900,
+          "damage" : "5d4 F",
+          "range" : "60 ft.",
+          "critical" : "burn 2d4",
+          "capacity" : "40 charges",
+          "usage" : 4,
+          "bulk" : 2,
+          "special" : "automatic",
+          "_description" : "Autobeam rifles can fire in automatic Mode, spraying a cone of lasers from the barrel."
+        },
+
+        "laser rifle, perihelion" : {
+          "hands" : 2,
+          "type" : "laser",
+          "level" : 13,
+          "price" : 53800,
+          "damage" : "5d6 F",
+          "range" : "130 ft.",
+          "critical" : "burn 2d6",
+          "capacity" : "100 charges",
+          "usage" : 2,
+          "bulk" : 1,
+          "special" : null,
+          "_description" : "With its snub, squared barrel and internal reinforcements, a laser rifle is sturdy and dependable."
+        },
+
+        "autobeam rifle, advanced" : {
+          "hands" : 2,
+          "type" : "laser",
+          "level" : 15,
+          "price" : 95500,
+          "damage" : "7d4 F",
+          "range" : "60 ft.",
+          "critical" : "burn 3d4",
+          "capacity" : "100 charges",
+          "usage" : 10,
+          "bulk" : 2,
+          "special" : "automatic",
+          "_description" : "Autobeam rifles can fire in automatic Mode, spraying a cone of lasers from the barrel."
+        },
+
+        "laser rifle, parallax" : {
+          "hands" : 2,
+          "type" : "laser",
+          "level" : 17,
+          "price" : 248000,
+          "damage" : "8d6 F",
+          "range" : "150 ft.",
+          "critical" : "burn 4d6",
+          "capacity" : "100 charges",
+          "usage" : 2,
+          "bulk" : 1,
+          "special" : null,
+          "_description" : "With its snub, squared barrel and internal reinforcements, a laser rifle is sturdy and dependable."
+        },
+
+        "autobeam rifle, elite" : {
+          "hands" : 2,
+          "type" : "laser",
+          "level" : 19,
+          "price" : 548100,
+          "damage" : "12d4 F",
+          "range" : "60 ft.",
+          "critical" : "burn 5d4",
+          "capacity" : "100 charges",
+          "usage" : 5,
+          "bulk" : 2,
+          "special" : "automatic",
+          "_description" : "Autobeam rifles can fire in automatic Mode, spraying a cone of lasers from the barrel."
+        },
+
+        "laser rifle, zenith" : {
+          "hands" : 2,
+          "type" : "laser",
+          "level" : 20,
+          "price" : 722000,
+          "damage" : "11d6 F",
+          "range" : "150 ft.",
+          "critical" : "burn 5d6",
+          "capacity" : "100 charges",
+          "usage" : 2,
           "bulk" : 1,
           "special" : null,
           "_description" : "With its snub, squared barrel and internal reinforcements, a laser rifle is sturdy and dependable."
