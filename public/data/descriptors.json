@@ -24,5 +24,19 @@
     "thrown" : "Ranged weapons that must be thrown and melee weapons that can be thrown as a ranged attack have the thrown special property. You apply your Strength modifier to damage rolls for thrown attacks. After you throw a weapon, it lands near your target and you must recover it if you want to attack with it again.",
     "trip" : "When you attempt a trip combat maneuver while wielding a weapon with this property, you gain a +2 bonus to your attack roll.",
     "unwieldy" : "Weapons with the unwieldy special property are large and awkward, can’t be fired without cooling down first, or are otherwise difficult to use with repeated attacks. You can’t use an unwieldy weapon as part of a full attack (or any other action in which you could make multiple attacks), you can’t attack with it more than once per round, and you can’t use it to make an attack of opportunity."
+  },
+
+  "critical" : {
+    "arc" : "The attack’s energy leaps to a second creature. This secondary target must be within 10 feet of your original target and must be the creature closest to the original target (you choose if multiple creatures are equidistant). Roll the amount of damage listed in the weapon’s arc—the secondary target takes this damage (not multiplied by the critical hit), of whatever type the weapon deals.",
+    "bleed" : "The target gains the bleeding condition.",
+    "burn" : "The target gains the burning condition.",
+    "corrode" : "The target takes corrode damage equal to the amount listed. This functions as the burning condition but deals acid damage rather than fire damage.",
+    "deafen" : "The target must succeed at a Fortitude saving throw or be deafened for 1d4 minutes.",
+    "injection" : "If the weapon is used to deliver a poison or drug of some kind, the save DC of that poison is increased by 2 when delivered on a critical hit.",
+    "knockdown" : "The target is knocked prone.",
+    "severe" : "Roll twice on Table 7–11: Wounding Weapons and choose your desired result. The target can still attempt any associated save.",
+    "staggered" : "The target must succeed at a Fortitude save or be staggered for 1 round.",
+    "stunned" : "The target is stunned for 1 round.",
+    "wound" : "Roll on Table 7–11: Wounding Weapons. The target must succeed at a saving throw of the listed type (if any) or suffer the listed effect. If the creature lacks a specified location, use the general location."
   }
 }

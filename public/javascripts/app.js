@@ -32,6 +32,10 @@ function getFirstItem(categoryOrSub, isSubCategory) {
     return categoryOrSub[ Object.keys(categoryOrSub)[0] ];
 }
 
+function getParentMethod(me, method) {
+    return me.$parent.$options.methods[method].bind(me.$parent);
+}
+
 function snapHeight() {
     const header = $('header');
     $('.content').offset({ top: header.height() });
@@ -92,6 +96,25 @@ class ArmoryService {
     }
 }
 
+const navigationDropdown = {
+    props: ['category', 'subcategories'],
+    data: function() {
+        return { mutate: mutators, setCategory: getParentMethod( this, 'setCategory' ) };
+    },
+    template:       "<li class=\"dropdown\">\n" +
+    "                  <a href=\"#\" v-on:click=\"setCategory(category)\">" +
+    "                       {{ mutate.capitalize( category ) }}" +
+    "                  </a>\n" +
+    "                  <i class=\"fa fa-caret-down\" v-if='subcategories'></i>\n" +
+    "                  <ul class=\"menu vertical\" v-if='subcategories'>\n" +
+    "                    <li><a v-on:click=\"setCategory(category)\">All {{ category }}</a></li>" +
+    "                    <li v-for=\"subcategory in subcategories.split(',')\">" +
+    "                       <a v-on:click=\"setCategory(subcategory)\">{{ mutate.capitalize( subcategory ) }}</a>" +
+    "                    </li>\n" +
+    "                  </ul>\n" +
+    "                </li>"
+};
+
 
 const App = new Vue({
     el: "#app-body",
@@ -149,7 +172,12 @@ const App = new Vue({
             return item && item.type && item.type.split(',')[0];
         }
 
+    },
+
+    components: {
+        'nav-dropdown' : navigationDropdown
     }
+
 });
 
 const ArmoryLoaderService = new Vue({
@@ -189,25 +217,6 @@ const ArmoryLoaderService = new Vue({
 });
 
 
-Vue.component('nav-dropdown', {
-    props: ['category', 'subcategories'],
-    data: function() {
-        return { mutate: mutators, setCategory: App.setCategory };
-    },
-    template:       "<li class=\"dropdown\">\n" +
-    "                  <a href=\"#\" v-on:click=\"setCategory(category)\">" +
-    "                       {{ mutate.capitalize( category ) }}" +
-    "                  </a>\n" +
-    "                  <i class=\"fa fa-caret-down\" v-if='subcategories'></i>\n" +
-    "                  <ul class=\"menu vertical\" v-if='subcategories'>\n" +
-    "                    <li><a v-on:click=\"setCategory(category)\">All {{ category }}</a></li>" +
-    "                    <li v-for=\"subcategory in subcategories.split(',')\">" +
-    "                       <a v-on:click=\"setCategory(subcategory)\">{{ mutate.capitalize( subcategory ) }}</a>" +
-    "                    </li>\n" +
-    "                  </ul>\n" +
-    "                </li>"
-});
-
 Vue.component('item-description', {
     props: ['item'],
     data: function() {
@@ -223,12 +232,13 @@ Vue.component('item-description', {
         }
 
         const criticalType = this.item.critical && this.item.critical.split(' ')[0];
-        if (criticalDescriptions[ criticalType ]) {
+        if (descriptorConstants.critical[ criticalType ]) {
             descriptors.push({
-                header: mutators.capitalize( this.item.critical ),
-                text: criticalDescriptions[ criticalType ]
+                header: "Critical: " + mutators.capitalize( this.item.critical ),
+                text: descriptorConstants.critical[ criticalType ]
             });
         }
+
 
         if (this.item.special) {
             const specials = this.item.special.split(',');
