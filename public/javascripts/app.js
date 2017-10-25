@@ -17,15 +17,6 @@ const mutators = {
     }
 };
 
-const criticalDescriptions = {
-    'burn' : "The target gains the burning condition",
-    'staggered' : "The target gains the staggered condition"
-};
-
-const specialDescriptions = {
-    'analog' : "This item requires neither technology nor magic to function"
-};
-
 function getFirstItem(categoryOrSub, isSubCategory) {
     if (!categoryOrSub) return;
     if (!isSubCategory) categoryOrSub = categoryOrSub[ Object.keys(categoryOrSub)[0] ];

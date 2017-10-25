@@ -44,7 +44,7 @@
             </div>
           </div>
 
-          <div class="nav-sub" v-if="filter.category">
+          <div class="nav-sub" v-if="filter.category && armory.getSubcategories( filter ).length > 1">
             <div class="top-bar-left">
               <ul class="menu">
                 <li v-for="subcategory in armory.getSubcategories( filter )">
