@@ -2269,6 +2269,34 @@
           "special": "line, unwieldy",
           "_description" : "Zero cannons project a freezing line straight out from a generator, affecting any targets within the line. A pair of tanks in the cannon’s heavy stock contain chemical coolants that produce a violent endothermic reaction when mixed in the insulated barrel."
         },
+        "zero cannon, advanced": {
+          "hands": 2,
+          "type": "cryo",
+          "level": 14,
+          "price": 81400,
+          "damage": "5d8 C",
+          "range": "60 ft.",
+          "critical": "staggered",
+          "capacity": "100 charges",
+          "usage": 5,
+          "bulk": 2,
+          "special": "line, unwieldy",
+          "_description" : "Zero cannons project a freezing line straight out from a generator, affecting any targets within the line. A pair of tanks in the cannon’s heavy stock contain chemical coolants that produce a violent endothermic reaction when mixed in the insulated barrel."
+        },
+        "zero cannon, elite": {
+          "hands": 2,
+          "type": "cryo",
+          "level": 18,
+          "price": 412800,
+          "damage": "8d8 C",
+          "range": "80 ft.",
+          "critical": "staggered",
+          "capacity": "100 charges",
+          "usage": 5,
+          "bulk": 2,
+          "special": "line, unwieldy",
+          "_description" : "Zero cannons project a freezing line straight out from a generator, affecting any targets within the line. A pair of tanks in the cannon’s heavy stock contain chemical coolants that produce a violent endothermic reaction when mixed in the insulated barrel."
+        },
         "flamethrower, ifrit-class": {
           "hands": 2,
           "type": "flame",
@@ -2293,6 +2321,48 @@
           "critical": "burn 2d6",
           "capacity": "20 petrol",
           "usage": 5,
+          "bulk": 2,
+          "special": "analog, blast, unwieldy",
+          "_description" : "These portable flamethrowers consist of a heavy rifle-like design with an oversized petrol tank integrated into the weapon’s stock."
+        },
+        "flamethrower, hellhound-class": {
+          "hands": 2,
+          "type": "flame",
+          "level": 12,
+          "price": 35100,
+          "damage": "4d6 F",
+          "range": "30 ft.",
+          "critical": "burn 4d6",
+          "capacity": "40 petrol",
+          "usage": 8,
+          "bulk": 2,
+          "special": "analog, blast, unwieldy",
+          "_description" : "These portable flamethrowers consist of a heavy rifle-like design with an oversized petrol tank integrated into the weapon’s stock."
+        },
+        "flamethrower, firedrake-class": {
+          "hands": 2,
+          "type": "flame",
+          "level": 15,
+          "price": 128000,
+          "damage": "6d6 F",
+          "range": "30 ft.",
+          "critical": "burn 6d6",
+          "capacity": "40 petrol",
+          "usage": 10,
+          "bulk": 2,
+          "special": "analog, blast, unwieldy",
+          "_description" : "These portable flamethrowers consist of a heavy rifle-like design with an oversized petrol tank integrated into the weapon’s stock."
+        },
+        "flamethrower, phoenix-class": {
+          "hands": 2,
+          "type": "flame",
+          "level": 18,
+          "price": 367500,
+          "damage": "9d6 F",
+          "range": "30 ft.",
+          "critical": "burn 9d6",
+          "capacity": "40 petrol",
+          "usage": 10,
           "bulk": 2,
           "special": "analog, blast, unwieldy",
           "_description" : "These portable flamethrowers consist of a heavy rifle-like design with an oversized petrol tank integrated into the weapon’s stock."
@@ -2343,6 +2413,96 @@
           "_description" : "Artillery lasers are heavy weapons designed to be effective against hardened targets such as Vehicles and enemy bunkers."
         },
 
+        "autobeam artillery, tactical" : {
+          "hands": 2,
+          "type" : "laser",
+          "level" : 10,
+          "price" : 19400,
+          "damage" : "2d8 F",
+          "range" : "120 ft.",
+          "critical" : "burn 1d8",
+          "capacity" : "40 charges",
+          "usage" : 1,
+          "bulk" : 2,
+          "special" : "automatic",
+          "_description" : "Though it lacks the penetrating power of an artillery laser, an autobeam artillery delivers sustained laser fire. It uses a rotating array of lenses to prevent the intense heat of sustained fire from melting the weapon’s housing."
+        },
+
+        "artillery laser, perihelion": {
+          "hands": 2,
+          "type" : "laser",
+          "level" : 13,
+          "price" : 53800,
+          "damage" : "4d8 F",
+          "range" : "130 ft.",
+          "critical" : "burn 2d6",
+          "capacity" : "100 charges",
+          "usage" : 5,
+          "bulk" : 3,
+          "special" : "penetrating",
+          "_description" : "Artillery lasers are heavy weapons designed to be effective against hardened targets such as Vehicles and enemy bunkers."
+        },
+
+        "autobeam artillery, advanced" : {
+          "hands": 2,
+          "type" : "laser",
+          "level" : 16,
+          "price" : 145700,
+          "damage" : "4d8 F",
+          "range" : "120 ft.",
+          "critical" : "burn 2d8",
+          "capacity" : "40 charges",
+          "usage" : 1,
+          "bulk" : 2,
+          "special" : "automatic",
+          "_description" : "Though it lacks the penetrating power of an artillery laser, an autobeam artillery delivers sustained laser fire. It uses a rotating array of lenses to prevent the intense heat of sustained fire from melting the weapon’s housing."
+        },
+
+        "artillery laser, parallax": {
+          "hands": 2,
+          "type" : "laser",
+          "level" : 17,
+          "price" : 248000,
+          "damage" : "7d8 F",
+          "range" : "150 ft.",
+          "critical" : "burn 4d6",
+          "capacity" : "100 charges",
+          "usage" : 5,
+          "bulk" : 3,
+          "special" : "penetrating",
+          "_description" : "Artillery lasers are heavy weapons designed to be effective against hardened targets such as Vehicles and enemy bunkers."
+        },
+
+        "autobeam artillery, elite" : {
+          "hands": 2,
+          "type" : "laser",
+          "level" : 19,
+          "price" : 543300,
+          "damage" : "6d8 F",
+          "range" : "120 ft.",
+          "critical" : "burn 2d10",
+          "capacity" : "40 charges",
+          "usage" : 1,
+          "bulk" : 2,
+          "special" : "automatic",
+          "_description" : "Though it lacks the penetrating power of an artillery laser, an autobeam artillery delivers sustained laser fire. It uses a rotating array of lenses to prevent the intense heat of sustained fire from melting the weapon’s housing."
+        },
+
+        "artillery laser, zenith": {
+          "hands": 2,
+          "type" : "laser",
+          "level" : 20,
+          "price" : 722000,
+          "damage" : "9d8 F",
+          "range" : "180 ft.",
+          "critical" : "burn 5d6",
+          "capacity" : "100 charges",
+          "usage" : 5,
+          "bulk" : 3,
+          "special" : "penetrating",
+          "_description" : "Artillery lasers are heavy weapons designed to be effective against hardened targets such as Vehicles and enemy bunkers."
+        },
+
         "plasma cannon, red star" : {
           "hands" : 2,
           "type" : "plasma",
@@ -2355,6 +2515,48 @@
           "usage" : 5,
           "bulk" : 2,
           "special" : "explode (5 ft.), unwieldy"
+        },
+
+        "plasma cannon, yellow star" : {
+          "hands" : 2,
+          "type" : "plasma",
+          "level" : 14,
+          "price" : 62800,
+          "damage" : "4d10 E&F",
+          "range" : "100 ft.",
+          "critical" : "burn 2d8",
+          "capacity" : "100 charges",
+          "usage" : 5,
+          "bulk" : 2,
+          "special" : "explode (5 ft.), unwieldy"
+        },
+
+        "plasma cannon, white star" : {
+          "hands" : 2,
+          "type" : "plasma",
+          "level" : 16,
+          "price" : 189200,
+          "damage" : "6d10 E&F",
+          "range" : "100 ft.",
+          "critical" : "burn 3d8",
+          "capacity" : "100 charges",
+          "usage" : 5,
+          "bulk" : 2,
+          "special" : "explode (5 ft.), unwieldy"
+        },
+
+        "plasma cannon, blue star" : {
+          "hands" : 2,
+          "type" : "plasma",
+          "level" : 20,
+          "price" : 950000,
+          "damage" : "8d10 E&F",
+          "range" : "100 ft.",
+          "critical" : "burn 4d8",
+          "capacity" : "100 charges",
+          "usage" : 10,
+          "bulk" : 2,
+          "special" : "explode (10 ft.), unwieldy"
         },
 
         "reaction cannon, light" : {
@@ -2441,6 +2643,188 @@
           "special" : "automatic"
         },
 
+        "reaction cannon, heavy" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 10,
+          "price" : 16750,
+          "damage" : "3d10 P",
+          "range" : "100 ft.",
+          "critical" : null,
+          "capacity" : "6 rounds",
+          "usage" : 1,
+          "bulk" : 3,
+          "special" : "penetrating"
+        },
+
+        "stellar cannon, light" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 10,
+          "price" : 19200,
+          "damage" : "2d12 P",
+          "range" : "30 ft.",
+          "critical" : "wound",
+          "capacity" : "18 shells",
+          "usage" : 6,
+          "bulk" : 2,
+          "special" : "blast"
+        },
+
+        "crossbolter, advanced" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 11,
+          "price" : 21900,
+          "damage" : "4d10 P",
+          "range" : "70 ft.",
+          "critical" : null,
+          "capacity" : "12 arrows",
+          "usage" : 4,
+          "bulk" : 2,
+          "special" : "unwieldy"
+        },
+
+        "machine gun, medium" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 11,
+          "price" : 23100,
+          "damage" : "3d10 P",
+          "range" : "60 ft.",
+          "critical" : null,
+          "capacity" : "60 rounds",
+          "usage" : 2,
+          "bulk" : 2,
+          "special" : "analog, automatic"
+        },
+
+        "x-gen gun, elite" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 13,
+          "price" : 53700,
+          "damage" : "4d12 P",
+          "range" : "120 ft.",
+          "critical" : null,
+          "capacity" : "100 rounds",
+          "usage" : 2,
+          "bulk" : 2,
+          "special" : "automatic"
+        },
+
+        "crossbolter, elite" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 14,
+          "price" : 71400,
+          "damage" : "6d10 P",
+          "range" : "60 ft.",
+          "critical" : null,
+          "capacity" : "30 arrows",
+          "usage" : 6,
+          "bulk" : 2,
+          "special" : "unwieldy"
+        },
+
+        "reaction cannon, advanced" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 14,
+          "price" : 73000,
+          "damage" : "6d10 P",
+          "range" : "100 ft.",
+          "critical" : null,
+          "capacity" : "6 rounds",
+          "usage" : 1,
+          "bulk" : 3,
+          "special" : "penetrating"
+        },
+
+        "stellar cannon, heavy" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 15,
+          "price" : 122800,
+          "damage" : "4d12 P",
+          "range" : "30 ft.",
+          "critical" : "wound",
+          "capacity" : "32 shells",
+          "usage" : 8,
+          "bulk" : 2,
+          "special" : "blast"
+        },
+
+        "machine gun, heavy" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 17,
+          "price" : 220300,
+          "damage" : "7d10 P",
+          "range" : "120 ft.",
+          "critical" : null,
+          "capacity" : "100 rounds",
+          "usage" : 4,
+          "bulk" : 2,
+          "special" : "analog, automatic"
+        },
+
+        "reaction cannon, elite" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 17,
+          "price" : 244000,
+          "damage" : "8d10 P",
+          "range" : "100 ft.",
+          "critical" : null,
+          "capacity" : "6 rounds",
+          "usage" : 1,
+          "bulk" : 3,
+          "special" : "penetrating"
+        },
+
+        "crossbolter, paragon" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 18,
+          "price" : 327200,
+          "damage" : "10d10 P",
+          "range" : "60 ft.",
+          "critical" : null,
+          "capacity" : "40 arrows",
+          "usage" : 8,
+          "bulk" : 2,
+          "special" : "unwieldy"
+        },
+
+        "reaction cannon, paragon" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 20,
+          "price" : 810000,
+          "damage" : "12d10 P",
+          "range" : "100 ft.",
+          "critical" : null,
+          "capacity" : "6 rounds",
+          "usage" : 1,
+          "bulk" : 3,
+          "special" : "penetrating"
+        },
+
+        "x-gen gun, paragon" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 20,
+          "price" : 826000,
+          "damage" : "9d12 P",
+          "range" : "120 ft.",
+          "critical" : null,
+          "capacity" : "100 rounds",
+          "usage" : 2,
+          "bulk" : 2,
+          "special" : "automatic"
+        },
+
         "shock caster, static" : {
           "hands" : 2,
           "type" : "shock",
@@ -2453,6 +2837,48 @@
           "usage" : 2,
           "bulk" : 2,
           "special" : "explode (10 ft.), unwieldy"
+        },
+
+        "shock caster, aurora" : {
+          "hands" : 2,
+          "type" : "shock",
+          "level" : 10,
+          "price" : 19100,
+          "damage" : "2d12 E",
+          "range" : "40 ft.",
+          "critical" : null,
+          "capacity" : "40 charges",
+          "usage" : 4,
+          "bulk" : 2,
+          "special" : "explode (15 ft.), unwieldy"
+        },
+
+        "shock caster, storm" : {
+          "hands" : 2,
+          "type" : "shock",
+          "level" : 16,
+          "price" : 164800,
+          "damage" : "5d12 E",
+          "range" : "40 ft.",
+          "critical" : null,
+          "capacity" : "100 charges",
+          "usage" : 10,
+          "bulk" : 2,
+          "special" : "explode (20 ft.), unwieldy"
+        },
+
+        "shock caster, tempest" : {
+          "hands" : 2,
+          "type" : "shock",
+          "level" : 20,
+          "price" : 735000,
+          "damage" : "7d12 E",
+          "range" : "40 ft.",
+          "critical" : null,
+          "capacity" : "100 charges",
+          "usage" : 10,
+          "bulk" : 2,
+          "special" : "explode (20 ft.), unwieldy"
         },
 
         "screamer, thunderstrike" : {
@@ -2479,6 +2905,20 @@
           "critical" : "deafen",
           "capacity" : "80 charges",
           "usage" : 8,
+          "bulk" : 2,
+          "special" : "blast, unwieldy"
+        },
+
+        "screamer, HFD" : {
+          "hands" : 2,
+          "type" : "sonic",
+          "level" : 15,
+          "price" : 107500,
+          "damage" : "4d10 So",
+          "range" : "60 ft.",
+          "critical" : "deafen",
+          "capacity" : "100 charges",
+          "usage" : 10,
           "bulk" : 2,
           "special" : "blast, unwieldy"
         },
