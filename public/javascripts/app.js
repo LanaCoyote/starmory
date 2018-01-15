@@ -40,6 +40,15 @@ function snapColumns() {
     });
 }
 
+const damageParser = /(\d+)d(\d+)\s(\w)/;
+function parseDamageString( damage ) {
+    if ( !damage ) return null;
+
+    let parsed = damageParser.exec( damage );
+    if ( !parsed ) return { diceCount: 1, diceValue: 1, type: '0' };
+    return { diceCount: parsed[1], diceValue: parsed[2], type: parsed[3] };
+}
+
 class ArmoryService {
     constructor (data) {
         this.data = data;
@@ -82,8 +91,61 @@ class ArmoryService {
                 if (!nameFilter) return true;
                 return nameFilter.test( item.name );
             })
-            .orderBy( ( filter.sort || this.defaultSort ).concat( this.extendedSort ), filter.order )
-            .value() || [];
+            // .orderBy( [this.getSortAlgorithm( filter.sort )], filter.order )
+            .value()
+            .sort( this.getSortAlgorithm( filter.sort, filter.order ) ) || [];
+    }
+
+    getSortAlgorithm ( field, order ) {
+        function decorate( fn ) {
+            return function( a, b ) {
+                if ( !a ) return order === 'asc' ? -1 : 1;
+                if ( !b ) return order === 'asc' ? 1 : -1;
+                return order === 'asc' ? fn( a, b ) : fn( b, a );
+            }
+        }
+
+        if ( !field ) {
+            return decorate( function ( a, b ) {
+                return a['hands'] - b['hands'] ||
+                       a['type'].localeCompare( b['type'] ) ||
+                       a['level'] - b['level'] ||
+                       a['name'].localeCompare( b['name'] );
+            } );
+        } else if ( field === "damage" ) {
+            return decorate( function ( a, b ) {
+                let aDamage = parseDamageString( a['damage'] );
+                let bDamage = parseDamageString( b['damage'] );
+
+                if ( !aDamage && !bDamage ) return 0;
+                else if ( !aDamage ) return 1;
+                else if ( !bDamage ) return -1;
+
+                return ( aDamage.diceCount * aDamage.diceValue ) - ( bDamage.diceCount * bDamage.diceValue )
+                      || aDamage.diceCount - bDamage.diceCount
+                      || aDamage.type.localeCompare( bDamage.type );
+            } );
+        } else if ( field === "range" || field === "capacity" ) {
+            return decorate( function ( a, b ) {
+                if ( !a[field] && !b[field] ) return 0;
+                else if ( !a[field] ) return 1;
+                else if ( !b[field] ) return -1;
+
+                let aWords = a[field].split(' ');
+                let bWords = b[field].split(' ');
+
+                return parseInt( aWords[0] ) - parseInt( bWords[0] )
+                    || aWords.length - bWords.length
+                    || aWords.pop().localeCompare( bWords.pop() );
+            } );
+        } else {
+            return decorate( function ( a, b ) {
+                if ( typeof a[field] === 'number' && typeof b[field] === 'number' ) return a[field] - b[field];
+                else if ( !a[field] ) return 1;
+                else if ( !b[field] ) return -1;
+                else return String( a[field] ).localeCompare( String( b[field] ) );
+            });
+        }
     }
 }
 
@@ -115,7 +177,7 @@ const App = new Vue({
         loading: true,
         showHeader: true,
         search: '',
-        filter: { order: ['asc'] },
+        filter: { order: 'asc' },
         filterOpen: false,
         mutate: mutators,
         expanded: {},
@@ -124,11 +186,11 @@ const App = new Vue({
 
     methods: {
         updateSort: function( key ) {
-            if (this.filter.sort && this.filter.sort[0] === key && this.filter.order[0] === 'asc') {
-                this.filter.order = ['desc'];
+            if (this.filter.sort && this.filter.sort === key && this.filter.order === 'asc') {
+                this.filter.order = 'desc';
             } else {
-                this.filter.sort = [key];
-                this.filter.order = ['asc'];
+                this.filter.sort = key;
+                this.filter.order = 'asc';
             }
 
             this.$forceUpdate();

@@ -864,7 +864,7 @@
           "damage" : "8d8 F&P",
           "range" : "50 ft. (thrown)",
           "critical" : null,
-          "capacity" : 20,
+          "capacity" : "20 charges",
           "usage" : 2,
           "bulk": 0,
           "special" : "powered (capacity 20, usage 2), thrown (50 ft.)"
@@ -5241,7 +5241,7 @@
           "price" : 1000,
           "slots" : 1,
           "type" : "light, heavy",
-          "capacity" : 20,
+          "capacity" : "20 charges",
           "usage" : "2/action",
           "bulk" : 0,
           "special": "fly 30 ft. as part of movement",
