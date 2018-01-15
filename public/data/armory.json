@@ -2098,6 +2098,76 @@
           "special" : "line, unwieldy"
         },
 
+        "plasma rifle, yellow star" : {
+          "hands" : 2,
+          "type" : "plasma",
+          "level" : 10,
+          "price" : 16800,
+          "damage" : "2d10 E&F",
+          "range" : "40 ft.",
+          "critical" : "burn 1d8",
+          "capacity" : "40 charges",
+          "usage" : 4,
+          "bulk" : 2,
+          "special" : "line, unwieldy"
+        },
+
+        "plasma caster, white star" : {
+          "hands" : 2,
+          "type" : "plasma",
+          "level" : 13,
+          "price" : 49100,
+          "damage" : "3d10 E&F",
+          "range" : "80 ft.",
+          "critical" : "burn 1d10",
+          "capacity" : "100 charges",
+          "usage" : 5,
+          "bulk" : 2,
+          "special" : "boost 1d10"
+        },
+
+        "plasma rifle, white star" : {
+          "hands" : 2,
+          "type" : "plasma",
+          "level" : 15,
+          "price" : 126600,
+          "damage" : "4d10 E&F",
+          "range" : "60 ft.",
+          "critical" : "burn 2d8",
+          "capacity" : "40 charges",
+          "usage" : 4,
+          "bulk" : 2,
+          "special" : "line, unwieldy"
+        },
+
+        "plasma caster, blue star" : {
+          "hands" : 2,
+          "type" : "plasma",
+          "level" : 17,
+          "price" : 275000,
+          "damage" : "5d10 E&F",
+          "range" : "80 ft.",
+          "critical" : "burn 2d10",
+          "capacity" : "200 charges",
+          "usage" : 10,
+          "bulk" : 2,
+          "special" : "boost 2d10"
+        },
+
+        "plasma rifle, blue star" : {
+          "hands" : 2,
+          "type" : "plasma",
+          "level" : 20,
+          "price" : 935000,
+          "damage" : "8d10 E&F",
+          "range" : "100 ft.",
+          "critical" : "burn 4d8",
+          "capacity" : "100 charges",
+          "usage" : 10,
+          "bulk" : 2,
+          "special" : "line, unwieldy"
+        },
+
         "hunting rifle" : {
           "hands" : 2,
           "type" : "projectile",
@@ -2168,6 +2238,286 @@
           "special" : "unwieldy"
         },
 
+        "acid dart rifle, dual" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 7,
+          "price" : 6900,
+          "damage" : "2d8 A&P",
+          "range" : "90 ft.",
+          "critical" : "corrode 2d4",
+          "capacity" : "24 darts",
+          "usage" : 2,
+          "bulk" : 1,
+          "special" : "analog"
+        },
+
+        "seeker rifle, tactical" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 7,
+          "price" : 6030,
+          "damage" : "2d8 P",
+          "range" : "100 ft.",
+          "critical" : null,
+          "capacity" : "8 rounds",
+          "usage" : 1,
+          "bulk" : 1,
+          "special" : "analog"
+        },
+
+        "crossbolter, dual" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 8,
+          "price" : 8250,
+          "damage" : "2d10 P",
+          "range" : "70 ft.",
+          "critical" : null,
+          "capacity" : "4 arrows",
+          "usage" : 2,
+          "bulk" : 2,
+          "special" : "unwieldy"
+        },
+
+        "scattergun, snub" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 8,
+          "price" : 8300,
+          "damage" : "1d12 P",
+          "range" : "15 ft.",
+          "critical" : null,
+          "capacity" : "8 shells",
+          "usage" : 1,
+          "bulk" : 1,
+          "special" : "analog, blast"
+        },
+
+        "magnetar rifle, tactical" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 9,
+          "price" : 11800,
+          "damage" : "2d8 P",
+          "range" : "60 ft.",
+          "critical" : null,
+          "capacity" : "18 rounds",
+          "usage" : 1,
+          "bulk" : 2,
+          "special" : "analog, automatic"
+        },
+
+        "combat rifle" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 10,
+          "price" : 16500,
+          "damage" : "3d8 P",
+          "range" : "90 ft.",
+          "critical" : null,
+          "capacity" : "12 rounds",
+          "usage" : 1,
+          "bulk" : 1,
+          "special" : "analog"
+        },
+
+        "acid dart rifle, complex" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 12,
+          "price" : 39200,
+          "damage" : "4d8 A&P",
+          "range" : "90 ft.",
+          "critical" : "corrode 4d4",
+          "capacity" : "48 darts",
+          "usage" : 4,
+          "bulk" : 2,
+          "special" : "analog"
+        },
+
+        "scattergun, impact" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 12,
+          "price" : 30400,
+          "damage" : "2d12 P",
+          "range" : "15 ft.",
+          "critical" : null,
+          "capacity" : "12 shells",
+          "usage" : 1,
+          "bulk" : 2,
+          "special" : "analog, blast"
+        },
+
+        "gyrojet rifle, tactical" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 13,
+          "price" : 54000,
+          "damage" : "3d12 B",
+          "range" : "100 ft.",
+          "critical" : "knockdown",
+          "capacity" : "12 mini-rockets",
+          "usage" : 1,
+          "bulk" : 2,
+          "special" : "analog"
+        },
+
+        "magnetar rifle, advanced" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 13,
+          "price" : 53700,
+          "damage" : "4d8 P",
+          "range" : "60 ft.",
+          "critical" : null,
+          "capacity" : "24 rounds",
+          "usage" : 1,
+          "bulk" : 2,
+          "special" : "analog, automatic"
+        },
+
+        "seeker rifle, advanced" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 14,
+          "price" : 72300,
+          "damage" : "6d8 P",
+          "range" : "100 ft.",
+          "critical" : null,
+          "capacity" : "18 rounds",
+          "usage" : 1,
+          "bulk" : 1,
+          "special" : "analog"
+        },
+
+        "gyrojet rifle, advanced" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 15,
+          "price" : 122800,
+          "damage" : "5d12 B",
+          "range" : "120 ft.",
+          "critical" : "knockdown",
+          "capacity" : "12 mini-rockets",
+          "usage" : 1,
+          "bulk" : 2,
+          "special" : "analog"
+        },
+
+        "scattergun, vortex" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 15,
+          "price" : 91900,
+          "damage" : "3d12 P",
+          "range" : "30 ft.",
+          "critical" : null,
+          "capacity" : "12 shells",
+          "usage" : 1,
+          "bulk" : 2,
+          "special" : "analog, blast"
+        },
+
+        "magnetar rifle, elite" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 16,
+          "price" : 185100,
+          "damage" : "6d8 P",
+          "range" : "120 ft.",
+          "critical" : null,
+          "capacity" : "36 rounds",
+          "usage" : 1,
+          "bulk" : 2,
+          "special" : "analog, automatic"
+        },
+
+        "gyrojet rifle, elite" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 17,
+          "price" : 245600,
+          "damage" : "6d12 B",
+          "range" : "120 ft.",
+          "critical" : "knockdown",
+          "capacity" : "12 mini-rockets",
+          "usage" : 1,
+          "bulk" : 2,
+          "special" : "analog"
+        },
+
+        "seeker rifle, elite" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 17,
+          "price" : 242500,
+          "damage" : "9d8 P",
+          "range" : "100 ft.",
+          "critical" : null,
+          "capacity" : "18 rounds",
+          "usage" : 1,
+          "bulk" : 1,
+          "special" : "analog"
+        },
+
+        "scattergun, grapeshot" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 18,
+          "price" : 331000,
+          "damage" : "4d12 P",
+          "range" : "30 ft.",
+          "critical" : null,
+          "capacity" : "12 shells",
+          "usage" : 1,
+          "bulk" : 2,
+          "special" : "analog, blast"
+        },
+
+        "magnetar rifle, paragon" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 19,
+          "price" : 612600,
+          "damage" : "8d8 P",
+          "range" : "120 ft.",
+          "critical" : null,
+          "capacity" : "48 rounds",
+          "usage" : 1,
+          "bulk" : 2,
+          "special" : "analog, automatic"
+        },
+
+        "gyrojet rifle, paragon" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 20,
+          "price" : 723500,
+          "damage" : "8d12 B",
+          "range" : "120 ft.",
+          "critical" : "knockdown",
+          "capacity" : "12 mini-rockets",
+          "usage" : 1,
+          "bulk" : 2,
+          "special" : "analog"
+        },
+
+        "seeker rifle, paragon" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 20,
+          "price" : 809200,
+          "damage" : "12d8 P",
+          "range" : "100 ft.",
+          "critical" : null,
+          "capacity" : "24 rounds",
+          "usage" : 1,
+          "bulk" : 1,
+          "special" : "analog"
+        },
+
         "pulsecaster rifle" : {
           "hands" : 2,
           "type" : "shock",
@@ -2210,6 +2560,62 @@
           "special" : "stun"
         },
 
+        "arc emitter, advanced" : {
+          "hands" : 2,
+          "type" : "shock",
+          "level" : 9,
+          "price" : 13200,
+          "damage" : "2d4 E",
+          "range" : "30 ft.",
+          "critical" : null,
+          "capacity" : "40 charges",
+          "usage" : 10,
+          "bulk" : 1,
+          "special" : "blast, unwieldy, stun"
+        },
+
+        "arc rifle, aurora" : {
+          "hands" : 2,
+          "type" : "shock",
+          "level" : 11,
+          "price" : 24500,
+          "damage" : "2d12 E",
+          "range" : "70 ft.",
+          "critical" : "arc 2d6",
+          "capacity" : "40 charges",
+          "usage" : 1,
+          "bulk" : 2,
+          "special" : "stun"
+        },
+
+        "arc rifle, storm" : {
+          "hands" : 2,
+          "type" : "shock",
+          "level" : 16,
+          "price" : 190300,
+          "damage" : "4d12 E",
+          "range" : "80 ft.",
+          "critical" : "arc 4d6",
+          "capacity" : "80 charges",
+          "usage" : 2,
+          "bulk" : 2,
+          "special" : "stun"
+        },
+
+        "arc rifle, tempest" : {
+          "hands" : 2,
+          "type" : "shock",
+          "level" : 19,
+          "price" : 622000,
+          "damage" : "6d12 E",
+          "range" : "80 ft.",
+          "critical" : "arc 6d6",
+          "capacity" : "100 charges",
+          "usage" : 2,
+          "bulk" : 2,
+          "special" : "stun"
+        },
+
         "sonic rifle, thunderstrike" : {
           "hands" : 2,
           "type" : "sonic",
@@ -2236,6 +2642,76 @@
           "usage" : 5,
           "bulk" : 2,
           "special" : "boost 1d6"
+        },
+
+        "sonic rifle, LFD" : {
+          "hands" : 2,
+          "type" : "sonic",
+          "level" : 10,
+          "price" : 17000,
+          "damage" : "2d10 So",
+          "range" : "50 ft.",
+          "critical" : "deafen",
+          "capacity" : "40 charges",
+          "usage" : 2,
+          "bulk" : 2,
+          "special" : null
+        },
+
+        "streetsweeper, LFD" : {
+          "hands" : 2,
+          "type" : "sonic",
+          "level" : 12,
+          "price" : 39300,
+          "damage" : "3d10 So",
+          "range" : "50 ft.",
+          "critical" : "knockdown",
+          "capacity" : "40 charges",
+          "usage" : 5,
+          "bulk" : 2,
+          "special" : "boost 1d8"
+        },
+
+        "sonic rifle, HFD" : {
+          "hands" : 2,
+          "type" : "sonic",
+          "level" : 14,
+          "price" : 80200,
+          "damage" : "4d10 So",
+          "range" : "50 ft.",
+          "critical" : "deafen",
+          "capacity" : "80 charges",
+          "usage" : 4,
+          "bulk" : 2,
+          "special" : null
+        },
+
+        "streetsweeper, HFD" : {
+          "hands" : 2,
+          "type" : "sonic",
+          "level" : 16,
+          "price" : 195000,
+          "damage" : "5d10 So",
+          "range" : "50 ft.",
+          "critical" : "knockdown",
+          "capacity" : "40 charges",
+          "usage" : 5,
+          "bulk" : 2,
+          "special" : "boost 1d10"
+        },
+
+        "sonic rifle, banshee" : {
+          "hands" : 2,
+          "type" : "sonic",
+          "level" : 18,
+          "price" : 364500,
+          "damage" : "6d10 So",
+          "range" : "50 ft.",
+          "critical" : "deafen",
+          "capacity" : "100 charges",
+          "usage" : 5,
+          "bulk" : 2,
+          "special" : null
         },
 
         "needler rifle" : {
@@ -2994,6 +3470,48 @@
           "usage" : 1,
           "bulk" : 2,
           "special" : "analog, sniper (500 ft.), unwieldy"
+        },
+
+        "shirren-eye rifle, elite" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 13,
+          "price" : 54000,
+          "damage" : "4d10 P",
+          "range" : "80 ft.",
+          "critical" : null,
+          "capacity" : "6 rounds",
+          "usage" : 1,
+          "bulk" : 2,
+          "special" : "analog, sniper (750 ft.), unwieldy"
+        },
+
+        "shirren-eye rifle, paragon" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 16,
+          "price" : 147200,
+          "damage" : "6d10 P",
+          "range" : "80 ft.",
+          "critical" : null,
+          "capacity" : "6 rounds",
+          "usage" : 1,
+          "bulk" : 1,
+          "special" : "analog, sniper (1000 ft.), unwieldy"
+        },
+
+        "shirren-eye rifle, warpshot" : {
+          "hands" : 2,
+          "type" : "projectile",
+          "level" : 20,
+          "price" : 740800,
+          "damage" : "10d10 P",
+          "range" : "80 ft.",
+          "critical" : null,
+          "capacity" : "4 rounds",
+          "usage" : 1,
+          "bulk" : 1,
+          "special" : "analog, sniper (1000 ft.), unwieldy"
         }
 
       },
@@ -3118,7 +3636,413 @@
           "bulk" : -1,
           "special" : "explode (1d10 So, deafened 1d4 minutes, 15 ft.)",
           "_description" : "When detonated, a screamer grenade releases a piercing shriek of sonic energy."
+        },
+
+        "shock grenade II" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 4,
+          "price" : 650,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (1d12 E, 15 ft.)",
+          "_description" : "A shock grenade releases a pulse of electrical energy on impact."
+        },
+
+        "stickybomb grenade II" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 4,
+          "price" : 675,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (entangled 2d4 rounds, 15 ft.)",
+          "_description" : "A stickybomb grenade detonates with a splash of adhesive resin."
+        },
+
+        "cryo grenade I" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 6,
+          "price" : 1220,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (1d8 C, staggered, 10 ft.)",
+          "_description" : "Cryo grenades release a blast of supercooled chemicals on impact, which immediately coalesce into freezing particles."
+        },
+
+        "flash grenade II" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 6,
+          "price" : 1350,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (blinded 1d4 rounds, 5 ft.)",
+          "_description" : "When detonated, a flash grenade releases a pulse of intense radiance."
+        },
+
+        "incendiary grenade II" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 6,
+          "price" : 1040,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (2d6 F, burn 1d6, 10 ft.)",
+          "_description" : "Incendiary grenades detonate in a spray of superheated plasma."
+        },
+
+        "frag grenade III" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 8,
+          "price" : 2560,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (4d6 P, 15 ft.)",
+          "_description" : "A fragmentary, or frag, grenade explodes in a cloud of shrapnel."
+        },
+
+        "incendiary grenade III" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 8,
+          "price" : 2800,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (3d6 F, burn 1d6, 10 ft.)",
+          "_description" : "Incendiary grenades detonate in a spray of superheated plasma."
+        },
+
+        "screamer grenade II" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 8,
+          "price" : 2720,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (2d10 So, deafened 1d4 minutes, 20 ft.)",
+          "_description" : "When detonated, a screamer grenade releases a piercing shriek of sonic energy."
+        },
+
+        "cryo grenade II" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 10,
+          "price" : 5000,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (2d8 C, staggered, 15 ft.)",
+          "_description" : "Cryo grenades release a blast of supercooled chemicals on impact, which immediately coalesce into freezing particles."
+        },
+
+        "frag grenade IV" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 10,
+          "price" : 5750,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (6d6 P, 15 ft.)",
+          "_description" : "A fragmentary, or frag, grenade explodes in a cloud of shrapnel."
+        },
+
+        "shock grenade III" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 10,
+          "price" : 5380,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (3d12 E, 15 ft.)",
+          "_description" : "A shock grenade releases a pulse of electrical energy on impact."
+        },
+
+        "stickybomb grenade III" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 10,
+          "price" : 5410,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (entangled 2d4 rounds, 20 ft.)",
+          "_description" : "A stickybomb grenade detonates with a splash of adhesive resin."
+        },
+
+        "flash grenade III" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 12,
+          "price" : 10400,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (blinded 1d6 rounds, 15 ft.)",
+          "_description" : "When detonated, a flash grenade releases a pulse of intense radiance."
+        },
+
+        "incendiary grenade IV" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 12,
+          "price" : 9380,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (5d6 F, burn 3d6, 15 ft.)",
+          "_description" : "Incendiary grenades detonate in a spray of superheated plasma."
+        },
+
+        "screamer grenade III" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 12,
+          "price" : 11300,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (4d10 So, deafened 1d4 minutes, 25 ft.)",
+          "_description" : "When detonated, a screamer grenade releases a piercing shriek of sonic energy."
+        },
+
+        "cryo grenade III" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 14,
+          "price" : 21100,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (4d8 C, staggered, 20 ft.)",
+          "_description" : "Cryo grenades release a blast of supercooled chemicals on impact, which immediately coalesce into freezing particles."
+        },
+
+        "frag grenade V" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 14,
+          "price" : 18750,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (10d6 P, 15 ft.)",
+          "_description" : "A fragmentary, or frag, grenade explodes in a cloud of shrapnel."
+        },
+
+        "shock grenade IV" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 14,
+          "price" : 23600,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (6d12 E, 15 ft.)",
+          "_description" : "A shock grenade releases a pulse of electrical energy on impact."
+        },
+
+        "flash grenade IV" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 16,
+          "price" : 53000,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (blinded 1d8 rounds, 20 ft.)",
+          "_description" : "When detonated, a flash grenade releases a pulse of intense radiance."
+        },
+
+        "frag grenade VI" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 16,
+          "price" : 44600,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (12d6 P, 15 ft.)",
+          "_description" : "A fragmentary, or frag, grenade explodes in a cloud of shrapnel."
+        },
+
+        "incendiary grenade V" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 16,
+          "price" : 44000,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (10d6 F, burn 5d6, 15 ft.)",
+          "_description" : "Incendiary grenades detonate in a spray of superheated plasma."
+        },
+
+        "screamer grenade IV" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 16,
+          "price" : 44000,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (7d10 So, deafened 1d4 minutes, 30 ft.)",
+          "_description" : "When detonated, a screamer grenade releases a piercing shriek of sonic energy."
+        },
+
+        "cryo grenade IV" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 18,
+          "price" : 108500,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (6d8 C, staggered, 20 ft.)",
+          "_description" : "Cryo grenades release a blast of supercooled chemicals on impact, which immediately coalesce into freezing particles."
+        },
+
+        "frag grenade VII" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 18,
+          "price" : 96900,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (16d6 P, 15 ft.)",
+          "_description" : "A fragmentary, or frag, grenade explodes in a cloud of shrapnel."
+        },
+
+        "incendiary grenade VI" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 18,
+          "price" : 108800,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (12d6 F, burn 6d6, 15 ft.)",
+          "_description" : "Incendiary grenades detonate in a spray of superheated plasma."
+        },
+
+        "frag grenade VIII" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 20,
+          "price" : 216000,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (20d6 P, 15 ft.)",
+          "_description" : "A fragmentary, or frag, grenade explodes in a cloud of shrapnel."
+        },
+
+        "shock grenade V" : {
+          "hands" : 1,
+          "type" : "grenade",
+          "level" : 20,
+          "price" : 110000,
+          "damage" : null,
+          "range" : "20 ft. (thrown)",
+          "critical" : null,
+          "capacity" : "drawn",
+          "usage" : null,
+          "bulk" : -1,
+          "special" : "explode (9d12 E, 15 ft.)",
+          "_description" : "A shock grenade releases a pulse of electrical energy on impact."
         }
+
       },
 
       "special weapons" : {
@@ -3335,6 +4259,26 @@
           "_description" : "The explosive tip of the arrow detonates on impact. A grenade arrow can be made using any handheld grenade. The miniaturized technology incorporated into the arrow increases its price substantially over an equivalent grenade."
         },
 
+        "grenade arrow III" : {
+          "type" : "uncategorized",
+          "level" : 15,
+          "price" : 32050,
+          "charges/cartridges" : 1,
+          "bulk" : -1,
+          "special" : "as any 10th- or lower-level grenade",
+          "_description" : "The explosive tip of the arrow detonates on impact. A grenade arrow can be made using any handheld grenade. The miniaturized technology incorporated into the arrow increases its price substantially over an equivalent grenade."
+        },
+
+        "grenade arrow IV" : {
+          "type" : "uncategorized",
+          "level" : 20,
+          "price" : 245000,
+          "charges/cartridges" : 1,
+          "bulk" : -1,
+          "special" : "as any 15th- or lower-level grenade",
+          "_description" : "The explosive tip of the arrow detonates on impact. A grenade arrow can be made using any handheld grenade. The miniaturized technology incorporated into the arrow increases its price substantially over an equivalent grenade."
+        },
+
         "tactical missile" : {
           "type" : "explosive",
           "level" : 10,
@@ -3342,6 +4286,16 @@
           "charges/cartridges" : 1,
           "bulk" : 1,
           "special" : "explode (6d8 B&P, 30 ft.)",
+          "_description" : "Missiles are heavy, snub-nosed munitions with devastating explosive power. A missile’s damage when fired from a missile launcher (such as an IMDS missile launcher) is listed in its entry."
+        },
+
+        "advanced missile" : {
+          "type" : "explosive",
+          "level" : 13,
+          "price" : 14600,
+          "charges/cartridges" : 1,
+          "bulk" : 1,
+          "special" : "explode (13d8 B&P, 30 ft.)",
           "_description" : "Missiles are heavy, snub-nosed munitions with devastating explosive power. A missile’s damage when fired from a missile launcher (such as an IMDS missile launcher) is listed in its entry."
         }
 
