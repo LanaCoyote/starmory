@@ -66,7 +66,7 @@ function decorateSortFunction( fn, order ) {
 }
 
 function defaultSortAlgorithm( a, b ) {
-    return a['type'].localeCompare( b['type'] ) ||  // compare type
+    return ( !!a['type'] && a['type'].localeCompare( b['type'] ) ) ||  // compare type
            a['level'] - b['level'] ||               // compare level
            a['name'].localeCompare( b['name'] );    // finally, compare name
 }
@@ -112,11 +112,11 @@ class ArmoryService {
                 return nameFilter.test( item.name );
             })
             .value()
-            .sort( this.getSortAlgorithm( filter.sort, filter.order ) ) || [];
+            .sort( this.getSortAlgorithm( filter.sort, filter.order, filter.category ) ) || [];
     }
 
-    getSortAlgorithm ( field, order ) {
-        if ( !field ) field = 'hands';
+    getSortAlgorithm ( field, order, category ) {
+        if ( !field ) field = { weapons: 'hands', armor: 'type', augmentations: 'type' }[ category ] || 'level';
         return decorateSortFunction((function() {   // IIFE to automatically decorate the result of the if/else block
             if ( field === "damage" ) {
                 return function ( a, b ) {                                  // damage sort order
