@@ -50,17 +50,17 @@ function parseDamageString( damage ) {
 }
 
 function decorateSortFunction( fn, order ) {
-    if ( order === 'asc' ) { // evaluate once at sort time
-        return function( a, b ) {
-            if ( !a ) return -1;
-            if ( !b ) return 1;
-            return fn( a, b ) || defaultSortAlgorithm( a, b );
-        }
-    } else {
+    if ( order === 'desc' ) { // evaluate once at sort time
         return function( a, b ) {
             if ( !a ) return 1;
             if ( !b ) return -1;
             return fn( b, a ) || defaultSortAlgorithm( b, a );
+        }
+    } else {
+        return function( a, b ) {
+            if ( !a ) return -1;
+            if ( !b ) return 1;
+            return fn( a, b ) || defaultSortAlgorithm( a, b );
         }
     }
 }
@@ -116,12 +116,9 @@ class ArmoryService {
     }
 
     getSortAlgorithm ( field, order ) {
+        if ( !field ) field = 'hands';
         return decorateSortFunction((function() {   // IIFE to automatically decorate the result of the if/else block
-            if ( !field ) {
-                return function( a, b ) {
-                    return b['hands'] - a['hands'];
-                }
-            } else if ( field === "damage" ) {
+            if ( field === "damage" ) {
                 return function ( a, b ) {                                  // damage sort order
                     let aDamage = parseDamageString( a['damage'] );
                     let bDamage = parseDamageString( b['damage'] );
