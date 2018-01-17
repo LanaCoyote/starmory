@@ -12,7 +12,7 @@ const armoryLoadPromise = armory.loadMultipleParts({
     "armor":                      "armory/armor.json",
     "armor upgrades":             "armory/armor_upgrades.json",
     "augmentations":              "armory/augmentations.json"
-}).then(() => armoryString = armory.toString());
+}).then(() => armoryString = armory.toMinifiedString());
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
