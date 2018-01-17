@@ -49,11 +49,31 @@ function parseDamageString( damage ) {
     return { diceCount: parsed[1], diceValue: parsed[2], type: parsed[3] };
 }
 
+function decorateSortFunction( fn, order ) {
+    if ( order === 'asc' ) { // evaluate once at sort time
+        return function( a, b ) {
+            if ( !a ) return -1;
+            if ( !b ) return 1;
+            return fn( a, b ) || defaultSortAlgorithm( a, b );
+        }
+    } else {
+        return function( a, b ) {
+            if ( !a ) return 1;
+            if ( !b ) return -1;
+            return fn( b, a ) || defaultSortAlgorithm( a, b );
+        }
+    }
+}
+
+function defaultSortAlgorithm( a, b ) {
+    return a['type'].localeCompare( b['type'] ) ||  // compare type
+           a['level'] - b['level'] ||               // compare level
+           a['name'].localeCompare( b['name'] );    // finally, compare name
+}
+
 class ArmoryService {
     constructor (data) {
         this.data = data;
-        this.defaultSort = ['hands'];
-        this.extendedSort = ['type', 'level', 'name']
     }
 
     getCategories () {
@@ -91,61 +111,49 @@ class ArmoryService {
                 if (!nameFilter) return true;
                 return nameFilter.test( item.name );
             })
-            // .orderBy( [this.getSortAlgorithm( filter.sort )], filter.order )
             .value()
             .sort( this.getSortAlgorithm( filter.sort, filter.order ) ) || [];
     }
 
     getSortAlgorithm ( field, order ) {
-        function decorate( fn ) {
-            return function( a, b ) {
-                if ( !a ) return order === 'asc' ? -1 : 1;
-                if ( !b ) return order === 'asc' ? 1 : -1;
-                return order === 'asc' ? fn( a, b ) : fn( b, a );
+        if ( !field ) field = "hands";
+        return decorateSortFunction((function() {   // IIFE to automatically decorate the result of the if/else block
+            if ( field === "damage" ) {
+                return function ( a, b ) {                                  // damage sort order
+                    let aDamage = parseDamageString( a['damage'] );
+                    let bDamage = parseDamageString( b['damage'] );
+
+                    if ( !aDamage && !bDamage ) return 0;
+                    else if ( !aDamage ) return 1;
+                    else if ( !bDamage ) return -1;
+
+                                                                            // compare maximum damage
+                    return ( aDamage.diceCount * aDamage.diceValue ) - ( bDamage.diceCount * bDamage.diceValue )
+                          || aDamage.diceCount - bDamage.diceCount          // compare minimum damage
+                          || aDamage.type.localeCompare( bDamage.type );    // finally, compare damage type
+                };
+            } else if ( field === "range" || field === "capacity" ) {
+                return function ( a, b ) {                                  // unit-defined sort order
+                    if ( !a[field] && !b[field] ) return 0;
+                    else if ( !a[field] ) return 1;
+                    else if ( !b[field] ) return -1;
+
+                    let aWords = a[field].split(' ');
+                    let bWords = b[field].split(' ');
+
+                    return parseInt( aWords[0] ) - parseInt( bWords[0] )    // compare values
+                        || aWords.length - bWords.length                    // check for extra qualifiers (i.e. thrown)
+                        || aWords.pop().localeCompare( bWords.pop() );      // finally, compare units
+                };
+            } else {
+                return function ( a, b ) {                                  // generic sort algorithm
+                    if ( typeof a[field] === 'number' && typeof b[field] === 'number' ) return a[field] - b[field];
+                    else if ( !a[field] ) return 1;
+                    else if ( !b[field] ) return -1;
+                    else return String( a[field] ).localeCompare( String( b[field] ) );
+                };
             }
-        }
-
-        if ( !field ) {
-            return decorate( function ( a, b ) {
-                return a['hands'] - b['hands'] ||
-                       a['type'].localeCompare( b['type'] ) ||
-                       a['level'] - b['level'] ||
-                       a['name'].localeCompare( b['name'] );
-            } );
-        } else if ( field === "damage" ) {
-            return decorate( function ( a, b ) {
-                let aDamage = parseDamageString( a['damage'] );
-                let bDamage = parseDamageString( b['damage'] );
-
-                if ( !aDamage && !bDamage ) return 0;
-                else if ( !aDamage ) return 1;
-                else if ( !bDamage ) return -1;
-
-                return ( aDamage.diceCount * aDamage.diceValue ) - ( bDamage.diceCount * bDamage.diceValue )
-                      || aDamage.diceCount - bDamage.diceCount
-                      || aDamage.type.localeCompare( bDamage.type );
-            } );
-        } else if ( field === "range" || field === "capacity" ) {
-            return decorate( function ( a, b ) {
-                if ( !a[field] && !b[field] ) return 0;
-                else if ( !a[field] ) return 1;
-                else if ( !b[field] ) return -1;
-
-                let aWords = a[field].split(' ');
-                let bWords = b[field].split(' ');
-
-                return parseInt( aWords[0] ) - parseInt( bWords[0] )
-                    || aWords.length - bWords.length
-                    || aWords.pop().localeCompare( bWords.pop() );
-            } );
-        } else {
-            return decorate( function ( a, b ) {
-                if ( typeof a[field] === 'number' && typeof b[field] === 'number' ) return a[field] - b[field];
-                else if ( !a[field] ) return 1;
-                else if ( !b[field] ) return -1;
-                else return String( a[field] ).localeCompare( String( b[field] ) );
-            });
-        }
+        })(), order);
     }
 }
 
