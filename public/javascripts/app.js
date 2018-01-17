@@ -207,6 +207,7 @@ const App = new Vue({
 
         setCategory: function( category ) {
             this.filter = { category: category };
+            this.search = '';
             Vue.nextTick(snapHeight);
         },
 
