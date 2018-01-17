@@ -60,7 +60,7 @@ function decorateSortFunction( fn, order ) {
         return function( a, b ) {
             if ( !a ) return 1;
             if ( !b ) return -1;
-            return fn( b, a ) || defaultSortAlgorithm( a, b );
+            return fn( b, a ) || defaultSortAlgorithm( b, a );
         }
     }
 }
@@ -116,9 +116,12 @@ class ArmoryService {
     }
 
     getSortAlgorithm ( field, order ) {
-        if ( !field ) field = "hands";
         return decorateSortFunction((function() {   // IIFE to automatically decorate the result of the if/else block
-            if ( field === "damage" ) {
+            if ( !field ) {
+                return function( a, b ) {
+                    return b['hands'] - a['hands'];
+                }
+            } else if ( field === "damage" ) {
                 return function ( a, b ) {                                  // damage sort order
                     let aDamage = parseDamageString( a['damage'] );
                     let bDamage = parseDamageString( b['damage'] );
