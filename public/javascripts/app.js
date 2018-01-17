@@ -259,12 +259,17 @@ const ArmoryLoaderService = new Vue({
                 ArmoryLoaderService.loading = false;
             }
 
+            console.log('loading armory');
             $.getJSON( "data/armory.json", function ( data ) {
+                console.log('armory loaded');
                 App.armory = new ArmoryService(data);
                 if (!--thingsToLoad) done();
+            }).fail(function( error ) {
+                console.log( arguments );
             });
 
-            $.getJSON( "data/descriptors.json", function ( data ) {
+            $.getJSON( "data_static/descriptors.json", function ( data ) {
+                console.log('descriptors loaded')
                 App.descriptors = data;
                 if (!--thingsToLoad) done();
             });

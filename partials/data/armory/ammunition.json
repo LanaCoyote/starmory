@@ -1,0 +1,186 @@
+{
+  "standard ammunition": {
+    "arrows": {
+      "type": "uncategorized",
+      "level": 1,
+      "price": 50,
+      "charges/cartridges": 20,
+      "bulk": 0,
+      "special": null,
+      "_description": "Arrow shafts are made of carbon fiber–reinforced plastic and have metal or ceramic heads."
+    },
+    "battery": {
+      "type": "charges",
+      "level": 1,
+      "price": 60,
+      "charges/cartridges": 20,
+      "bulk": -1,
+      "special": null,
+      "_description": "Batteries charge powered weapons, but they can also be used to power an array of items, including powered armor and technological items. Batteries have a standardized size and weight, and items that take batteries all have a slot into which they fit, regardless of the item’s actual size. Weapons that use batteries list the highest-capacity battery they are capable of using as well as how many charges from the battery that each shot consumes."
+    },
+    "battery, high-capacity": {
+      "type": "charges",
+      "level": 4,
+      "price": 330,
+      "charges/cartridges": 40,
+      "bulk": -1,
+      "special": null,
+      "_description": "Batteries charge powered weapons, but they can also be used to power an array of items, including powered armor and technological items. Batteries have a standardized size and weight, and items that take batteries all have a slot into which they fit, regardless of the item’s actual size. Weapons that use batteries list the highest-capacity battery they are capable of using as well as how many charges from the battery that each shot consumes."
+    },
+    "battery, super-capacity": {
+      "type": "charges",
+      "level": 4,
+      "price": 390,
+      "charges/cartridges": 80,
+      "bulk": -1,
+      "special": null,
+      "_description": "Batteries charge powered weapons, but they can also be used to power an array of items, including powered armor and technological items. Batteries have a standardized size and weight, and items that take batteries all have a slot into which they fit, regardless of the item’s actual size. Weapons that use batteries list the highest-capacity battery they are capable of using as well as how many charges from the battery that each shot consumes."
+    },
+    "battery, ultra-capacity": {
+      "type": "charges",
+      "level": 5,
+      "price": 445,
+      "charges/cartridges": 100,
+      "bulk": 0,
+      "special": null,
+      "_description": "Batteries charge powered weapons, but they can also be used to power an array of items, including powered armor and technological items. Batteries have a standardized size and weight, and items that take batteries all have a slot into which they fit, regardless of the item’s actual size. Weapons that use batteries list the highest-capacity battery they are capable of using as well as how many charges from the battery that each shot consumes."
+    },
+    "darts": {
+      "type": "uncategorized",
+      "level": 1,
+      "price": 20,
+      "charges/cartridges": 25,
+      "bulk": 0,
+      "special": null,
+      "_description": "These light metal shafts each have a pointed tip and a reservoir to hold toxins or other appropriate substances that are typically liquid or viscous. While most combatants rely on darts to deliver toxins to enemies, particularly desperate or overworked field medics sometimes employ darts to conveniently deliver antitoxins, healing serums, and other beneficial specialugs across a crowded battlefield. In these cases, medics often practice to improve their aim to ensure that this strategy is effective when employed."
+    },
+    "flare": {
+      "type": "uncategorized",
+      "level": 1,
+      "price": 5,
+      "charges/cartridges": 1,
+      "bulk": -1,
+      "special": null,
+      "_description": "Usually made of magnesium, flares burn brightly and can deliver some heat. You can ignite a flare by hand without the need for a flare gun. A lit flare burns for 1 hour, and it can be wielded in melee combat as an improvised weapon that deals 1d2 fire damage."
+    },
+    "mini-rockets": {
+      "type": "explosive",
+      "level": 4,
+      "price": 300,
+      "charges/cartridges": 10,
+      "bulk": 0,
+      "special": null,
+      "_description": "These long, tapered shells hold combustible material as well as a chemical propellant."
+    },
+    "petrol tank, standard": {
+      "type": "petrol",
+      "level": 1,
+      "price": 60,
+      "charges/cartridges": 20,
+      "bulk": 1,
+      "special": null,
+      "_description": "Petrol is a highly flammable blend of hyspecialocarbons that is used in flame weapons (and petrol is occasionally used by desperate adventurers as fuel or for other various utilitarian purposes). A petrol tank snaps easily into the housing of weapons that are specifically petrol-powered."
+    },
+    "petrol tank, high capacity": {
+      "type": "petrol",
+      "level": 3,
+      "price": 280,
+      "charges/cartridges": 40,
+      "bulk": 2,
+      "special": null,
+      "_description": "Petrol is a highly flammable blend of hyspecialocarbons that is used in flame weapons (and petrol is occasionally used by desperate adventurers as fuel or for other various utilitarian purposes). A petrol tank snaps easily into the housing of weapons that are specifically petrol-powered."
+    },
+    "rounds, small arm": {
+      "type": "rounds",
+      "level": 1,
+      "price": 40,
+      "charges/cartridges": 30,
+      "bulk": 0,
+      "special": null,
+      "_description": "Cased rounds are housed in magazines, which can be fitted into the appropriate weapon."
+    },
+    "rounds, longarm and sniper": {
+      "type": "rounds",
+      "level": 1,
+      "price": 75,
+      "charges/cartridges": 25,
+      "bulk": 0,
+      "special": null,
+      "_description": "Cased rounds are housed in magazines, which can be fitted into the appropriate weapon."
+    },
+    "rounds, heavy": {
+      "type": "rounds",
+      "level": 1,
+      "price": 90,
+      "charges/cartridges": 20,
+      "bulk": 0,
+      "special": null,
+      "_description": "Cased rounds are housed in magazines, which can be fitted into the appropriate weapon."
+    },
+    "scattergun shells": {
+      "type": "shells",
+      "level": 1,
+      "price": 55,
+      "charges/cartridges": 25,
+      "bulk": 0,
+      "special": null,
+      "_description": "These cartridges are packed with small metal spheres that scatter when the cartridge explodes."
+    }
+  },
+  "special ammunition": {
+    "grenade arrow I": {
+      "type": "uncategorized",
+      "level": 6,
+      "price": 875,
+      "charges/cartridges": 1,
+      "bulk": -1,
+      "special": "as any 1st-level grenade",
+      "_description": "The explosive tip of the arrow detonates on impact. A grenade arrow can be made using any handheld grenade. The miniaturized technology incorporated into the arrow increases its price substantially over an equivalent grenade."
+    },
+    "grenade arrow II": {
+      "type": "uncategorized",
+      "level": 10,
+      "price": 5450,
+      "charges/cartridges": 1,
+      "bulk": -1,
+      "special": "as any 5th- or lower-level grenade",
+      "_description": "The explosive tip of the arrow detonates on impact. A grenade arrow can be made using any handheld grenade. The miniaturized technology incorporated into the arrow increases its price substantially over an equivalent grenade."
+    },
+    "grenade arrow III": {
+      "type": "uncategorized",
+      "level": 15,
+      "price": 32050,
+      "charges/cartridges": 1,
+      "bulk": -1,
+      "special": "as any 10th- or lower-level grenade",
+      "_description": "The explosive tip of the arrow detonates on impact. A grenade arrow can be made using any handheld grenade. The miniaturized technology incorporated into the arrow increases its price substantially over an equivalent grenade."
+    },
+    "grenade arrow IV": {
+      "type": "uncategorized",
+      "level": 20,
+      "price": 245000,
+      "charges/cartridges": 1,
+      "bulk": -1,
+      "special": "as any 15th- or lower-level grenade",
+      "_description": "The explosive tip of the arrow detonates on impact. A grenade arrow can be made using any handheld grenade. The miniaturized technology incorporated into the arrow increases its price substantially over an equivalent grenade."
+    },
+    "tactical missile": {
+      "type": "explosive",
+      "level": 10,
+      "price": 5700,
+      "charges/cartridges": 1,
+      "bulk": 1,
+      "special": "explode (6d8 B&P, 30 ft.)",
+      "_description": "Missiles are heavy, snub-nosed munitions with devastating explosive power. A missile’s damage when fired from a missile launcher (such as an IMDS missile launcher) is listed in its entry."
+    },
+    "advanced missile": {
+      "type": "explosive",
+      "level": 13,
+      "price": 14600,
+      "charges/cartridges": 1,
+      "bulk": 1,
+      "special": "explode (13d8 B&P, 30 ft.)",
+      "_description": "Missiles are heavy, snub-nosed munitions with devastating explosive power. A missile’s damage when fired from a missile launcher (such as an IMDS missile launcher) is listed in its entry."
+    }
+  }
+}
