@@ -19,6 +19,21 @@ header {
   top: 0;
   z-index: 10; }
 
+footer {
+  position: fixed;
+  display: block;
+  background: #FFFFFF;
+  width: 100%;
+  text-align: center;
+  font-size: 8pt;
+  bottom: 1em; }
+
+img.bg-image {
+  position: absolute;
+  margin: auto;
+  z-index: -1;
+  opacity: 0.2; }
+
 .table-items thead {
   border: none; }
 

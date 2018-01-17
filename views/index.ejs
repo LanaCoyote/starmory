@@ -70,6 +70,7 @@
 
         <section class="splash" v-if="!filter.category">
           <div class="grid-container text-center">
+            <img src="/images/starfinder-soc.jpg" class="bg-image">
             <h3>Starmory</h3>
 
             <p class="lead">
@@ -80,7 +81,18 @@
               Select a category from the navigation bar above to begin browsing. Use the subcategories and filters to
               narrow your search.
             </p>
+
+            <p>
+              <a href="https://github.com/LanaCoyote/starmory">GitHub</a> |
+              <a href="http://paizo.com/starfinder/">Starfinder</a> |
+              <a href="http://www.starfindersrd.com/">System Reference Document</a>
+            </p>
           </div>
+
+          <footer>
+            Paizo Inc., Paizo, Pathfinder, Starfinder, and the Starfinder logo are registered trademarks of
+            <a href="http://paizo.com/">Paizo Inc.</a>
+          </footer>
         </section>
 
         <section class="items medium-auto" v-if="filter.category">
